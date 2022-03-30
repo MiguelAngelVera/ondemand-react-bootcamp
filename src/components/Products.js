@@ -86,14 +86,28 @@ const ProductCategory = styled.div`
     }
 `
 const Title = styled.div`
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
     padding: 0 6vw;
     background-color: #E6E6E6;
     font-size: 1.1vw;
     color:gray;
     height:5vw;
-    @media(max-width: 900px)
-        {font-size: 3vw;
-        height:12vw;}  
+    button{
+        font-size: 1.5vw;
+        background-color:#D9FDFA90;
+        border-radius:15vw;
+        color: blue;
+        border: none;
+    }
+    @media(max-width: 900px){
+        font-size: 3vw;
+        height:12vw;
+        button{
+            font-size: 3vw;
+    }
+    }  
 `
 
 function Image (element){
@@ -117,7 +131,12 @@ export default function Products(){
     const productslist = products
     return(
         <>
-            <Title>Top Sellers</Title>
+            <Title>
+                <div>Top Sellers</div>
+                <button>
+                    View all products >
+                </button>
+            </Title>
             <ContainerBackground>
                 <Container>
                     {productslist.results.map((element)=>
