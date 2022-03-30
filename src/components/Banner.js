@@ -36,6 +36,15 @@ const BannerStyle = styled.div`
             margin-right: auto;
         };        
 `
+const Title = styled.div`
+    padding: 0 6vw;
+    background-color: #E6E6E6;
+    font-size: 1.5vw;
+    color:gray;
+    @media(max-width: 900px)
+        {font-size: 15px}  
+`
+
 
 export default function Banner(){
     const banner = MockBanner
@@ -75,6 +84,7 @@ export default function Banner(){
 
     return(
         <>
+            <Title>Popular Products</Title>
             <Container>
                 <SlideContainer ref={slideref}>
                     {banner.results.map((item) =>

@@ -117,7 +117,7 @@ export default function Products(){
     const productslist = products
     return(
         <>
-            <Title>Los mas Comprados</Title>
+            <Title>Top Sellers</Title>
             <ContainerBackground>
                 <Container>
                     {productslist.results.map((element)=>

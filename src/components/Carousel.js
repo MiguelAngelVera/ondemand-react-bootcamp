@@ -176,7 +176,7 @@ export default function Grid(){
       };
     return(
         <>
-        <Title>Categorias Populares</Title>
+        <Title>Department</Title>
         <Container>
             <CardBackground>
                 <CardContainer ref={carouselslide}>    
