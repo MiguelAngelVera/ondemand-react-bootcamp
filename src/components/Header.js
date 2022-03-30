@@ -36,15 +36,15 @@ const Left =  styled.div`
     justify-content: flex-end;
     margin-right: 3%;
     @media(max-width: 900px)   
-        {margin-right: 6%;}
+        {margin-right: 2vw;}
 `;
 const ShopName = styled.div`
     padding: 0% 2%;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.5vw;
     font-weight: bold;
     @media(max-width: 900px)
-        {font-size: 15px}  
+        {font-size: 3.3vw}  
 `
 
 
@@ -85,7 +85,7 @@ const SignBlock = styled.div`
 
 const Sign = styled.div`
     @media(max-width: 900px)
-        {font-size: 13px;
+        {font-size: 2.5vw;
         margin-right: 10%}
 `
 

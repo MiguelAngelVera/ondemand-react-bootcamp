@@ -88,11 +88,11 @@ const ProductCategory = styled.div`
 const Title = styled.div`
     padding: 0 6vw;
     background-color: #E6E6E6;
-    font-size: 1.5vw;
+    font-size: 1.1vw;
     color:gray;
     height:5vw;
     @media(max-width: 900px)
-        {font-size: 15px;
+        {font-size: 3vw;
         height:12vw;}  
 `
 

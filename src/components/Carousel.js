@@ -112,10 +112,10 @@ const CardText = styled.div`
 const Title = styled.div`
     padding: 0 6vw;
     background-color: #E6E6E6;
-    font-size: 1.5vw;
+    font-size: 1.1vw;
     color:gray;
     @media(max-width: 900px)
-        {font-size: 15px}  
+        {font-size: 3vw;}  
 `
 
 
@@ -176,7 +176,7 @@ export default function Grid(){
       };
     return(
         <>
-        <Title>Department</Title>
+        <Title>Departments</Title>
         <Container>
             <CardBackground>
                 <CardContainer ref={carouselslide}>    

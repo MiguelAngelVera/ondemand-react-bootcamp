@@ -3,46 +3,54 @@ import React, { useRef, useEffect } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
+    display:flex;
     overflow: hidden;
     background-color: #E6E6E6;
+    height:30vw;
+    align-items: center;
+    @media(max-width: 900px){
+        height: 50vw;    }
 `
+
 const SlideContainer = styled.div`
     display:flex;
     flex-wrap:nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 560px;
     width:100%;
+    height: 100%;
     background-color: #E6E6E6;
     margin: 0 auto;
-    min-width: 100%;
-        transition: .3s ease all;
+    transition: .3s ease all;
     @media(max-width: 900px){
         height: 50vw;       
     }
 `
 
 const BannerStyle = styled.div`
-    justify-content: center;
+    display:flex;
+    align-items: center;
     background-color:#DEDEDE;
-    position:relative;
     transition: .3s ease all;
     min-width: 100%;
-        transition: .3s ease all;
+    height:80%;
+    transition: .3s ease all;
         img {
-            width: 90%;
-            display: block;
+            height: 100%;
+            display: block;        
+            margin-top:center;
             margin-left: auto;
             margin-right: auto;
+
         };        
 `
 const Title = styled.div`
     padding: 0 6vw;
     background-color: #E6E6E6;
-    font-size: 1.5vw;
+    font-size: 1.1vw;
     color:gray;
     @media(max-width: 900px)
-        {font-size: 15px}  
+        {font-size: 3vw;}  
 `
 
 
@@ -56,7 +64,7 @@ export default function Banner(){
         if(slideref.current.children.length > 0){
             const firstElement = slideref.current.children[0];
 
-            slideref.current.style.transition = `500ms ease-in all`;
+            slideref.current.style.transition = `700ms ease-in all`;
             slideref.current.style.transform = `translateX(-100%)`;
             const append = () => {
                 slideref.current.style.transition = 'none';
