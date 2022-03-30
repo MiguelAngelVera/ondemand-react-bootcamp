@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import categories from '../mocks/en-us/product-categories.json'
 import { useState, useRef } from 'react';
