@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/MiguelAngelVera/ondemand-react-bootcamp.git/static/css/main.e6c13ad2.css",
+    "main.js": "/MiguelAngelVera/ondemand-react-bootcamp.git/static/js/main.b36cd7f0.js",
+    "static/js/787.11f79f68.chunk.js": "/MiguelAngelVera/ondemand-react-bootcamp.git/static/js/787.11f79f68.chunk.js",
+    "static/media/main-logo.svg": "/MiguelAngelVera/ondemand-react-bootcamp.git/static/media/main-logo.8e9ea023198d3433168ff28bdd189e93.svg",
+    "index.html": "/MiguelAngelVera/ondemand-react-bootcamp.git/index.html",
+    "static/media/cart-logo.svg": "/MiguelAngelVera/ondemand-react-bootcamp.git/static/media/cart-logo.bb2048e0cc7fc1e7bf1c812e9e33d522.svg",
+    "static/media/search-icon.svg": "/MiguelAngelVera/ondemand-react-bootcamp.git/static/media/search-icon.8160e0eeec8a4eda760b32159b21950c.svg",
+    "main.e6c13ad2.css.map": "/MiguelAngelVera/ondemand-react-bootcamp.git/static/css/main.e6c13ad2.css.map",
+    "main.b36cd7f0.js.map": "/MiguelAngelVera/ondemand-react-bootcamp.git/static/js/main.b36cd7f0.js.map",
+    "787.11f79f68.chunk.js.map": "/MiguelAngelVera/ondemand-react-bootcamp.git/static/js/787.11f79f68.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.b36cd7f0.js"
+  ]
+}
