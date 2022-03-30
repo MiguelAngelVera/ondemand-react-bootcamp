@@ -1,5 +1,5 @@
 import MockBanner from "../mocks/en-us/featured-banners.json"
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -38,7 +38,7 @@ const BannerStyle = styled.div`
 `
 
 export default function Banner(){
-    const [banner, setBanner] = useState(MockBanner)
+    const banner = MockBanner
     
 
     const slideref = useRef(null);
@@ -62,9 +62,8 @@ export default function Banner(){
     useEffect(()=>{
         const autoChange = setInterval(() => {
             Slider();
-            },3500)
-            // slideref.current.addEventListener('mouseenter', () => {
-            // clearInterval(autoChange)})
+            },2500)
+        return(clearInterval(autoChange))
     },[])
 
 
@@ -80,7 +79,7 @@ export default function Banner(){
             <Container>
                 <SlideContainer ref={slideref}>
                     {banner.results.map((item) =>
-                        <BannerStyle>
+                        <BannerStyle key={item.id}>
                             <BannerBox {...item}></BannerBox>
                         </BannerStyle>)}
                 </SlideContainer>
