@@ -1,0 +1,6 @@
+<svg className="svg-icon search-icon" aria-labelledby="title desc" width="28px" height="26px" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 19.7">
+    <g  fill="none" stroke="gray">
+        <path strokeLinecap="square" d="M18.5 18.3l-5.4-5.4"/>
+        <circle cx="8" cy="8" r="7"/>
+    </g>
+</svg>
