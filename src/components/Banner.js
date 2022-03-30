@@ -60,10 +60,9 @@ export default function Banner(){
     }
 
     useEffect(()=>{
-        const autoChange = setInterval(() => {
+        setInterval(() => {
             Slider();
             },2500)
-        return(clearInterval(autoChange))
     },[])
 
 
