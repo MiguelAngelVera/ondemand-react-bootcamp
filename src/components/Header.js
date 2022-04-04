@@ -17,6 +17,7 @@ const SearchIcon = styled(SearchLogo)``;
 const MainHeader = styled.div`
   background-color: #F7DC6F;
   align-items: center;
+  display:fixed;
 `;
 const BarWrapper = styled.div`
   display: flex;
@@ -89,13 +90,15 @@ const Sign = styled.div`
         margin-right: 10%}
 `
 
-function NavBar(){
+
+
+function NavBar({action}){
     return(
         <BarWrapper >
         <meta name="viewport" 
                 content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         </meta>
-        <Left>
+        <Left onClick={_=>{action(true)}}>
             <MainLogoIcon></MainLogoIcon>
             <ShopName>
                 <div>Wize</div>
@@ -120,10 +123,10 @@ function NavBar(){
     )
 }
 
-export default function Header(){
+export default function Header({change}){
     return(
         <MainHeader>
-            <NavBar></NavBar>
+            <NavBar action={change}></NavBar>
         </MainHeader>
     )
 }
