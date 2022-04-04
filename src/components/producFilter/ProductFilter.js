@@ -35,14 +35,22 @@ export default function ProductFilter(){
     let encuentro = ''
     let temp = ''
 
+    useEffect(()=>{
+        const deffun = () => (
+            setDefaultfiltered(productlist.results.filter(it => it.data.category.slug.toLowerCase().includes(''.toLowerCase()))))
+        const timer = setTimeout(()=>(
+            deffun()
+        ),2000)
+        return()=>clearTimeout(timer)
+    },[])
     
     useEffect(()=>{
         window.scrollTo(0, 0)
-        setDefaultfiltered(productlist.results.filter(it => it.data.category.slug.toLowerCase().includes(''.toLowerCase())))
         const keys = Object.keys(searchFor)
         const indexKey = keys[0]
         const fun = (encuentro) => (
             keys.length ? (
+                setDefaultfiltered(productlist.results.filter(it => it.data.category.slug.toLowerCase().includes(''.toLowerCase()))),
                 encuentro = productlist.results.filter(it => it.data.category.slug.toLowerCase().includes(searchFor[indexKey].toLowerCase())),
                 !encuentro.length && (searchFor[indexKey] === "fallo") ? (
                     temp = filteredProducts,
@@ -54,6 +62,11 @@ export default function ProductFilter(){
             )
         :{})
         fun(encuentro)
+        // const timer = setTimeout(()=>(
+        //     deffun(),
+        //     console.log('hola')
+        // ),2000)
+        // return()=>clearTimeout(timer)
     },[searchFor,productlist])
     
 
@@ -100,10 +113,11 @@ export default function ProductFilter(){
                                 ):(null)
                             ))
                         ):(
-                            defaultfiltered.map ((item)=>(
-                                <styles.ProductCard key={item.data.sku}>
-                                    <Image  {...item}></Image>
-                                </styles.ProductCard> ))
+                            Object.keys(defaultfiltered).length !== 0 ? (
+                                defaultfiltered.map ((item)=>(
+                                    <styles.ProductCard key={item.data.sku}>
+                                        <Image  {...item}></Image>
+                                    </styles.ProductCard> ))):(<div>Cargando...</div>)
                             )
                     }
                 </styles.ProductContainer>
