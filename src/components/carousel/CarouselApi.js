@@ -67,6 +67,9 @@ export default function CarouselApi() {
   return (
     <>
       <styles.Title>Departments</styles.Title>
+      {carouselIsLoading ? (
+        <h2 style={{ textAlign: "center" }}>Loading...</h2>
+      ) : null}
       <styles.Container>
         <styles.CardBackground>
           <styles.CardContainer ref={carouselslide}>

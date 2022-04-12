@@ -2,7 +2,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-expressions */
 /* eslint-disable no-sequences */
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useReducer, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import ListContext from "../../states/ListContext";
 import useSearch from "../../utils/hooks/useSearch";
@@ -12,7 +12,9 @@ import ProductGrid from "../productGrid/ProductGrid";
 export default function Search() {
   const [postPerPage, setPostsPerPage] = useState(20);
   const [params] = useSearchParams("");
+
   const [test, setTest] = useState("");
+
   const [filteredSearchList, setFilteredSearchList] = useState("");
   const [filteredSearchPagination, setfilteredSearchPagination] = useState("");
   const {
@@ -100,19 +102,23 @@ export default function Search() {
       <br></br>
       <br></br>
       <br></br>
-      {filteredSearchPagination.length ? (
-        <div>
-          <ProductGrid
-            productisLoading={productisLoading}
-            product={filteredSearchPagination}
-          ></ProductGrid>
-          <Pagination
-            postPerPage={postPerPage}
-            totalPosts={filteredSearchList.length}
-          ></Pagination>
-        </div>
+      {!productisLoading ? (
+        filteredSearchPagination.length ? (
+          <div>
+            <ProductGrid
+              productisLoading={productisLoading}
+              product={filteredSearchPagination}
+            ></ProductGrid>
+            <Pagination
+              postPerPage={postPerPage}
+              totalPosts={filteredSearchList.length}
+            ></Pagination>
+          </div>
+        ) : (
+          <h2 style={{ textAlign: "center" }}>Nothing to Show ...</h2>
+        )
       ) : (
-        <h2 style={{ textAlign: "center" }}>Nothing to show ...</h2>
+        <h2 style={{ textAlign: "center" }}>Loading ...</h2>
       )}
     </>
   );
