@@ -2,15 +2,14 @@ import React, { useState } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/header/Header.js";
 import Space from "./components/Space";
-import ProductPage from "./pages/products/Products";
 import HomePage from "./pages/home/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import NotFound from "./components/NotFound";
 import ProductDetail from "./components/productDetail/productDetail";
 import ListContext from "./states/ListContext";
-import Search from "./components/search/Search";
-import SearchPage from "./pages/search/SearchPage";
+const ProductPage = React.lazy(() => import("./pages/products/Products"));
+const SearchPage = React.lazy(() => import("./pages/search/SearchPage"));
 
 export default function Component() {
   const [searchFor, setSearchFor] = useState("");
