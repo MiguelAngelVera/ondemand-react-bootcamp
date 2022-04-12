@@ -127,53 +127,53 @@ export default function ProductFilterApi() {
             </styles.Title>
             <ul>
               <styles.NavBarList>
-                {!focus
-                  ? !categoryIsLoading
-                    ? categoryDataApi.results.map((item) =>
-                        item.data.name.toLowerCase() !==
-                        param.replace("--", " & ") ? (
-                          <li key={item.id} style={myStyleGray} name={item.id}>
-                            <h3
-                              onClick={(e) =>
-                                handleFiltering(e, item.data.name.toLowerCase())
-                              }
-                              style={myStyleGray}
-                            >
-                              {item.data.name}
-                            </h3>
-                          </li>
-                        ) : (
-                          <li key={item.id} style={myStyleBlue} name={item.id}>
-                            <h3
-                              onClick={(e) =>
-                                handleFiltering(e, item.data.name.toLowerCase())
-                              }
-                              style={myStyleBlue}
-                            >
-                              {item.data.name}
-                            </h3>
-                          </li>
-                        )
+                {!focus ? (
+                  !categoryIsLoading ? (
+                    categoryDataApi.results.map((item) =>
+                      item.data.name.toLowerCase() !==
+                      param.replace("--", " & ") ? (
+                        <li key={item.id} style={myStyleGray} name={item.id}>
+                          <h3
+                            onClick={(e) =>
+                              handleFiltering(e, item.data.name.toLowerCase())
+                            }
+                            style={myStyleGray}
+                          >
+                            {item.data.name}
+                          </h3>
+                        </li>
+                      ) : (
+                        <li key={item.id} style={myStyleBlue} name={item.id}>
+                          <h3
+                            onClick={(e) =>
+                              handleFiltering(e, item.data.name.toLowerCase())
+                            }
+                            style={myStyleBlue}
+                          >
+                            {item.data.name}
+                          </h3>
+                        </li>
                       )
-                    : null
-                  : !categoryIsLoading
-                  ? categoryDataApi.results.map((item) => (
-                      <li
-                        key={item.data.name}
+                    )
+                  ) : (
+                    <li style={{ textAlign: "center" }}>Loading...</li>
+                  )
+                ) : !categoryIsLoading ? (
+                  categoryDataApi.results.map((item) => (
+                    <li key={item.data.name} style={myStyleGray} name={item.id}>
+                      <h3
+                        onClick={(e) =>
+                          handleFiltering(e, item.data.name.toLowerCase())
+                        }
                         style={myStyleGray}
-                        name={item.id}
                       >
-                        <h3
-                          onClick={(e) =>
-                            handleFiltering(e, item.data.name.toLowerCase())
-                          }
-                          style={myStyleGray}
-                        >
-                          {item.data.name}
-                        </h3>
-                      </li>
-                    ))
-                  : null}
+                        {item.data.name}
+                      </h3>
+                    </li>
+                  ))
+                ) : (
+                  <li style={{ textAlign: "center" }}>Loading...</li>
+                )}
               </styles.NavBarList>
               {clearButton && (
                 <button

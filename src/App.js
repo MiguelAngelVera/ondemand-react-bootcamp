@@ -8,8 +8,8 @@ import "./App.css";
 import NotFound from "./components/NotFound";
 import ProductDetail from "./components/productDetail/productDetail";
 import ListContext from "./states/ListContext";
-const ProductPage = React.lazy(() => import("./pages/products/Products"));
-const SearchPage = React.lazy(() => import("./pages/search/SearchPage"));
+import ProductPage from "./pages/products/Products";
+import SearchPage from "./pages/search/SearchPage";
 
 export default function Component() {
   const [searchFor, setSearchFor] = useState("");

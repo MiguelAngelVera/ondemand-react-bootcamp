@@ -34,16 +34,19 @@ function Image(item) {
 
 export default function ProductGrid({ productisLoading, product, feature }) {
   return (
-    <styles.Container>
-      {!productisLoading ? (
-        product.map((item) => (
-          <styles.ProductCard key={item.data.sku + feature}>
-            <Image {...item}></Image>
-          </styles.ProductCard>
-        ))
-      ) : (
-        <div>Cargando</div>
-      )}
-    </styles.Container>
+    <>
+      {productisLoading ? (
+        <h2 style={{ textAlign: "center" }}>Loading...</h2>
+      ) : null}
+      <styles.Container>
+        {!productisLoading
+          ? product.map((item) => (
+              <styles.ProductCard key={item.data.sku + feature}>
+                <Image {...item}></Image>
+              </styles.ProductCard>
+            ))
+          : null}
+      </styles.Container>
+    </>
   );
 }

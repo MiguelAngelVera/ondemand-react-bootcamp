@@ -102,19 +102,23 @@ export default function Search() {
       <br></br>
       <br></br>
       <br></br>
-      {filteredSearchPagination.length ? (
-        <div>
-          <ProductGrid
-            productisLoading={productisLoading}
-            product={filteredSearchPagination}
-          ></ProductGrid>
-          <Pagination
-            postPerPage={postPerPage}
-            totalPosts={filteredSearchList.length}
-          ></Pagination>
-        </div>
+      {!productisLoading ? (
+        filteredSearchPagination.length ? (
+          <div>
+            <ProductGrid
+              productisLoading={productisLoading}
+              product={filteredSearchPagination}
+            ></ProductGrid>
+            <Pagination
+              postPerPage={postPerPage}
+              totalPosts={filteredSearchList.length}
+            ></Pagination>
+          </div>
+        ) : (
+          <h2 style={{ textAlign: "center" }}>Nothing to Show ...</h2>
+        )
       ) : (
-        <h2 style={{ textAlign: "center" }}>Nothing to show ...</h2>
+        <h2 style={{ textAlign: "center" }}>Loading ...</h2>
       )}
     </>
   );
