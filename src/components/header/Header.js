@@ -16,14 +16,17 @@ function NavBar() {
   const [searchString, setSearchString] = useState("");
   const handleChange = (event) => setSearchString(event.target.value);
   const handleSearch = (event) => (
-    navigate(`/search?q=${searchString.toLowerCase()}`),
+    navigate(`/ondemand-react-bootcamp/search?q=${searchString.toLowerCase()}`),
     event.preventDefault(),
     setSearchString("")
   );
   return (
     <styles.BarWrapper>
       <styles.Left>
-        <Link to="/home" style={{ textDecoration: "none" }}>
+        <Link
+          to="/ondemand-react-bootcamp/home"
+          style={{ textDecoration: "none" }}
+        >
           <MainLogoIcon></MainLogoIcon>
         </Link>
       </styles.Left>
