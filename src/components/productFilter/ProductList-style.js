@@ -6,7 +6,7 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   gap: 10px;
-  min-height: 100vw;
+  height: auto;
   flex-wrap: nowrap;
   height: auto;
   border-top: 60px solid #e6e6e6;
@@ -15,14 +15,12 @@ export const Container = styled.div`
   }
 `;
 export const NavBarContainer = styled.nav`
-  margin-left: 10vw;
+  margin-left: 8vw;
   background-color: #e6e6e6;
   border-radius: 10px;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   flex: 1;
-  // width: 20vw;
   height: 100vh;
-  // border-top: 10vw;
   @media (max-width: 900px) {
     border-radius: 0px;
     width: 100%;
@@ -34,12 +32,10 @@ export const NavBarContainer = styled.nav`
     width: 100%;
     height: auto;
     border-radius: 0;
-    //   position: fixed;
     border: none;
     border-top: 20px solid #e6e6e6;
     z-index: 3;
-    //    box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.19);
-    //   position: fixed;
+    padding-top: 10vw;
   }
 `;
 
@@ -86,35 +82,19 @@ export const NavBarCard = styled.div`
     padding: 0px;
     margin: 0px;
     @media (max-width: 900px) {
-      //flex:5;
       margin: 0 auto;
       align-items: center;
-      //    position: fixed;
       gap: 3vw;
     }
   }
 `;
 
 export const ProductContainer = styled.div`
-  flex: 7;
-  height: auto;
-  padding: 2.5vw 0;
-  margin-right: 10vw;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(30vw, 30vw);
   background-color: #e6e6e6;
-  justify-content: center;
-  display: grid;
-  row-gap: 4rem;
   @media (max-width: 900px) {
-    padding: 4vw 0;
-    margin-right: 0;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(70vw, 70vw);
-    column-gap: 0rem;
+    padding: 10vw 0;
   }
 `;
-
 export const ProductCard = styled.div`
   height: 100%;
   display: flex;
@@ -189,7 +169,6 @@ export const Arrow = styled.button`
   border-radius: 0.3rem;
   background-color: #e6e6e6;
   color: #6495ed;
-  // margin: auto auto;
   border-width: 0px;
   padding: 3vw;
   font-size: 2vw;
@@ -197,7 +176,11 @@ export const Arrow = styled.button`
     font-size: 4vw;
     width: 12vw;
     height: 12vw;
-    //  opacity:60%;
-    //  margin:auto;
+  }
+`;
+export const Title = styled.div`
+  margin-top: "0";
+  @media (max-width: 900px) {
+    margin-top: "15vw";
   }
 `;

@@ -1,21 +1,27 @@
 /* eslint-disable no-unused-expressions */
 import { useContext, useEffect } from "react";
-import { useFeaturedBanners } from "../../utils/hooks/useFeaturedBanners";
+import { useFeaturedBanners } from "./useFeaturedBanners";
 import ListContext from "../../states/ListContext";
 
-export default function useList(param) {
+export default function useFilter(feature) {
   const {
     searchFor,
     filteredProducts,
     setFilteredProducts,
     setDefaultfiltered,
+    param,
+    productEncode,
+    productPageSize,
+    productLanguage,
   } = useContext(ListContext);
 
-  let productEncode = '[[at(document.type, "product")]]';
-  let productLanguage = "en-us";
-  let productPageSize = "100";
   const { data: productDataApi, isLoading: productisLoading } =
-    useFeaturedBanners(productEncode, productLanguage, productPageSize);
+    useFeaturedBanners(
+      productEncode,
+      productLanguage,
+      productPageSize,
+      feature
+    );
 
   useEffect(() => {
     let found = "";
@@ -43,14 +49,14 @@ export default function useList(param) {
         : null;
     const paramFiltering = () =>
       !productisLoading
-        ? (console.log(param),
-          ((found = productDataApi.results.filter((item) =>
+        ? ((found = productDataApi.results.filter((item) =>
             item.data.category.slug.toLowerCase().includes(param)
           )),
-          setFilteredProducts({ ...filteredProducts, [param]: found })))
+          setFilteredProducts({ [param]: found }))
         : null;
     window.scrollTo(0, 0);
-    param !== "" ? paramFiltering() : filtering(), defaultFiltering();
+    param !== "" && !category.length ? paramFiltering() : filtering(),
+      defaultFiltering();
   }, [productisLoading, searchFor]);
   return { productisLoading };
 }

@@ -1,6 +1,6 @@
 .App-button {
   border-radius: 0.3rem;
-  background-color: white;
+  background: #e6e6e6;
   color: #6495ed;
   margin: 0 auto;
   border-width: 0px;
@@ -9,4 +9,7 @@
   top: 0;
   display: flex;
   font-size: 3vw;
+}
+body {
+  background: #e6e6e6;
 }

@@ -1,50 +1,49 @@
-import { useFeaturedBanners } from "../../utils/hooks/useFeaturedBanners";
+import { useContext, useEffect } from "react";
+import ListContext from "../../states/ListContext";
+import useFilter from "../../utils/hooks/useFilter";
+import ProductGrid from "../productGrid/ProductGrid";
 import * as styles from "./Products-style";
 
-function Image(item) {
-  return (
-    <>
-      <styles.ProductImage>
-        <img src={item.data.mainimage.url} alt={item.data.id}></img>
-        <styles.Line></styles.Line>
-        <styles.ProductText>
-          <styles.ProductPrice>${item.data.price}</styles.ProductPrice>
-          <styles.ProductName>{item.data.name}</styles.ProductName>
-          <styles.ProductCategory>
-            {item.data.category.slug.toUpperCase().replace("--", " & ")}
-          </styles.ProductCategory>
-          <styles.ProductDetails>More Details</styles.ProductDetails>
-          <styles.ProducttoCart>Add to cart</styles.ProducttoCart>
-        </styles.ProductText>
-      </styles.ProductImage>
-    </>
-  );
-}
-
 export default function ProductsApi() {
-  let encode = '[[at(document.type, "product")]]';
-  let language = "en-us";
-  let pageSize = "16";
   let feature = `&q=${encodeURIComponent(
     '[[at(document.tags, ["Featured"])]]'
   )}`;
-  const { data: productDataApi, isLoading: productIsLoading } =
-    useFeaturedBanners(encode, language, pageSize, feature);
+
+  const {
+    defaultfiltered,
+    setParam,
+    setProductEncode,
+    setProductPageSize,
+    setProductLanguage,
+    setSearchFor,
+    setFilteredProducts,
+    setCurrentPage,
+  } = useContext(ListContext);
+
+  //Call API and retreive data
+  useEffect(() => {
+    setParam("");
+    setProductEncode('[[at(document.type, "product")]]');
+    setProductPageSize(16);
+    setProductLanguage("en-us");
+    setSearchFor("");
+    setFilteredProducts("");
+    setCurrentPage(1);
+  }, []);
+
+  const { productisLoading } = useFilter(feature);
+
   return (
     <>
       <styles.Title>
         <div>Top Sellers</div>
       </styles.Title>
       <styles.ContainerBackground>
-        <styles.Container>
-          {!productIsLoading
-            ? productDataApi.results.map((item) => (
-                <styles.ProductContainer key={item.data.sku}>
-                  <Image {...item}></Image>
-                </styles.ProductContainer>
-              ))
-            : null}
-        </styles.Container>
+        <ProductGrid
+          feature={feature}
+          productisLoading={productisLoading}
+          product={defaultfiltered}
+        ></ProductGrid>
       </styles.ContainerBackground>
     </>
   );

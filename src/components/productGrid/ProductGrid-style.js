@@ -15,9 +15,11 @@ export const Container = styled.div`
   row-gap: 4rem;
   column-gap: 0.1rem;
   @media (max-width: 900px) {
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: minmax(100vw, 100vw);
+    width: 90%;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-auto-rows: minmax(80vw, 80vw);
     column-gap: 0rem;
+    row-gap: 2rem;
   }
 `;
 export const ProductContainer = styled.div`
@@ -37,6 +39,9 @@ export const ProductImage = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
+  @media (max-width: 900px) {
+    width: 90%;
+  }
 `;
 
 export const Line = styled.div`
@@ -52,6 +57,7 @@ export const ProductText = styled.div`
 
   @media (max-width: 900px) {
     padding: 4.5vw 4.5vw;
+    height: 30%;
   }
 `;
 export const ProductName = styled.div`
@@ -98,7 +104,7 @@ export const ProducttoCart = styled.button`
   margin: 0 auto;
   align-content: center;
   @media (max-width: 900px) {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 `;
 
@@ -125,4 +131,11 @@ export const Title = styled.div`
       font-size: 3vw;
     }
   }
+`;
+
+export const ProductCard = styled.div`
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #e6e6e6;
 `;

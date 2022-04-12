@@ -7,29 +7,26 @@ const ListContext = createContext({
   setFilteredProducts: () => {},
   defaultfiltered: [],
   setDefaultfiltered: () => {},
-  showProducts: "",
-  setShowProducts: () => {},
+  param: "",
+  setParam: () => {},
+  productEncode: "",
+  setProductEncode: () => {},
+  productPageSize: "",
+  setProductPageSize: () => {},
+  productLanguage: "",
+  setProductLanguage: () => {},
+  searchString: "",
+  setSearchString: () => {},
+  filterSearchName: "",
+  setFilterSearchName: () => {},
+  filterSearchCat: "",
+  setFilterSearchCat: () => {},
+  filterSearchDesc: "",
+  setFilterSearchDesc: () => {},
+  currentPage: "",
+  setCurrentPage: () => {},
+  activeItem: "",
+  setActiveItem: () => {},
 });
 
 export default ListContext;
-
-// const ListContext = createContext({});
-// const ContextProvider = ({ children }) => {
-//   const [searchFor, setSearchFor] = useState("");
-//   const [filteredProducts, setFilteredProducts] = useState("");
-//   const [defaultfiltered, setDefaultfiltered] = useState([]);
-
-//   const data = {
-//     searchFor,
-//     setSearchFor,
-//     filteredProducts,
-//     setFilteredProducts,
-//     defaultfiltered,
-//     setDefaultfiltered,
-//   };
-//   return <ListContext.Provider value={data}>{children}</ListContext.Provider>;
-// };
-
-// export { ContextProvider };
-
-// export default ListContext;

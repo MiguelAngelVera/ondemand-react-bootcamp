@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { API_BASE_URL } from "../constants";
 import { useLatestAPI } from "./useLatestAPI";
 import axios from "axios";
+
 export function useFeaturedBanners(encodes, languages, pageSizes, featureds) {
   const { ref: apiRef, isLoading: isApiMetadataLoading } = useLatestAPI();
   const pageSize = pageSizes;
@@ -12,7 +13,6 @@ export function useFeaturedBanners(encodes, languages, pageSizes, featureds) {
     data: {},
     isLoading: true,
   }));
-
   useEffect(() => {
     if (!apiRef || isApiMetadataLoading) {
       return () => {};
@@ -33,7 +33,6 @@ export function useFeaturedBanners(encodes, languages, pageSizes, featureds) {
           }
         );
         const response = status !== 200 ? {} : data;
-        //const data = await response.json();
         setFeaturedBanners({ data: response, isLoading: false });
       } catch (err) {
         setFeaturedBanners({ data: {}, isLoading: false });

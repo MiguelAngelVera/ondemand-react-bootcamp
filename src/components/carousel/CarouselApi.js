@@ -3,6 +3,7 @@ import { useRef } from "react";
 import * as styles from "./Carousel-style";
 import { useFeaturedBanners } from "../../utils/hooks/useFeaturedBanners";
 import { useNavigate } from "react-router-dom";
+
 export default function CarouselApi() {
   let encode = '[[at(document.type, "category")]]';
   let language = "en-us";
