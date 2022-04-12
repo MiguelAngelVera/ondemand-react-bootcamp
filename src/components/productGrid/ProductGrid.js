@@ -19,7 +19,7 @@ function Image(item) {
           </styles.ProductCategory>
           <styles.ProductDetails>
             <Link
-              to={"/products/" + item.id}
+              to={"/ondemand-react-bootcamp/products/" + item.id}
               style={{ textDecoration: "none" }}
             >
               More Details

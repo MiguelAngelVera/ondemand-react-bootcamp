@@ -61,17 +61,33 @@ export default function Component() {
         <Space></Space>
         <Router>
           <Routes>
-            <Route exact path={"/products/#"} element={<ProductPage />}></Route>
             <Route
               exact
-              path={"/products/:id"}
+              path={"/ondemand-react-bootcamp/products/#"}
+              element={<ProductPage />}
+            ></Route>
+            <Route
+              exact
+              path={"/ondemand-react-bootcamp/products/:id"}
               element={<ProductDetail />}
             ></Route>
-            <Route path={"/home"} element={<HomePage />}></Route>
-            <Route path={"/products"} element={<ProductPage />}></Route>
-            <Route path={"/search"} element={<SearchPage />}></Route>
+            <Route
+              path={"/ondemand-react-bootcamp/home"}
+              element={<HomePage />}
+            ></Route>
+            <Route
+              path={"/ondemand-react-bootcamp/products"}
+              element={<ProductPage />}
+            ></Route>
+            <Route
+              path={"/ondemand-react-bootcamp/search"}
+              element={<SearchPage />}
+            ></Route>
+            <Route
+              path={"/ondemand-react-bootcamp/"}
+              element={<HomePage />}
+            ></Route>
             <Route path={"/*"} element={<NotFound />}></Route>
-            <Route path={"/"} element={<HomePage />}></Route>
           </Routes>
           <Header></Header>
         </Router>
