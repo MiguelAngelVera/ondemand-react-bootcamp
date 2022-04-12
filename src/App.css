@@ -1,10 +1,15 @@
 .App-button {
-  border-radius:.3rem;
-  background-color:white;
-  color:#6495ED;
+  border-radius: 0.3rem;
+  background: #e6e6e6;
+  color: #6495ed;
   margin: 0 auto;
   border-width: 0px;
-  padding:3vw;
-  display:flex;
-  font-size:2vw
+  padding-bottom: 8vw;
+  padding-top: 1vw;
+  top: 0;
+  display: flex;
+  font-size: 3vw;
+}
+body {
+  background: #e6e6e6;
 }

@@ -1,48 +1,45 @@
-import { useState, useEffect } from 'react';
-import { API_BASE_URL } from '../constants';
-import { useLatestAPI } from './useLatestAPI';
+import { useState, useEffect, useContext } from "react";
+import { API_BASE_URL } from "../constants";
+import { useLatestAPI } from "./useLatestAPI";
+import axios from "axios";
 
-export function useFeaturedBanners() {
+export function useFeaturedBanners(encodes, languages, pageSizes, featureds) {
   const { ref: apiRef, isLoading: isApiMetadataLoading } = useLatestAPI();
+  const pageSize = pageSizes;
+  const encoder = encodes;
+  const language = languages;
+  const featured = featureds;
   const [featuredBanners, setFeaturedBanners] = useState(() => ({
     data: {},
     isLoading: true,
   }));
-
   useEffect(() => {
     if (!apiRef || isApiMetadataLoading) {
       return () => {};
     }
-
-    const controller = new AbortController();
+    const CancelToken = axios.CancelToken;
+    const cancelSource = CancelToken.source();
 
     async function getFeaturedBanners() {
       try {
         setFeaturedBanners({ data: {}, isLoading: true });
 
-        const response = await fetch(
+        const { data, status } = await axios(
           `${API_BASE_URL}/documents/search?ref=${apiRef}&q=${encodeURIComponent(
-            '[[at(document.type, "banner")]]'
-          )}&lang=en-us&pageSize=5`,
+            encoder
+          )}${featured}&lang=${language}&pageSize=${pageSize}`,
           {
-            signal: controller.signal,
+            cancelToken: cancelSource.token,
           }
         );
-        const data = await response.json();
-
-        setFeaturedBanners({ data, isLoading: false });
+        const response = status !== 200 ? {} : data;
+        setFeaturedBanners({ data: response, isLoading: false });
       } catch (err) {
         setFeaturedBanners({ data: {}, isLoading: false });
-        console.error(err);
       }
     }
 
     getFeaturedBanners();
-
-    return () => {
-      controller.abort();
-    };
   }, [apiRef, isApiMetadataLoading]);
-
   return featuredBanners;
 }

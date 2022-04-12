@@ -1,16 +1,18 @@
-import Banner from "../../components/banner/Banner";
-import Carousel from "../../components/carousel/Carousel";
-import Products from "../../components/products/Products";
- import Space from "../../components/Space";
+import BannerApi from "../../components/banner/BannerApi";
+import CarouselApi from "../../components/carousel/CarouselApi";
+import HomeButton from "../../components/HomeButton";
+import ProductsApi from "../../components/products/ProductsApi";
+import Space from "../../components/Space";
 
 const HomePage = () => (
-    <>
-      <Space></Space>
-      <Banner></Banner>
-      <Carousel></Carousel>
-      <Products></Products>
-      <Space></Space>
-    </>  
-  );
+  <>
+    <Space></Space>
+    <BannerApi></BannerApi>
+    <CarouselApi></CarouselApi>
+    <ProductsApi></ProductsApi>
+    <Space></Space>
+    <HomeButton></HomeButton>
+  </>
+);
 
 export default HomePage;

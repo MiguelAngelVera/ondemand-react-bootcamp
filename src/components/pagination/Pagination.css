@@ -1,0 +1,46 @@
+.Pages {
+  overflow: hidden;
+  padding: 5vw 0;
+  height: 100px;
+  width: auto;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  justify-content: center;
+}
+
+.Page {
+  width: 30px;
+  margin: 4px;
+  align-items: center;
+}
+
+.PageButton {
+  color: #6495ed;
+  border-width: 0px;
+  font-size: 2vw;
+}
+.PageButtonOn {
+  color: blue;
+  border-width: 1px;
+  border-color: blue;
+  font-size: 2vw;
+}
+@media only screen and (max-width: 900px) {
+  .Pages {
+    padding: 7vw 0;
+  }
+  .PageButtonOn {
+    font-size: 5vw;
+    padding: 0 2vw;
+  }
+  .PageButton {
+    font-size: 5vw;
+    padding: 0 2vw;
+  }
+  .Page {
+    /* margin: 2vw; */
+
+    align-items: center;
+  }
+}
