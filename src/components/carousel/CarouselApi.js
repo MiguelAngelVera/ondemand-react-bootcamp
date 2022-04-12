@@ -50,7 +50,9 @@ export default function CarouselApi() {
   };
 
   const handleParams = (e, item) => {
-    history(`/products?category=${item.slugs[0].toLowerCase()}`);
+    history(
+      `/ondemand-react-bootcamp/products?category=${item.slugs[0].toLowerCase()}`
+    );
   };
 
   const CarouselBox = (item) => {
