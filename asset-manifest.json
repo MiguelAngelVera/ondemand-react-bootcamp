@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/ondemand-react-bootcamp/static/css/main.953e4f1a.css",
-    "main.js": "/ondemand-react-bootcamp/static/js/main.04f8a54f.js",
+    "main.js": "/ondemand-react-bootcamp/static/js/main.ef38610b.js",
     "static/js/787.11f79f68.chunk.js": "/ondemand-react-bootcamp/static/js/787.11f79f68.chunk.js",
     "static/media/main-logo.svg": "/ondemand-react-bootcamp/static/media/main-logo.4f70965f92e6666127f5e51b1170c460.svg",
     "index.html": "/ondemand-react-bootcamp/index.html",
     "static/media/cart-logo.svg": "/ondemand-react-bootcamp/static/media/cart-logo.68b0f83996bde27a7799677747175903.svg",
     "static/media/search-icon.svg": "/ondemand-react-bootcamp/static/media/search-icon.8160e0eeec8a4eda760b32159b21950c.svg",
     "main.953e4f1a.css.map": "/ondemand-react-bootcamp/static/css/main.953e4f1a.css.map",
-    "main.04f8a54f.js.map": "/ondemand-react-bootcamp/static/js/main.04f8a54f.js.map",
+    "main.ef38610b.js.map": "/ondemand-react-bootcamp/static/js/main.ef38610b.js.map",
     "787.11f79f68.chunk.js.map": "/ondemand-react-bootcamp/static/js/787.11f79f68.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.953e4f1a.css",
-    "static/js/main.04f8a54f.js"
+    "static/js/main.ef38610b.js"
   ]
 }
