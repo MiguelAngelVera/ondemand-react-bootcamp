@@ -55,7 +55,12 @@ function NavBar() {
           <styles.Sign>Register</styles.Sign>
           <styles.Sign>Sign In</styles.Sign>
         </styles.SignBlock>
-        <CartLogoIcon></CartLogoIcon>
+        <Link
+          to="/ondemand-react-bootcamp/cart"
+          style={{ textDecoration: "none" }}
+        >
+          <CartLogoIcon></CartLogoIcon>
+        </Link>
       </styles.Right>
     </styles.BarWrapper>
   );

@@ -83,6 +83,10 @@ export default function Component() {
               element={<SearchPage />}
             ></Route>
             <Route
+              path={"/ondemand-react-bootcamp/cart"}
+              element={<SearchPage />}
+            ></Route>
+            <Route
               path={"/ondemand-react-bootcamp/"}
               element={<HomePage />}
             ></Route>
