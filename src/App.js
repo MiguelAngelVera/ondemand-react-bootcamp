@@ -10,6 +10,9 @@ import ProductDetail from "./components/productDetail/productDetail";
 import ListContext from "./states/ListContext";
 import ProductPage from "./pages/products/Products";
 import SearchPage from "./pages/search/SearchPage";
+import Cart from "./pages/cart/Cart";
+import CheckOut from "./pages/checkout/CheckOut";
+import CartContext, { CartContextProvider } from "./states/CartContext";
 
 export default function Component() {
   const [searchFor, setSearchFor] = useState("");
@@ -25,6 +28,7 @@ export default function Component() {
   let [productPageSize, setProductPageSize] = useState([]);
   let [productLanguage, setProductLanguage] = useState([]);
   const [activeItem, setActiveItem] = useState(1);
+  const [cartItems, setCartItems] = useState([]);
   return (
     <>
       <ListContext.Provider
@@ -55,6 +59,8 @@ export default function Component() {
           setCurrentPage,
           activeItem,
           setActiveItem,
+          cartItems,
+          setCartItems,
         }}
       >
         <Space></Space>
@@ -84,7 +90,11 @@ export default function Component() {
             ></Route>
             <Route
               path={"/ondemand-react-bootcamp/cart"}
-              element={<SearchPage />}
+              element={<Cart />}
+            ></Route>
+            <Route
+              path={"/ondemand-react-bootcamp/checkout"}
+              element={<CheckOut />}
             ></Route>
             <Route
               path={"/ondemand-react-bootcamp/"}

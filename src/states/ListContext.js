@@ -27,6 +27,8 @@ const ListContext = createContext({
   setCurrentPage: () => {},
   activeItem: "",
   setActiveItem: () => {},
+  cartItems: "",
+  setCartItems: () => {},
 });
 
 export default ListContext;

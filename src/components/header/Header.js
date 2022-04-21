@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { ReactComponent as MainLogo } from "../../utils/assets/main-logo.svg";
-import { ReactComponent as CartLogo } from "../../utils/assets/cart-logo.svg";
 import { ReactComponent as SearchLogo } from "../../utils/assets/search-icon.svg";
 import * as styles from "./Header-style";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import HeaderCart from "./HeaderCart";
 
 const MainLogoIcon = styled(MainLogo)``;
-const CartLogoIcon = styled(CartLogo)``;
+
 const SearchIcon = styled(SearchLogo)``;
 
 function NavBar() {
@@ -55,12 +55,7 @@ function NavBar() {
           <styles.Sign>Register</styles.Sign>
           <styles.Sign>Sign In</styles.Sign>
         </styles.SignBlock>
-        <Link
-          to="/ondemand-react-bootcamp/cart"
-          style={{ textDecoration: "none" }}
-        >
-          <CartLogoIcon></CartLogoIcon>
-        </Link>
+        <HeaderCart></HeaderCart>
       </styles.Right>
     </styles.BarWrapper>
   );
