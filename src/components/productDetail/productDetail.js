@@ -1,13 +1,17 @@
 /* eslint-disable no-unused-expressions */
-import React, { useContext, useEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import ListContext from "../../states/ListContext";
 import { useFeaturedBanners } from "../../utils/hooks/useFeaturedBanners";
+import AddToCart from "../cart/AddToCart";
 import Space from "../Space";
 
 import * as styles from "./productDetail-style";
+import Selector from "./Selector";
 
 export default function ProductDetail() {
+  const [qty, setQty] = useState(1);
+
   const slideref = useRef(null);
 
   const Slider = () => {
@@ -40,7 +44,7 @@ export default function ProductDetail() {
   const InfoBox = (data) => {
     return (
       <>
-        <h1 style={{ color: "black", margin: 0 }}>{data.data.name}</h1>
+        <h1 style={{ color: "black", margin: 0 }}>{data.data.data.name}</h1>
         <styles.Line></styles.Line>
         <styles.MainTable>
           <tbody>
@@ -52,41 +56,32 @@ export default function ProductDetail() {
               </td>
               <td>
                 <h2 style={{ color: "black", marginTop: "5vw" }}>
-                  ${data.data.price}
+                  ${data.data.data.price}
                 </h2>
               </td>
             </tr>
-            <tr>
+            <Selector {...data} cart={false}></Selector>
+            {/* <tr>
               <td></td>
               <td style={{ display: "flex" }}>
                 <h5 style={{ margin: 0 }}>qty: </h5>
-                <select name="qty" defaultValue="1">
-                  {[1, 2, 3, 4, 5].map((item) => (
-                    <option key={item} value={item}>
-                      {item}
-                    </option>
-                  ))}
-                </select>
               </td>
             </tr>
             <tr>
               <td></td>
               <td>
-                <button
-                  className="App-button"
-                  style={{ margin: 0, padding: 0 }}
-                >
-                  Add to cart
-                </button>
+                <AddToCart data={data.data} qty={qty}></AddToCart>
               </td>
-            </tr>
+            </tr> */}
             <tr>
               <td>
                 <h5 style={{ margin: 1, marginTop: "5vw" }}>sku:</h5>
               </td>
               <td>
                 <styles.Line></styles.Line>
-                <h5 style={{ margin: 1, marginTop: "5vw" }}>{data.data.sku}</h5>
+                <h5 style={{ margin: 1, marginTop: "5vw" }}>
+                  {data.data.data.sku}
+                </h5>
               </td>
             </tr>
             <tr>
@@ -95,7 +90,9 @@ export default function ProductDetail() {
               </td>
               <td>
                 <h5 style={{ margin: 1 }}>
-                  {data.data.category.slug.replace("--", " & ").toUpperCase()}
+                  {data.data.data.category.slug
+                    .replace("--", " & ")
+                    .toUpperCase()}
                 </h5>
               </td>
             </tr>
@@ -105,7 +102,7 @@ export default function ProductDetail() {
               </td>
               <td>
                 <p style={{ margin: 1, textAlign: "justify", width: "90%" }}>
-                  {data.data.description[0].text}
+                  {data.data.data.description[0].text}
                 </p>
                 <styles.Line></styles.Line>
               </td>
@@ -116,7 +113,7 @@ export default function ProductDetail() {
               </td>
 
               <td style={{ verticalAlign: "top" }}>
-                {data.data.specs.map((item) => (
+                {data.data.data.specs.map((item) => (
                   <h5 key={item.spec_name} style={{ margin: 10, marginTop: 0 }}>
                     {item.spec_name}: {item.spec_value}
                   </h5>
@@ -173,7 +170,7 @@ export default function ProductDetail() {
         <styles.ContainerBackground>
           <styles.Title>
             {!productisLoading ? (
-              <InfoBox data={productDataApi.results[0].data}></InfoBox>
+              <InfoBox data={productDataApi.results[0]}></InfoBox>
             ) : null}
           </styles.Title>
         </styles.ContainerBackground>

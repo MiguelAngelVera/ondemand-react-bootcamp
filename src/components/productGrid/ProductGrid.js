@@ -1,4 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
+import AddToCart from "../cart/AddToCart";
 import * as styles from "./ProductGrid-style";
 
 function Image(item) {
@@ -25,7 +26,7 @@ function Image(item) {
               More Details
             </Link>
           </styles.ProductDetails>
-          <styles.ProducttoCart>Add to cart</styles.ProducttoCart>
+          <AddToCart data={item} qty={1}></AddToCart>
         </styles.ProductText>
       </styles.ProductImage>
     </>

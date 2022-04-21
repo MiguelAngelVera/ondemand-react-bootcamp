@@ -8,6 +8,7 @@ import ListContext from "../../states/ListContext";
 import useSearch from "../../utils/hooks/useSearch";
 import Pagination from "../pagination/Pagination";
 import ProductGrid from "../productGrid/ProductGrid";
+import Space from "../Space";
 
 export default function Search() {
   const [postPerPage, setPostsPerPage] = useState(20);
@@ -98,10 +99,7 @@ export default function Search() {
 
   return (
     <>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <Space></Space>
       {!productisLoading ? (
         filteredSearchPagination.length ? (
           <div>

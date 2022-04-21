@@ -84,7 +84,7 @@ export const Line = styled.div`
   border: 0.6px solid gray;
   opacity: 30%;
 `;
-export const MainTable = styled.div`
+export const MainTable = styled.table`
   @media (max-width: 900px) {
     min-height: 160vw;
   }
