@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 import {Link} from 'react-router-dom'
-import {ReactComponent as CartLogo} from '../../utils/assets/cart-logo.svg'
 import styled from 'styled-components'
+import {ReactComponent as CartLogo} from '../../utils/assets/cart-logo.svg'
 import ListContext from '../../states/ListContext'
 
 const CartLogoIcon = styled(CartLogo)``
@@ -23,7 +23,7 @@ export default function HeaderCart() {
   return (
     <Container>
       <Link to="/ondemand-react-bootcamp/cart" style={{textDecoration: 'none'}}>
-        <CartLogoIcon></CartLogoIcon>
+        <CartLogoIcon />
       </Link>
       {cartItems.length ? (
         <NumberOfItems>

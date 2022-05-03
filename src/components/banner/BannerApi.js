@@ -1,11 +1,15 @@
 import React, {useRef, useEffect} from 'react'
+import PropTypes from 'prop-types'
 import {useFeaturedBanners} from '../../utils/hooks/useFeaturedBanners'
 import * as styles from './Banner-style'
 
+function BannerBox({imgSource, imgName}) {
+  return <img src={imgSource} alt={imgName} title={imgName} />
+}
 export default function BannerApp() {
-  let encode = '[[at(document.type, "banner")]]'
-  let language = 'en-us'
-  let pageSize = '5'
+  const encode = '[[at(document.type, "banner")]]'
+  const language = 'en-us'
+  const pageSize = '5'
 
   const {data: bannerDataApi, isLoading: bannerIsLoading} = useFeaturedBanners(
     encode,
@@ -37,11 +41,6 @@ export default function BannerApp() {
     return () => clearInterval(autoChange)
   }, [])
 
-  const BannerBox = (item) => {
-    const image = item.data.main_image
-    return <img src={image.url} alt={image.alt} title={image.alt}></img>
-  }
-
   return (
     <>
       <styles.Title>Popular Products</styles.Title>
@@ -50,7 +49,10 @@ export default function BannerApp() {
           {!bannerIsLoading ? (
             bannerDataApi.results.map((item) => (
               <styles.BannerStyle key={item.id}>
-                <BannerBox {...item}></BannerBox>
+                <BannerBox
+                  imgSource={item.data.main_image.url}
+                  imgName={item.data.main_image.alt}
+                />
               </styles.BannerStyle>
             ))
           ) : (
@@ -60,4 +62,9 @@ export default function BannerApp() {
       </styles.Container>
     </>
   )
+}
+
+BannerBox.propTypes = {
+  imgSource: PropTypes.string.isRequired,
+  imgName: PropTypes.string.isRequired,
 }

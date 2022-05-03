@@ -36,16 +36,16 @@ export default function ProductDetail() {
     return () => clearInterval(autoChange)
   }, [])
 
-  const BannerBox = (item) => {
-    const image = item.image
-    return <img src={image.url} alt={image.alt} title={image.alt}></img>
+  function BannerBox(item) {
+    const {image} = item
+    return <img src={image.url} alt={image.alt} title={image.alt} />
   }
 
-  const InfoBox = (data) => {
+  function InfoBox(data) {
     return (
       <>
         <h1 style={{color: 'black', margin: 0}}>{data.data.data.name}</h1>
-        <styles.Line></styles.Line>
+        <styles.Line />
         <styles.MainTable>
           <tbody>
             <tr>
@@ -60,7 +60,7 @@ export default function ProductDetail() {
                 </h2>
               </td>
             </tr>
-            <Selector {...data} cart={false}></Selector>
+            <Selector {...data} cart={false} />
             {/* <tr>
               <td></td>
               <td style={{ display: "flex" }}>
@@ -78,7 +78,7 @@ export default function ProductDetail() {
                 <h5 style={{margin: 1, marginTop: '5vw'}}>sku:</h5>
               </td>
               <td>
-                <styles.Line></styles.Line>
+                <styles.Line />
                 <h5 style={{margin: 1, marginTop: '5vw'}}>
                   {data.data.data.sku}
                 </h5>
@@ -104,7 +104,7 @@ export default function ProductDetail() {
                 <p style={{margin: 1, textAlign: 'justify', width: '90%'}}>
                   {data.data.data.description[0].text}
                 </p>
-                <styles.Line></styles.Line>
+                <styles.Line />
               </td>
             </tr>
             <tr>
@@ -126,7 +126,7 @@ export default function ProductDetail() {
     )
   }
 
-  let {id} = useParams('')
+  const {id} = useParams('')
 
   const {
     productEncode,
@@ -148,7 +148,7 @@ export default function ProductDetail() {
 
   return (
     <>
-      <Space></Space>
+      <Space />
       <styles.Wrapper>
         <styles.Container>
           <styles.SlideContainer ref={slideref}>
@@ -156,7 +156,7 @@ export default function ProductDetail() {
               Object.values(
                 productDataApi.results[0].data.images.map((item) => (
                   <styles.BannerStyle key={item.image.url}>
-                    <BannerBox {...item}></BannerBox>
+                    <BannerBox {...item} />
                   </styles.BannerStyle>
                 )),
               )
@@ -170,7 +170,7 @@ export default function ProductDetail() {
         <styles.ContainerBackground>
           <styles.Title>
             {!productisLoading ? (
-              <InfoBox data={productDataApi.results[0]}></InfoBox>
+              <InfoBox data={productDataApi.results[0]} />
             ) : null}
           </styles.Title>
         </styles.ContainerBackground>

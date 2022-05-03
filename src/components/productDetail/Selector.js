@@ -21,7 +21,7 @@ export default function Selector(data, {cart}) {
   return (
     <>
       <tr>
-        <td></td>
+        <td />
         <td style={{display: 'flex'}}>
           <h5 style={{margin: 0}}>qty: </h5>
           <select
@@ -41,9 +41,9 @@ export default function Selector(data, {cart}) {
         </td>
       </tr>
       <tr>
-        <td></td>
+        <td />
         <td>
-          {!data.cart && <AddToCart data={data.data} qty={qty}></AddToCart>}
+          {!data.cart && <AddToCart data={data.data} qty={qty} />}
         </td>
       </tr>
     </>

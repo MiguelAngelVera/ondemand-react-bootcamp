@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-expressions */
 import React, {useContext} from 'react'
 import styled from 'styled-components'
-import CartContext from '../../states/CartContext'
 import ListContext from '../../states/ListContext'
 
 const ProducttoCart = styled.button`
@@ -21,22 +20,25 @@ const ProducttoCart = styled.button`
 
 function handleClick(e, data, cartItems, setCartItems, quantity) {
   e.preventDefault()
-  let item = data.data
-  let matches = cartItems.filter((existingItemns) =>
+  const item = data.data
+  const matches = cartItems.filter((existingItemns) =>
     existingItemns.id.includes(item.id),
   )
-
   matches.length
     ? setCartItems(
-        cartItems.map((existingItem) =>
-          existingItem.id === item.id
-            ? existingItem.qty + quantity > existingItem.data.stock
-              ? {...existingItem, qty: existingItem.data.stock}
-              : {...existingItem, qty: existingItem.qty + quantity}
-            : existingItem,
-        ),
+        cartItems.map((existingItem) => {
+          if (existingItem.id === item.id) {
+            if (existingItem.qty + quantity > existingItem.data.stock) {
+              return {...existingItem, qty: existingItem.data.stock}
+            }
+            return {...existingItem, qty: existingItem.qty + quantity}
+          }
+          return existingItem
+        }),
       )
     : setCartItems([...cartItems, {...item, qty: quantity}])
+
+  return null
 }
 export default function AddToCart(data, {qty}) {
   const {cartItems, setCartItems} = useContext(ListContext)

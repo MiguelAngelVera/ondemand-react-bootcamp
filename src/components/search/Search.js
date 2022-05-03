@@ -86,10 +86,10 @@ export default function Search() {
     setFilteredSearchList(temp)
     setActiveItem(1)
   }, [filterSearchName, filterSearchCat, filterSearchDesc])
-  //Slices the list previously mentioned to apply pagination
+  // Slices the list previously mentioned to apply pagination
   useEffect(() => {
-    let indexLastItem = currentPage * postPerPage
-    let indexFirstItem = indexLastItem - postPerPage
+    const indexLastItem = currentPage * postPerPage
+    const indexFirstItem = indexLastItem - postPerPage
     setfilteredSearchPagination(
       filteredSearchList.slice(indexFirstItem, indexLastItem),
     )
@@ -99,18 +99,18 @@ export default function Search() {
 
   return (
     <>
-      <Space></Space>
+      <Space />
       {!productisLoading ? (
         filteredSearchPagination.length ? (
           <div>
             <ProductGrid
               productisLoading={productisLoading}
               product={filteredSearchPagination}
-            ></ProductGrid>
+             />
             <Pagination
               postPerPage={postPerPage}
               totalPosts={filteredSearchList.length}
-            ></Pagination>
+             />
           </div>
         ) : (
           <h2 style={{textAlign: 'center'}}>Nothing to Show ...</h2>

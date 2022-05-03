@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
+
 const CheckoutButtons = styled.div`
   display: flex;
   justify-content: space-evenly;

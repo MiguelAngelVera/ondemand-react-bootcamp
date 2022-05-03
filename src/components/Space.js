@@ -11,5 +11,5 @@ const MainSpace = styled.div`
 `
 
 export default function Space() {
-  return <MainSpace></MainSpace>
+  return <MainSpace />
 }

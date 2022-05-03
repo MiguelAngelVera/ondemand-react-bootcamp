@@ -1,7 +1,7 @@
 import {useState, useEffect, useContext} from 'react'
+import axios from 'axios'
 import {API_BASE_URL} from '../constants'
 import {useLatestAPI} from './useLatestAPI'
-import axios from 'axios'
 
 export function useFeaturedBanners(encodes, languages, pageSizes, featureds) {
   const {ref: apiRef, isLoading: isApiMetadataLoading} = useLatestAPI()
@@ -17,7 +17,7 @@ export function useFeaturedBanners(encodes, languages, pageSizes, featureds) {
     if (!apiRef || isApiMetadataLoading) {
       return () => {}
     }
-    const CancelToken = axios.CancelToken
+    const {CancelToken} = axios
     const cancelSource = CancelToken.source()
 
     async function getFeaturedBanners() {

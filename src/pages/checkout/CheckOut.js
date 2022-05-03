@@ -4,7 +4,7 @@ import CheckOutForm from '../../components/checkout/CheckOutForm'
 export default function CheckOut() {
   return (
     <>
-      <CheckOutForm></CheckOutForm>
+      <CheckOutForm />
       <div>CheckOut</div>
     </>
   )

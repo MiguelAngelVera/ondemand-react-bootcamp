@@ -4,15 +4,15 @@ import HomeButton from '../../components/HomeButton'
 import ProductsApi from '../../components/products/ProductsApi'
 import Space from '../../components/Space'
 
-const HomePage = () => (
-  <>
-    <Space></Space>
-    <BannerApi></BannerApi>
-    <CarouselApi></CarouselApi>
-    <ProductsApi></ProductsApi>
-    <Space></Space>
-    <HomeButton></HomeButton>
+function HomePage() {
+  return <>
+    <Space />
+    <BannerApi />
+    <CarouselApi />
+    <ProductsApi />
+    <Space />
+    <HomeButton />
   </>
-)
+}
 
 export default HomePage

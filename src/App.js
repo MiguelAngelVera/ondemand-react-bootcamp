@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Footer from './components/Footer'
 import Header from './components/header/Header.js'
 import Space from './components/Space'
 import HomePage from './pages/home/Home'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './App.css'
 import NotFound from './components/NotFound'
 import ProductDetail from './components/productDetail/productDetail'
@@ -24,14 +24,13 @@ export default function Component() {
   const [filterSearchCat, setFilterSearchCat] = useState([])
   const [filterSearchDesc, setFilterSearchDesc] = useState([])
   const [currentPage, setCurrentPage] = useState(1)
-  let [productEncode, setProductEncode] = useState([])
-  let [productPageSize, setProductPageSize] = useState([])
-  let [productLanguage, setProductLanguage] = useState([])
+  const [productEncode, setProductEncode] = useState([])
+  const [productPageSize, setProductPageSize] = useState([])
+  const [productLanguage, setProductLanguage] = useState([])
   const [activeItem, setActiveItem] = useState(1)
   const [cartItems, setCartItems] = useState([])
   return (
-    <>
-      <ListContext.Provider
+    <ListContext.Provider
         value={{
           searchFor,
           setSearchFor,
@@ -63,49 +62,48 @@ export default function Component() {
           setCartItems,
         }}
       >
-        <Space></Space>
+        <Space />
         <Router>
           <Routes>
             <Route
               exact
-              path={'/ondemand-react-bootcamp/products/#'}
+              path="/ondemand-react-bootcamp/products/#"
               element={<ProductPage />}
-            ></Route>
+             />
             <Route
               exact
-              path={'/ondemand-react-bootcamp/products/:id'}
+              path="/ondemand-react-bootcamp/products/:id"
               element={<ProductDetail />}
-            ></Route>
+             />
             <Route
-              path={'/ondemand-react-bootcamp/home'}
+              path="/ondemand-react-bootcamp/home"
               element={<HomePage />}
-            ></Route>
+             />
             <Route
-              path={'/ondemand-react-bootcamp/products'}
+              path="/ondemand-react-bootcamp/products"
               element={<ProductPage />}
-            ></Route>
+             />
             <Route
-              path={'/ondemand-react-bootcamp/search'}
+              path="/ondemand-react-bootcamp/search"
               element={<SearchPage />}
-            ></Route>
+             />
             <Route
-              path={'/ondemand-react-bootcamp/cart'}
+              path="/ondemand-react-bootcamp/cart"
               element={<Cart />}
-            ></Route>
+             />
             <Route
-              path={'/ondemand-react-bootcamp/checkout'}
+              path="/ondemand-react-bootcamp/checkout"
               element={<CheckOut />}
-            ></Route>
+             />
             <Route
-              path={'/ondemand-react-bootcamp/'}
+              path="/ondemand-react-bootcamp/"
               element={<HomePage />}
-            ></Route>
-            <Route path={'/*'} element={<NotFound />}></Route>
+             />
+            <Route path={'/*'} element={<NotFound />} />
           </Routes>
-          <Header></Header>
+          <Header />
         </Router>
-        <Footer></Footer>
+        <Footer />
       </ListContext.Provider>
-    </>
   )
 }

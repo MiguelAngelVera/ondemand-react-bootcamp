@@ -1,13 +1,22 @@
-import React from 'react'
-import {useRef} from 'react'
+import React, {useRef} from 'react'
+import {useNavigate} from 'react-router-dom'
+import PropTypes from 'prop-types'
 import * as styles from './Carousel-style'
 import {useFeaturedBanners} from '../../utils/hooks/useFeaturedBanners'
-import {useNavigate} from 'react-router-dom'
+
+function CarouselBox({imgSource, imgName}) {
+  return (
+    <>
+      <img src={imgSource} alt={imgName} title={imgName} />
+      <styles.CardText>{imgName}</styles.CardText>
+    </>
+  )
+}
 
 export default function CarouselApi() {
-  let encode = '[[at(document.type, "category")]]'
-  let language = 'en-us'
-  let pageSize = '30'
+  const encode = '[[at(document.type, "category")]]'
+  const language = 'en-us'
+  const pageSize = '30'
 
   const {data: carouselDataApi, isLoading: carouselIsLoading} =
     useFeaturedBanners(encode, language, pageSize)
@@ -55,15 +64,6 @@ export default function CarouselApi() {
     )
   }
 
-  const CarouselBox = (item) => {
-    const image = item.data.main_image
-    return (
-      <>
-        <img src={image.url} alt={image.alt} title={image.alt}></img>
-        <styles.CardText>{item.data.name}</styles.CardText>
-      </>
-    )
-  }
   return (
     <>
       <styles.Title>Departments</styles.Title>
@@ -79,7 +79,10 @@ export default function CarouselApi() {
                     key={item.id}
                     onClick={(e) => handleParams(e, item)}
                   >
-                    <CarouselBox {...item} />
+                    <CarouselBox
+                      imgSource={item.data.main_image.url}
+                      imgName={item.data.main_image.alt}
+                    />
                   </styles.Card>
                 ))
               : null}
@@ -94,4 +97,9 @@ export default function CarouselApi() {
       </styles.Container>
     </>
   )
+}
+
+CarouselBox.propTypes = {
+  imgSource: PropTypes.string.isRequired,
+  imgName: PropTypes.string.isRequired,
 }

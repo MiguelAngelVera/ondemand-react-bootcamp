@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import CartContext from '../../states/CartContext'
 import ListContext from '../../states/ListContext'
 import Selector from '../productDetail/Selector'
 
@@ -59,7 +59,7 @@ const handleClick = (e, cartItems, setCartItems, data) => {
   setCartItems(cartItems.filter((existingItes) => existingItes.id !== data))
 }
 
-export default function ShoppingProd({checkout = false}) {
+export default function ShoppingProd({checkout}) {
   const {cartItems, setCartItems} = useContext(ListContext)
 
   return (
@@ -68,7 +68,7 @@ export default function ShoppingProd({checkout = false}) {
         ? cartItems.map((item) => (
             <Row key={item.id}>
               <ProductDetails>
-                <Image src={item.data.mainimage.url}></Image>
+                <Image src={item.data.mainimage.url} />
                 <Text>
                   <Name>
                     <b>Product: </b>
@@ -111,11 +111,7 @@ export default function ShoppingProd({checkout = false}) {
                 )}
                 <Text>
                   <table>
-                    <tbody>
-                      {!checkout && (
-                        <Selector data={item} cart={true}></Selector>
-                      )}
-                    </tbody>
+                    <tbody>{!checkout && <Selector data={item} cart />}</tbody>
                   </table>
                   <Name>
                     <b>Subtotal: </b>${(item.qty * item.data.price).toFixed(2)}
@@ -127,4 +123,12 @@ export default function ShoppingProd({checkout = false}) {
         : null}
     </Medium>
   )
+}
+
+ShoppingProd.defaultProps = {
+  checkout: false,
+}
+
+ShoppingProd.propTypes = {
+  checkout: PropTypes.bool,
 }

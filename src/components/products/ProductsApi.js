@@ -5,7 +5,7 @@ import ProductGrid from '../productGrid/ProductGrid'
 import * as styles from './Products-style'
 
 export default function ProductsApi() {
-  let feature = `&q=${encodeURIComponent(
+  const feature = `&q=${encodeURIComponent(
     '[[at(document.tags, ["Featured"])]]',
   )}`
 
@@ -20,7 +20,7 @@ export default function ProductsApi() {
     setCurrentPage,
   } = useContext(ListContext)
 
-  //Call API and retreive data
+  // Call API and retreive data
   useEffect(() => {
     setParam('')
     setProductEncode('[[at(document.type, "product")]]')
@@ -43,7 +43,7 @@ export default function ProductsApi() {
           feature={feature}
           productisLoading={productisLoading}
           product={defaultfiltered}
-        ></ProductGrid>
+         />
       </styles.ContainerBackground>
     </>
   )

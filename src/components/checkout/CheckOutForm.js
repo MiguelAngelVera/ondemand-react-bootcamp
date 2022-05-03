@@ -1,12 +1,8 @@
 import React, {useContext, useState} from 'react'
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
 import ShoppingProd from '../cart/ShoppingProd'
 import ListContext from '../../states/ListContext'
 import Space from '../Space'
-import {Link} from 'react-router-dom'
-import Cart from '../../pages/cart/Cart'
-import CartContext from '../../states/CartContext'
 import CheckOutButtons from './CheckOutButtons'
 
 const Container = styled.div`
@@ -113,7 +109,7 @@ export default function CheckOutForm() {
 
   return (
     <>
-      <Space></Space>
+      <Space />
       <Container>
         <Title>Checkout</Title>
         <Wrapper>
@@ -122,27 +118,15 @@ export default function CheckOutForm() {
             <FormWrapper>
               <Separator>
                 <LabelName htmlFor="name">Name: </LabelName>
-                <InputName
-                  name="name"
-                  id="name"
-                  onChange={handleChange}
-                ></InputName>
+                <InputName name="name" id="name" onChange={handleChange} />
               </Separator>
               <Separator>
                 <LabelEmail htmlFor="email">Email: </LabelEmail>
-                <InputEmail
-                  name="email"
-                  id="email"
-                  onChange={handleChange}
-                ></InputEmail>
+                <InputEmail name="email" id="email" onChange={handleChange} />
               </Separator>
               <Separator>
                 <LabelZipCode htmlFor="zip">Zip Code: </LabelZipCode>
-                <InputZipCode
-                  name="zip"
-                  id="zip"
-                  onChange={handleChange}
-                ></InputZipCode>
+                <InputZipCode name="zip" id="zip" onChange={handleChange} />
               </Separator>
               <Separator>
                 <LabelInstructions htmlFor="instructions">
@@ -152,14 +136,14 @@ export default function CheckOutForm() {
                   name="instructions"
                   id="instructions"
                   onChange={handleChange}
-                ></InputInstructions>
+                />
               </Separator>
             </FormWrapper>
           </CheckoutForm>
         </Wrapper>
       </Container>
       <ProductsContainer>
-        <ShoppingProd checkout={true}></ShoppingProd>
+        <ShoppingProd checkout />
         <Total>
           <b>
             Total: $
@@ -171,9 +155,9 @@ export default function CheckOutForm() {
           </b>
         </Total>
       </ProductsContainer>
-      <CheckOutButtons></CheckOutButtons>
-      <Space></Space>
-      <Space></Space>
+      <CheckOutButtons />
+      <Space />
+      <Space />
     </>
   )
 }

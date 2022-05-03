@@ -20,8 +20,6 @@ const Text = styled.div`
 
 export default function Footer() {
   return (
-    <>
-      <Text>Ecommerce created during Wizeline’s Academy React Bootcamp</Text>
-    </>
+    <Text>Ecommerce created during Wizeline’s Academy React Bootcamp</Text>
   )
 }

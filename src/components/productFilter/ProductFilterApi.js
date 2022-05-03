@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-expressions */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, {useState, useEffect, useContext} from 'react'
-import * as styles from './ProductList-style'
 import {useSearchParams} from 'react-router-dom'
+import * as styles from './ProductList-style'
 import {useFeaturedBanners} from '../../utils/hooks/useFeaturedBanners'
 import ListContext from '../../states/ListContext'
 import useFilter from '../../utils/hooks/useFilter'
@@ -18,10 +18,10 @@ const myStyleBlue = {
 }
 
 export default function ProductFilterApi() {
-  let categoryEncode = '[[at(document.type, "category")]]'
-  let categoryLanguage = 'en-us'
-  let categoryPageSize = '30'
-  let {data: categoryDataApi, isLoading: categoryIsLoading} =
+  const categoryEncode = '[[at(document.type, "category")]]'
+  const categoryLanguage = 'en-us'
+  const categoryPageSize = '30'
+  const {data: categoryDataApi, isLoading: categoryIsLoading} =
     useFeaturedBanners(categoryEncode, categoryLanguage, categoryPageSize)
   const {
     setSearchFor,
@@ -45,9 +45,9 @@ export default function ProductFilterApi() {
   const [productPagination, setProductPagination] = useState('')
   const [clearButton, setClearButton] = useState(false)
   const [focus, setFocus] = useState(false)
-  let feature = ''
+  const feature = ''
 
-  //Call API and retreive data
+  // Call API and retreive data
   useEffect(() => {
     setParam(params.get('category') ?? '')
     setProductEncode('[[at(document.type, "product")]]')
@@ -55,14 +55,14 @@ export default function ProductFilterApi() {
     setProductLanguage('en-us')
   }, [])
 
-  //Filters following the categories selected
+  // Filters following the categories selected
   const {productisLoading} = useFilter(feature)
 
   useEffect(() => {
     focus ? setFocus(false) : null
   }, [focus])
 
-  //Creates the list of all the products that will be shown
+  // Creates the list of all the products that will be shown
   useEffect(() => {
     let temp = []
     const productList = () =>
@@ -80,10 +80,10 @@ export default function ProductFilterApi() {
     setActiveItem(1)
   }, [filteredProducts, defaultfiltered])
 
-  //Slices the list previously mentioned to apply pagination
+  // Slices the list previously mentioned to apply pagination
   useEffect(() => {
-    let indexLastItem = currentPage * postPerPage
-    let indexFirstItem = indexLastItem - postPerPage
+    const indexLastItem = currentPage * postPerPage
+    const indexFirstItem = indexLastItem - postPerPage
     setProductPagination(productList.slice(indexFirstItem, indexLastItem))
     window.scrollTo(0, 0)
   }, [productList, currentPage, productList])
@@ -118,8 +118,7 @@ export default function ProductFilterApi() {
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber)
   return (
-    <>
-      <styles.Container>
+    <styles.Container>
         <styles.NavBarContainer>
           <styles.NavBarCard>
             <styles.Title>
@@ -197,13 +196,12 @@ export default function ProductFilterApi() {
             feature={feature}
             productisLoading={productisLoading}
             product={productPagination}
-          ></ProductGrid>
+           />
           <Pagination
             postPerPage={postPerPage}
             totalPosts={productList.length}
-          ></Pagination>
+           />
         </styles.ProductContainer>
       </styles.Container>
-    </>
   )
 }

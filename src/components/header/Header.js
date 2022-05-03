@@ -1,10 +1,9 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
+import {Link,useNavigate} from 'react-router-dom'
 import {ReactComponent as MainLogo} from '../../utils/assets/main-logo.svg'
 import {ReactComponent as SearchLogo} from '../../utils/assets/search-icon.svg'
 import * as styles from './Header-style'
-import {Link} from 'react-router-dom'
-import {useNavigate} from 'react-router-dom'
 import HeaderCart from './HeaderCart'
 
 const MainLogoIcon = styled(MainLogo)``
@@ -27,7 +26,7 @@ function NavBar() {
           to="/ondemand-react-bootcamp/home"
           style={{textDecoration: 'none'}}
         >
-          <MainLogoIcon></MainLogoIcon>
+          <MainLogoIcon />
         </Link>
       </styles.Left>
 
@@ -40,12 +39,12 @@ function NavBar() {
               placeholder="Search..."
               value={searchString}
               onChange={handleChange}
-            ></styles.SearchInput>
+             />
             <button
               style={{backgroundColor: 'white', borderWidth: '0'}}
               type="submit"
             >
-              <SearchIcon></SearchIcon>
+              <SearchIcon />
             </button>
           </form>
         </styles.SearchBar>
@@ -55,7 +54,7 @@ function NavBar() {
           <styles.Sign>Register</styles.Sign>
           <styles.Sign>Sign In</styles.Sign>
         </styles.SignBlock>
-        <HeaderCart></HeaderCart>
+        <HeaderCart />
       </styles.Right>
     </styles.BarWrapper>
   )
@@ -64,7 +63,7 @@ function NavBar() {
 export default function Header() {
   return (
     <styles.MainHeader>
-      <NavBar></NavBar>
+      <NavBar />
     </styles.MainHeader>
   )
 }
