@@ -39,7 +39,7 @@ export default function AddToCart({itemData, qty}) {
 }
 
 AddToCart.propTypes = {
+  qty: PropTypes.number.isRequired,
   itemData: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
     .isRequired,
-  qty: PropTypes.number.isRequired,
 }

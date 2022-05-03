@@ -5,6 +5,9 @@ const MainSpace = styled.div`
   border-top: 2.5vw solid #e6e6e6;
   height: 1.5vw;
   background-color: #e6e6e6;
+  @media (max-width: 1200px) {
+    height: 3vw;
+  }
   @media (max-width: 900px) {
     height: 5vw;
   }
