@@ -1,8 +1,8 @@
 /* eslint-disable array-callback-return */
 /* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable no-unused-expressions */
-/* eslint-disable no-sequences */
-import {useContext, useEffect, useReducer, useState} from 'react'
+/* eslint-disable no-nested-ternary */
+
+import React, {useContext, useEffect, useState} from 'react'
 import {useSearchParams} from 'react-router-dom'
 import ListContext from '../../states/ListContext'
 import useSearch from '../../utils/hooks/useSearch'
@@ -11,7 +11,7 @@ import ProductGrid from '../productGrid/ProductGrid'
 import Space from '../Space'
 
 export default function Search() {
-  const [postPerPage, setPostsPerPage] = useState(20)
+  const [postPerPage] = useState(20)
   const [params] = useSearchParams('')
 
   const [test, setTest] = useState('')
@@ -56,8 +56,8 @@ export default function Search() {
 
     filterSearchName.map((item) => {
       skuKey = item.data.sku
-      found = temp.filter((item) =>
-        item.data.sku.toLowerCase().includes(skuKey),
+      found = temp.filter((meta) =>
+        meta.data.sku.toLowerCase().includes(skuKey),
       )
 
       if (!found.length) {
@@ -66,8 +66,8 @@ export default function Search() {
     })
     filterSearchDesc.map((item) => {
       skuKey = item.data.sku
-      found = temp.filter((item) =>
-        item.data.sku.toLowerCase().includes(skuKey),
+      found = temp.filter((meta) =>
+        meta.data.sku.toLowerCase().includes(skuKey),
       )
       if (!found.length) {
         temp = temp.concat(item)
@@ -75,8 +75,8 @@ export default function Search() {
     })
     filterSearchCat.map((item) => {
       skuKey = item.data.sku
-      found = temp.filter((item) =>
-        item.data.sku.toLowerCase().includes(skuKey),
+      found = temp.filter((meta) =>
+        meta.data.sku.toLowerCase().includes(skuKey),
       )
 
       if (!found.length) {
@@ -106,11 +106,11 @@ export default function Search() {
             <ProductGrid
               productisLoading={productisLoading}
               product={filteredSearchPagination}
-             />
+            />
             <Pagination
               postPerPage={postPerPage}
               totalPosts={filteredSearchList.length}
-             />
+            />
           </div>
         ) : (
           <h2 style={{textAlign: 'center'}}>Nothing to Show ...</h2>

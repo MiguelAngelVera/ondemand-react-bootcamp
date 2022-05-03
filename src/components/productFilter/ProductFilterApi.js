@@ -197,11 +197,13 @@ export default function ProductFilterApi() {
         </styles.NavBarCard>
       </styles.NavBarContainer>
       <styles.ProductContainer style={{width: 'auto'}}>
-        <ProductGrid
-          feature={feature}
-          productisLoading={productisLoading}
-          product={productPagination}
-        />
+        {productPagination.length && (
+          <ProductGrid
+            feature={feature}
+            productisLoading={productisLoading}
+            product={productPagination}
+          />
+        )}
         <Pagination postPerPage={postPerPage} totalPosts={productList.length} />
       </styles.ProductContainer>
     </styles.Container>

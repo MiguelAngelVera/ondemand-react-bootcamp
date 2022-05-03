@@ -76,5 +76,9 @@ Image.propTypes = {
 ProductGrid.propTypes = {
   productisLoading: PropTypes.bool.isRequired,
   product: PropTypes.oneOfType([PropTypes.array]).isRequired,
-  feature: PropTypes.string.isRequired,
+  feature: PropTypes.string,
+}
+
+ProductGrid.defaultProps = {
+  feature: 'defaultvalue',
 }
