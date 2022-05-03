@@ -1,14 +1,14 @@
-import React, { useContext } from "react";
-import { Link } from "react-router-dom";
-import { ReactComponent as CartLogo } from "../../utils/assets/cart-logo.svg";
-import styled from "styled-components";
-import ListContext from "../../states/ListContext";
+import React, {useContext} from 'react'
+import {Link} from 'react-router-dom'
+import {ReactComponent as CartLogo} from '../../utils/assets/cart-logo.svg'
+import styled from 'styled-components'
+import ListContext from '../../states/ListContext'
 
-const CartLogoIcon = styled(CartLogo)``;
+const CartLogoIcon = styled(CartLogo)``
 const Container = styled.div`
   display: flex;
   align-items: center;
-`;
+`
 const NumberOfItems = styled.p`
   background-color: black;
   color: white;
@@ -16,16 +16,13 @@ const NumberOfItems = styled.p`
   width: 20px;
   height: 20px;
   text-align: center;
-`;
+`
 
 export default function HeaderCart() {
-  const { cartItems } = useContext(ListContext);
+  const {cartItems} = useContext(ListContext)
   return (
     <Container>
-      <Link
-        to="/ondemand-react-bootcamp/cart"
-        style={{ textDecoration: "none" }}
-      >
+      <Link to="/ondemand-react-bootcamp/cart" style={{textDecoration: 'none'}}>
         <CartLogoIcon></CartLogoIcon>
       </Link>
       {cartItems.length ? (
@@ -34,5 +31,5 @@ export default function HeaderCart() {
         </NumberOfItems>
       ) : null}
     </Container>
-  );
+  )
 }

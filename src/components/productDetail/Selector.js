@@ -1,29 +1,29 @@
-import React, { useContext, useState } from "react";
-import CartContext from "../../states/CartContext";
-import ListContext from "../../states/ListContext";
-import AddToCart from "../cart/AddToCart";
+import React, {useContext, useState} from 'react'
+import CartContext from '../../states/CartContext'
+import ListContext from '../../states/ListContext'
+import AddToCart from '../cart/AddToCart'
 
-export default function Selector(data, { cart }) {
-  const { cartItems, setCartItems } = useContext(ListContext);
+export default function Selector(data, {cart}) {
+  const {cartItems, setCartItems} = useContext(ListContext)
 
-  const [qty, setQty] = useState(1);
+  const [qty, setQty] = useState(1)
   const handleChange = (e, cart, data) => {
     !cart
       ? setQty(parseInt(e.target.value, 10))
       : setCartItems(
           cartItems.map((existingItem) =>
             existingItem.id === data.data.id
-              ? { ...existingItem, qty: parseInt(e.target.value, 10) }
-              : existingItem
-          )
-        );
-  };
+              ? {...existingItem, qty: parseInt(e.target.value, 10)}
+              : existingItem,
+          ),
+        )
+  }
   return (
     <>
       <tr>
         <td></td>
-        <td style={{ display: "flex" }}>
-          <h5 style={{ margin: 0 }}>qty: </h5>
+        <td style={{display: 'flex'}}>
+          <h5 style={{margin: 0}}>qty: </h5>
           <select
             onChange={(e) => handleChange(e, data.cart, data)}
             name="qty"
@@ -47,5 +47,5 @@ export default function Selector(data, { cart }) {
         </td>
       </tr>
     </>
-  );
+  )
 }

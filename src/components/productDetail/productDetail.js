@@ -1,61 +1,61 @@
 /* eslint-disable no-unused-expressions */
-import React, { useContext, useEffect, useRef, useState } from "react";
-import { useParams } from "react-router-dom";
-import ListContext from "../../states/ListContext";
-import { useFeaturedBanners } from "../../utils/hooks/useFeaturedBanners";
-import AddToCart from "../cart/AddToCart";
-import Space from "../Space";
+import React, {useContext, useEffect, useRef, useState} from 'react'
+import {useParams} from 'react-router-dom'
+import ListContext from '../../states/ListContext'
+import {useFeaturedBanners} from '../../utils/hooks/useFeaturedBanners'
+import AddToCart from '../cart/AddToCart'
+import Space from '../Space'
 
-import * as styles from "./productDetail-style";
-import Selector from "./Selector";
+import * as styles from './productDetail-style'
+import Selector from './Selector'
 
 export default function ProductDetail() {
-  const [qty, setQty] = useState(1);
+  const [qty, setQty] = useState(1)
 
-  const slideref = useRef(null);
+  const slideref = useRef(null)
 
   const Slider = () => {
     if (slideref.current.children.length > 1) {
-      const firstElement = slideref.current.children[0];
-      slideref.current.style.transition = `700ms ease-in all`;
-      slideref.current.style.transform = `translateX(-100%)`;
+      const firstElement = slideref.current.children[0]
+      slideref.current.style.transition = `700ms ease-in all`
+      slideref.current.style.transform = `translateX(-100%)`
       const append = () => {
-        slideref.current.style.transition = "none";
-        slideref.current.style.transform = `translateX(0)`;
-        slideref.current.appendChild(firstElement);
-        slideref.current.removeEventListener("transitionend", append);
-      };
-      slideref.current.addEventListener("transitionend", append);
+        slideref.current.style.transition = 'none'
+        slideref.current.style.transform = `translateX(0)`
+        slideref.current.appendChild(firstElement)
+        slideref.current.removeEventListener('transitionend', append)
+      }
+      slideref.current.addEventListener('transitionend', append)
     }
-  };
+  }
 
   useEffect(() => {
     const autoChange = setInterval(() => {
-      Slider();
-    }, 2500);
-    return () => clearInterval(autoChange);
-  }, []);
+      Slider()
+    }, 2500)
+    return () => clearInterval(autoChange)
+  }, [])
 
   const BannerBox = (item) => {
-    const image = item.image;
-    return <img src={image.url} alt={image.alt} title={image.alt}></img>;
-  };
+    const image = item.image
+    return <img src={image.url} alt={image.alt} title={image.alt}></img>
+  }
 
   const InfoBox = (data) => {
     return (
       <>
-        <h1 style={{ color: "black", margin: 0 }}>{data.data.data.name}</h1>
+        <h1 style={{color: 'black', margin: 0}}>{data.data.data.name}</h1>
         <styles.Line></styles.Line>
         <styles.MainTable>
           <tbody>
             <tr>
               <td>
-                <h5 style={{ color: "#6495ed", marginTop: "5vw" }}>
+                <h5 style={{color: '#6495ed', marginTop: '5vw'}}>
                   List Price:
                 </h5>
               </td>
               <td>
-                <h2 style={{ color: "black", marginTop: "5vw" }}>
+                <h2 style={{color: 'black', marginTop: '5vw'}}>
                   ${data.data.data.price}
                 </h2>
               </td>
@@ -75,46 +75,46 @@ export default function ProductDetail() {
             </tr> */}
             <tr>
               <td>
-                <h5 style={{ margin: 1, marginTop: "5vw" }}>sku:</h5>
+                <h5 style={{margin: 1, marginTop: '5vw'}}>sku:</h5>
               </td>
               <td>
                 <styles.Line></styles.Line>
-                <h5 style={{ margin: 1, marginTop: "5vw" }}>
+                <h5 style={{margin: 1, marginTop: '5vw'}}>
                   {data.data.data.sku}
                 </h5>
               </td>
             </tr>
             <tr>
               <td>
-                <h5 style={{ margin: 1 }}>Category:</h5>
+                <h5 style={{margin: 1}}>Category:</h5>
               </td>
               <td>
-                <h5 style={{ margin: 1 }}>
+                <h5 style={{margin: 1}}>
                   {data.data.data.category.slug
-                    .replace("--", " & ")
+                    .replace('--', ' & ')
                     .toUpperCase()}
                 </h5>
               </td>
             </tr>
             <tr>
               <td>
-                <h5 style={{ margin: 1 }}>Description:</h5>
+                <h5 style={{margin: 1}}>Description:</h5>
               </td>
               <td>
-                <p style={{ margin: 1, textAlign: "justify", width: "90%" }}>
+                <p style={{margin: 1, textAlign: 'justify', width: '90%'}}>
                   {data.data.data.description[0].text}
                 </p>
                 <styles.Line></styles.Line>
               </td>
             </tr>
             <tr>
-              <td style={{ verticalAlign: "top" }}>
-                <h5 style={{ margin: 1 }}>Things you must know:</h5>
+              <td style={{verticalAlign: 'top'}}>
+                <h5 style={{margin: 1}}>Things you must know:</h5>
               </td>
 
-              <td style={{ verticalAlign: "top" }}>
+              <td style={{verticalAlign: 'top'}}>
                 {data.data.data.specs.map((item) => (
-                  <h5 key={item.spec_name} style={{ margin: 10, marginTop: 0 }}>
+                  <h5 key={item.spec_name} style={{margin: 10, marginTop: 0}}>
                     {item.spec_name}: {item.spec_value}
                   </h5>
                 ))}
@@ -123,10 +123,10 @@ export default function ProductDetail() {
           </tbody>
         </styles.MainTable>
       </>
-    );
-  };
+    )
+  }
 
-  let { id } = useParams("");
+  let {id} = useParams('')
 
   const {
     productEncode,
@@ -135,16 +135,16 @@ export default function ProductDetail() {
     setProductEncode,
     setProductPageSize,
     setProductLanguage,
-  } = useContext(ListContext);
+  } = useContext(ListContext)
 
   useEffect(() => {
-    setProductEncode(`[[:d=at(document.id , "${id}")]]`);
-    setProductPageSize(100);
-    setProductLanguage("en-us");
-  }, []);
+    setProductEncode(`[[:d=at(document.id , "${id}")]]`)
+    setProductPageSize(100)
+    setProductLanguage('en-us')
+  }, [])
 
-  const { data: productDataApi, isLoading: productisLoading } =
-    useFeaturedBanners(productEncode, productLanguage, productPageSize, "");
+  const {data: productDataApi, isLoading: productisLoading} =
+    useFeaturedBanners(productEncode, productLanguage, productPageSize, '')
 
   return (
     <>
@@ -158,7 +158,7 @@ export default function ProductDetail() {
                   <styles.BannerStyle key={item.image.url}>
                     <BannerBox {...item}></BannerBox>
                   </styles.BannerStyle>
-                ))
+                )),
               )
             ) : (
               <styles.BannerStyle>
@@ -176,5 +176,5 @@ export default function ProductDetail() {
         </styles.ContainerBackground>
       </styles.Wrapper>
     </>
-  );
+  )
 }

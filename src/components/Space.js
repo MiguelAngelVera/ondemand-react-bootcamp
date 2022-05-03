@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 const MainSpace = styled.div`
   border-top: 2.5vw solid #e6e6e6;
@@ -8,8 +8,8 @@ const MainSpace = styled.div`
   @media (max-width: 900px) {
     height: 5vw;
   }
-`;
+`
 
 export default function Space() {
-  return <MainSpace></MainSpace>;
+  return <MainSpace></MainSpace>
 }

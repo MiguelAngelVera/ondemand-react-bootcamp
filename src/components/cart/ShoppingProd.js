@@ -1,22 +1,22 @@
-import React, { useContext } from "react";
-import styled from "styled-components";
-import CartContext from "../../states/CartContext";
-import ListContext from "../../states/ListContext";
-import Selector from "../productDetail/Selector";
+import React, {useContext} from 'react'
+import styled from 'styled-components'
+import CartContext from '../../states/CartContext'
+import ListContext from '../../states/ListContext'
+import Selector from '../productDetail/Selector'
 
-const Medium = styled.div``;
+const Medium = styled.div``
 const Row = styled.div`
   display: flex;
   margin-bottom: 10px;
   background-color: white;
-`;
+`
 const Image = styled.img`
   width: 130px;
   @media (max-width: 900px) {
     width: 50%;
     height: 50%;
   }
-`;
+`
 const ProductDetails = styled.div`
   display: flex;
   padding: 0 15px;
@@ -24,7 +24,7 @@ const ProductDetails = styled.div`
     display: inline;
     width: 50%;
   }
-`;
+`
 const Text = styled.div`
   padding: 20px;
   display: flex;
@@ -34,17 +34,17 @@ const Text = styled.div`
     padding: 0;
     font-size: 3vw;
   }
-`;
-const Price = styled.span``;
-const Name = styled.span``;
-const Category = styled.span``;
+`
+const Price = styled.span``
+const Name = styled.span``
+const Category = styled.span``
 const CartActions = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-left: auto;
   margin-right: 10px;
-`;
+`
 const Remove = styled.button`
   width: 5vw;
   background-color: #ff573330;
@@ -53,14 +53,14 @@ const Remove = styled.button`
   @media (max-width: 900px) {
     width: auto;
   }
-`;
+`
 
 const handleClick = (e, cartItems, setCartItems, data) => {
-  setCartItems(cartItems.filter((existingItes) => existingItes.id !== data));
-};
+  setCartItems(cartItems.filter((existingItes) => existingItes.id !== data))
+}
 
-export default function ShoppingProd({ checkout = false }) {
-  const { cartItems, setCartItems } = useContext(ListContext);
+export default function ShoppingProd({checkout = false}) {
+  const {cartItems, setCartItems} = useContext(ListContext)
 
   return (
     <Medium>
@@ -126,5 +126,5 @@ export default function ShoppingProd({ checkout = false }) {
           ))
         : null}
     </Medium>
-  );
+  )
 }

@@ -1,39 +1,39 @@
-import React, { useContext, useState } from "react";
-import ListContext from "../../states/ListContext";
-import Space from "../Space";
-import styled from "styled-components";
-import { AstPath } from "prettier";
-import AddToCart from "./AddToCart";
-import Selector from "../productDetail/Selector";
-import CartSelector from "./CartSelector";
-import { Link } from "react-router-dom";
-import ShoppingProd from "./ShoppingProd";
-import CartContext from "../../states/CartContext";
+import React, {useContext, useState} from 'react'
+import ListContext from '../../states/ListContext'
+import Space from '../Space'
+import styled from 'styled-components'
+import {AstPath} from 'prettier'
+import AddToCart from './AddToCart'
+import Selector from '../productDetail/Selector'
+import CartSelector from './CartSelector'
+import {Link} from 'react-router-dom'
+import ShoppingProd from './ShoppingProd'
+import CartContext from '../../states/CartContext'
 
 const Container = styled.section`
   width: 85%;
   margin: 0 auto;
-`;
-const Tittle = styled.h1``;
-const Wrapper = styled.div``;
-const Top = styled.div``;
+`
+const Tittle = styled.h1``
+const Wrapper = styled.div``
+const Top = styled.div``
 const Total = styled.p`
   text-align: right;
-`;
-const Medium = styled.div``;
-const ProductsTable = styled.table``;
+`
+const Medium = styled.div``
+const ProductsTable = styled.table``
 const Row = styled.div`
   display: flex;
   margin-bottom: 10px;
   background-color: white;
-`;
+`
 const Image = styled.img`
   width: 130px;
   @media (max-width: 900px) {
     width: 50%;
     height: 50%;
   }
-`;
+`
 
 const ProductDetails = styled.div`
   display: flex;
@@ -42,7 +42,7 @@ const ProductDetails = styled.div`
     display: inline;
     width: 50%;
   }
-`;
+`
 const Text = styled.div`
   padding: 20px;
   display: flex;
@@ -52,11 +52,11 @@ const Text = styled.div`
     padding: 0;
     font-size: 3vw;
   }
-`;
+`
 
-const Price = styled.span``;
-const Name = styled.span``;
-const Category = styled.span``;
+const Price = styled.span``
+const Name = styled.span``
+const Category = styled.span``
 
 const CartActions = styled.div`
   display: flex;
@@ -64,7 +64,7 @@ const CartActions = styled.div`
   justify-content: space-around;
   margin-left: auto;
   margin-right: 10px;
-`;
+`
 
 const CheckoutButton = styled.button`
   background-color: #6495ed40;
@@ -75,7 +75,7 @@ const CheckoutButton = styled.button`
     font-size: 5vw;
     width: 100vw;
   }
-`;
+`
 const Bottom = styled.div`
   display: flex;
   justify-content: right;
@@ -87,11 +87,11 @@ const Bottom = styled.div`
     margin: 0 auto;
     overflow: hidden;
   }
-`;
+`
 export default function CartPage() {
-  const { cartItems } = useContext(ListContext);
+  const {cartItems} = useContext(ListContext)
 
-  window.scrollTo(0, 0);
+  window.scrollTo(0, 0)
   return (
     <>
       <Space></Space>
@@ -115,7 +115,7 @@ export default function CartPage() {
           <Bottom>
             <Link
               to="/ondemand-react-bootcamp/checkout"
-              style={{ textDecoration: "none" }}
+              style={{textDecoration: 'none'}}
             >
               {cartItems.length ? (
                 <CheckoutButton>Checkout</CheckoutButton>
@@ -127,5 +127,5 @@ export default function CartPage() {
       <Space></Space>
       <Space></Space>
     </>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
@@ -12,7 +12,7 @@ export const Container = styled.div`
     width: 100%;
     padding: 0 0;
   }
-`;
+`
 
 export const SlideContainer = styled.div`
   display: flex;
@@ -28,7 +28,7 @@ export const SlideContainer = styled.div`
     height: 50vw;
     padding: 0 0rem;
   }
-`;
+`
 
 export const BannerStyle = styled.div`
   display: flex;
@@ -45,7 +45,7 @@ export const BannerStyle = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
-`;
+`
 export const Title = styled.div`
   padding: 0 6vw;
   background-color: #e6e6e6;
@@ -55,7 +55,7 @@ export const Title = styled.div`
   @media (max-width: 900px) {
     font-size: 3vw;
   }
-`;
+`
 
 export const ContainerBackground = styled.div`
   background-color: #e6e6e6;
@@ -64,7 +64,7 @@ export const ContainerBackground = styled.div`
     width: 100%;
     min-height: 120vw;
   }
-`;
+`
 
 export const Wrapper = styled.div`
   display: flex;
@@ -78,14 +78,14 @@ export const Wrapper = styled.div`
     min-height: 200vw;
     margin: 0;
   }
-`;
+`
 export const Line = styled.div`
   margin: auto 13px;
   border: 0.6px solid gray;
   opacity: 30%;
-`;
+`
 export const MainTable = styled.table`
   @media (max-width: 900px) {
     min-height: 160vw;
   }
-`;
+`

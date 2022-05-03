@@ -1,8 +1,8 @@
-import BannerApi from "../../components/banner/BannerApi";
-import CarouselApi from "../../components/carousel/CarouselApi";
-import HomeButton from "../../components/HomeButton";
-import ProductsApi from "../../components/products/ProductsApi";
-import Space from "../../components/Space";
+import BannerApi from '../../components/banner/BannerApi'
+import CarouselApi from '../../components/carousel/CarouselApi'
+import HomeButton from '../../components/HomeButton'
+import ProductsApi from '../../components/products/ProductsApi'
+import Space from '../../components/Space'
 
 const HomePage = () => (
   <>
@@ -13,6 +13,6 @@ const HomePage = () => (
     <Space></Space>
     <HomeButton></HomeButton>
   </>
-);
+)
 
-export default HomePage;
+export default HomePage

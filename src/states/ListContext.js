@@ -1,34 +1,34 @@
-import { createContext } from "react";
+import {createContext} from 'react'
 
 const ListContext = createContext({
-  searchFor: "",
+  searchFor: '',
   setSearchFor: () => {},
-  filteredProducts: "",
+  filteredProducts: '',
   setFilteredProducts: () => {},
   defaultfiltered: [],
   setDefaultfiltered: () => {},
-  param: "",
+  param: '',
   setParam: () => {},
-  productEncode: "",
+  productEncode: '',
   setProductEncode: () => {},
-  productPageSize: "",
+  productPageSize: '',
   setProductPageSize: () => {},
-  productLanguage: "",
+  productLanguage: '',
   setProductLanguage: () => {},
-  searchString: "",
+  searchString: '',
   setSearchString: () => {},
-  filterSearchName: "",
+  filterSearchName: '',
   setFilterSearchName: () => {},
-  filterSearchCat: "",
+  filterSearchCat: '',
   setFilterSearchCat: () => {},
-  filterSearchDesc: "",
+  filterSearchDesc: '',
   setFilterSearchDesc: () => {},
-  currentPage: "",
+  currentPage: '',
   setCurrentPage: () => {},
-  activeItem: "",
+  activeItem: '',
   setActiveItem: () => {},
-  cartItems: "",
+  cartItems: '',
   setCartItems: () => {},
-});
+})
 
-export default ListContext;
+export default ListContext

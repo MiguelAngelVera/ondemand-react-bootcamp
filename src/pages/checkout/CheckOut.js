@@ -1,5 +1,5 @@
-import React from "react";
-import CheckOutForm from "../../components/checkout/CheckOutForm";
+import React from 'react'
+import CheckOutForm from '../../components/checkout/CheckOutForm'
 
 export default function CheckOut() {
   return (
@@ -7,5 +7,5 @@ export default function CheckOut() {
       <CheckOutForm></CheckOutForm>
       <div>CheckOut</div>
     </>
-  );
+  )
 }

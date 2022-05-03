@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const MainHeader = styled.div`
   background-color: #f7dc6f;
   position: fixed;
   top: 0;
   width: 100%;
-`;
+`
 
 export const BarWrapper = styled.div`
   display: flex;
@@ -16,7 +16,7 @@ export const BarWrapper = styled.div`
     padding: 0px 5px;
     height: 60px;
   }
-`;
+`
 
 export const Left = styled.div`
   align-items: center;
@@ -27,7 +27,7 @@ export const Left = styled.div`
   @media (max-width: 900px) {
     margin-right: 2vw;
   }
-`;
+`
 export const ShopName = styled.div`
   padding: 0% 2%;
   text-align: center;
@@ -36,7 +36,7 @@ export const ShopName = styled.div`
   @media (max-width: 900px) {
     font-size: 3.3vw;
   }
-`;
+`
 
 export const Mid = styled.div`
   align-items: center;
@@ -45,19 +45,19 @@ export const Mid = styled.div`
   @media (max-width: 900px) {
     flex: 9;
   }
-`;
+`
 export const SearchBar = styled.div`
   border: 10% solid gray;
   display: flex;
   padding: 2.5%;
   justify-content: flex-end;
-`;
+`
 export const SearchInput = styled.input`
   border: none;
   margin-right: 10%;
   background-color: white;
   width: 100%;
-`;
+`
 
 export const Right = styled.div`
   flex: 10;
@@ -68,14 +68,14 @@ export const Right = styled.div`
   @media (max-width: 900px) {
     flex: 5;
   }
-`;
+`
 export const SignBlock = styled.div`
   margin-right: 10%;
-`;
+`
 
 export const Sign = styled.div`
   @media (max-width: 900px) {
     font-size: 2.5vw;
     margin-right: 10%;
   }
-`;
+`

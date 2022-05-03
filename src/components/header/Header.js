@@ -1,31 +1,31 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import { ReactComponent as MainLogo } from "../../utils/assets/main-logo.svg";
-import { ReactComponent as SearchLogo } from "../../utils/assets/search-icon.svg";
-import * as styles from "./Header-style";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import HeaderCart from "./HeaderCart";
+import React, {useState} from 'react'
+import styled from 'styled-components'
+import {ReactComponent as MainLogo} from '../../utils/assets/main-logo.svg'
+import {ReactComponent as SearchLogo} from '../../utils/assets/search-icon.svg'
+import * as styles from './Header-style'
+import {Link} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
+import HeaderCart from './HeaderCart'
 
-const MainLogoIcon = styled(MainLogo)``;
+const MainLogoIcon = styled(MainLogo)``
 
-const SearchIcon = styled(SearchLogo)``;
+const SearchIcon = styled(SearchLogo)``
 
 function NavBar() {
-  const navigate = useNavigate();
-  const [searchString, setSearchString] = useState("");
-  const handleChange = (event) => setSearchString(event.target.value);
+  const navigate = useNavigate()
+  const [searchString, setSearchString] = useState('')
+  const handleChange = (event) => setSearchString(event.target.value)
   const handleSearch = (event) => (
     navigate(`/ondemand-react-bootcamp/search?q=${searchString.toLowerCase()}`),
     event.preventDefault(),
-    setSearchString("")
-  );
+    setSearchString('')
+  )
   return (
     <styles.BarWrapper>
       <styles.Left>
         <Link
           to="/ondemand-react-bootcamp/home"
-          style={{ textDecoration: "none" }}
+          style={{textDecoration: 'none'}}
         >
           <MainLogoIcon></MainLogoIcon>
         </Link>
@@ -33,16 +33,16 @@ function NavBar() {
 
       <styles.Mid>
         <styles.SearchBar>
-          <form style={{ display: "flex" }} onSubmit={handleSearch}>
+          <form style={{display: 'flex'}} onSubmit={handleSearch}>
             <styles.SearchInput
-              style={{ outline: "none" }}
+              style={{outline: 'none'}}
               type="text"
               placeholder="Search..."
               value={searchString}
               onChange={handleChange}
             ></styles.SearchInput>
             <button
-              style={{ backgroundColor: "white", borderWidth: "0" }}
+              style={{backgroundColor: 'white', borderWidth: '0'}}
               type="submit"
             >
               <SearchIcon></SearchIcon>
@@ -58,7 +58,7 @@ function NavBar() {
         <HeaderCart></HeaderCart>
       </styles.Right>
     </styles.BarWrapper>
-  );
+  )
 }
 
 export default function Header() {
@@ -66,5 +66,5 @@ export default function Header() {
     <styles.MainHeader>
       <NavBar></NavBar>
     </styles.MainHeader>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   overflow: hidden;
@@ -11,7 +11,7 @@ export const Container = styled.div`
   @media (max-width: 900px) {
     height: 30vw;
   }
-`;
+`
 export const Arrow = styled.button`
   cursor: pointer;
   pointer-events: all;
@@ -25,8 +25,8 @@ export const Arrow = styled.button`
   position: absolute;
   top: 0;
   bottom: 0;
-  left: ${(props) => props.change === "prev" && "10px"};
-  right: ${(props) => props.change === "next" && "10px"};
+  left: ${(props) => props.change === 'prev' && '10px'};
+  right: ${(props) => props.change === 'next' && '10px'};
   margin: auto;
   opacity: 0%;
   display: none;
@@ -42,12 +42,12 @@ export const Arrow = styled.button`
     position: absolute;
     top: 0;
     bottom: 0;
-    left: ${(props) => props.change === "prev" && "50px"};
-    right: ${(props) => props.change === "next" && "50px"};
+    left: ${(props) => props.change === 'prev' && '50px'};
+    right: ${(props) => props.change === 'next' && '50px'};
     opacity: 60%;
     margin: auto;
   }
-`;
+`
 export const CardContainer = styled.div`
   display: flex;
   flex-wrap: nowrap;
@@ -60,10 +60,10 @@ export const CardContainer = styled.div`
   @media (max-width: 900px) {
     width: 100%;
   }
-`;
+`
 export const CardBackground = styled.div`
   background-color: #dedede;
-`;
+`
 export const Card = styled.div`
   justify-content: center;
   position: relative;
@@ -81,7 +81,7 @@ export const Card = styled.div`
       margin-right: auto;
     }
   } ;
-`;
+`
 export const CardText = styled.div`
   line-height: 1.5vw;
   height: 1.5vw;
@@ -99,7 +99,7 @@ export const CardText = styled.div`
     margin: auto;
     width: 35%;
   }
-`;
+`
 
 export const Title = styled.div`
   padding: 0 6vw;
@@ -109,4 +109,4 @@ export const Title = styled.div`
   @media (max-width: 900px) {
     font-size: 3vw;
   }
-`;
+`
