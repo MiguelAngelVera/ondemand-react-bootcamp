@@ -184,3 +184,10 @@ export const Title = styled.div`
     margin-top: '15vw';
   }
 `
+export const FilterButton = styled.button`
+  border-width: 0;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: #e6e6e6;
+`

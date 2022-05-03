@@ -1,3 +1,5 @@
+/* eslint-disable no-nested-ternary */
+/* eslint-disable no-return-assign */
 /* eslint-disable no-unused-expressions */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, {useState, useEffect, useContext} from 'react'
@@ -39,7 +41,7 @@ export default function ProductFilterApi() {
   } = useContext(ListContext)
   const [params] = useSearchParams()
   const [searchParams, setSearchParams] = useSearchParams({})
-  const [postPerPage, setPostsPerPage] = useState(12)
+  const [postPerPage] = useState(12)
 
   const [productList, setProductList] = useState('')
   const [productPagination, setProductPagination] = useState('')
@@ -65,17 +67,17 @@ export default function ProductFilterApi() {
   // Creates the list of all the products that will be shown
   useEffect(() => {
     let temp = []
-    const productList = () =>
+    const productListFunc = () =>
       !productisLoading && Object.values(filteredProducts).length
-        ? (Object.values(filteredProducts).forEach((item) =>
-            item.map((item) => (temp = temp.concat(item))),
+        ? (Object.values(filteredProducts).forEach((product) =>
+            product.map((item) => (temp = temp.concat(item))),
           ),
           setProductList(temp),
           setClearButton(true))
         : (defaultfiltered.map((item) => (temp = temp.concat(item))),
           setProductList(temp),
           setClearButton(false))
-    productList()
+    productListFunc()
     setCurrentPage(1)
     setActiveItem(1)
   }, [filteredProducts, defaultfiltered])
@@ -106,102 +108,102 @@ export default function ProductFilterApi() {
     setSearchParams(searchParams)
   )
 
-  const handleReset = () => (
-    setSearchFor(''),
-    setFilteredProducts(''),
-    setClearButton(false),
-    setParam(''),
-    searchParams.delete('category'),
-    setSearchParams(searchParams),
+  const handleReset = () => {
+    setSearchFor('')
+    setFilteredProducts('')
+    setClearButton(false)
+    setParam('')
+    searchParams.delete('category')
+    setSearchParams(searchParams)
     setFocus(true)
-  )
+  }
 
-  const paginate = (pageNumber) => setCurrentPage(pageNumber)
   return (
     <styles.Container>
-        <styles.NavBarContainer>
-          <styles.NavBarCard>
-            <styles.Title>
-              <h1>Products</h1>
-            </styles.Title>
-            <ul>
-              <styles.NavBarList>
-                {!focus ? (
-                  !categoryIsLoading ? (
-                    categoryDataApi.results.map((item) =>
-                      item.data.name.toLowerCase() !==
-                      param.replace('--', ' & ') ? (
-                        <li key={item.id} style={myStyleGray} name={item.id}>
-                          <h3
-                            onClick={(e) =>
-                              handleFiltering(e, item.data.name.toLowerCase())
-                            }
-                            style={myStyleGray}
-                          >
-                            {item.data.name}
-                          </h3>
-                        </li>
-                      ) : (
-                        <li key={item.id} style={myStyleBlue} name={item.id}>
-                          <h3
-                            onClick={(e) =>
-                              handleFiltering(e, item.data.name.toLowerCase())
-                            }
-                            style={myStyleBlue}
-                          >
-                            {item.data.name}
-                          </h3>
-                        </li>
-                      ),
-                    )
-                  ) : (
-                    <li style={{textAlign: 'center'}}>Loading...</li>
+      <styles.NavBarContainer>
+        <styles.NavBarCard>
+          <styles.Title>
+            <h1>Products</h1>
+          </styles.Title>
+          <ul>
+            <styles.NavBarList>
+              {!focus ? (
+                !categoryIsLoading ? (
+                  categoryDataApi.results.map((item) =>
+                    item.data.name.toLowerCase() !==
+                    param.replace('--', ' & ') ? (
+                      <li key={item.id} style={myStyleGray} name={item.id}>
+                        <styles.FilterButton
+                          type="button"
+                          onClick={(e) =>
+                            handleFiltering(e, item.data.name.toLowerCase())
+                          }
+                          style={myStyleGray}
+                        >
+                          {item.data.name}
+                        </styles.FilterButton>
+                      </li>
+                    ) : (
+                      <li key={item.id} style={myStyleBlue} name={item.id}>
+                        <styles.FilterButton
+                          type="button"
+                          onClick={(e) =>
+                            handleFiltering(e, item.data.name.toLowerCase())
+                          }
+                          style={myStyleBlue}
+                        >
+                          {item.data.name}
+                        </styles.FilterButton>
+                      </li>
+                    ),
                   )
-                ) : !categoryIsLoading ? (
-                  categoryDataApi.results.map((item) => (
-                    <li key={item.data.name} style={myStyleGray} name={item.id}>
-                      <h3
-                        onClick={(e) =>
-                          handleFiltering(e, item.data.name.toLowerCase())
-                        }
-                        style={myStyleGray}
-                      >
-                        {item.data.name}
-                      </h3>
-                    </li>
-                  ))
                 ) : (
                   <li style={{textAlign: 'center'}}>Loading...</li>
-                )}
-              </styles.NavBarList>
-              {clearButton && (
-                <button
-                  style={{
-                    margin: '3vw auto',
-                    display: 'block',
-                    color: '#6495ed',
-                    borderWidth: 0,
-                    paddin: '1vw 0',
-                  }}
-                  onClick={handleReset}
-                >
-                  Clear Filter
-                </button>
+                )
+              ) : !categoryIsLoading ? (
+                categoryDataApi.results.map((item) => (
+                  <li key={item.data.name} style={myStyleGray} name={item.id}>
+                    <styles.FilterButton
+                      type="button"
+                      onClick={(e) =>
+                        handleFiltering(e, item.data.name.toLowerCase())
+                      }
+                      style={myStyleGray}
+                    >
+                      {item.data.name}
+                    </styles.FilterButton>
+                  </li>
+                ))
+              ) : (
+                <li style={{textAlign: 'center'}}>Loading...</li>
               )}
-            </ul>
-          </styles.NavBarCard>
-        </styles.NavBarContainer>
-        <styles.ProductContainer style={{width: 'auto'}}>
-          <ProductGrid
-            feature={feature}
-            productisLoading={productisLoading}
-            product={productPagination}
-           />
-          <Pagination
-            postPerPage={postPerPage}
-            totalPosts={productList.length}
-           />
-        </styles.ProductContainer>
-      </styles.Container>
+            </styles.NavBarList>
+            {clearButton && (
+              <button
+                type="button"
+                style={{
+                  margin: '3vw auto',
+                  display: 'block',
+                  color: '#6495ed',
+                  borderWidth: 0,
+                  paddin: '1vw 0',
+                }}
+                onClick={handleReset}
+              >
+                Clear Filter
+              </button>
+            )}
+          </ul>
+        </styles.NavBarCard>
+      </styles.NavBarContainer>
+      <styles.ProductContainer style={{width: 'auto'}}>
+        <ProductGrid
+          feature={feature}
+          productisLoading={productisLoading}
+          product={productPagination}
+        />
+        <Pagination postPerPage={postPerPage} totalPosts={productList.length} />
+      </styles.ProductContainer>
+    </styles.Container>
   )
 }
