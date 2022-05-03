@@ -1,4 +1,4 @@
-import {useContext, useEffect} from 'react'
+import React, {useContext, useEffect} from 'react'
 import ListContext from '../../states/ListContext'
 import useFilter from '../../utils/hooks/useFilter'
 import ProductGrid from '../productGrid/ProductGrid'
@@ -43,7 +43,7 @@ export default function ProductsApi() {
           feature={feature}
           productisLoading={productisLoading}
           product={defaultfiltered}
-         />
+        />
       </styles.ContainerBackground>
     </>
   )
