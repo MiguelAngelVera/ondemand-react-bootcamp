@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductFilterApi from '../../components/productFilter/ProductFilterApi.js'
+import ProductFilterApi from '../../components/productFilter/ProductFilterApi'
 
 function ProductPage() {
   return <ProductFilterApi />
