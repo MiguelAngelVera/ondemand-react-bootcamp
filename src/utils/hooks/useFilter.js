@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-return-assign */
 /* eslint-disable no-unused-expressions */
 import {useContext, useEffect} from 'react'
 import {useFeaturedBanners} from './useFeaturedBanners'
@@ -50,8 +52,9 @@ export default function useFilter(feature) {
           setFilteredProducts({[param]: found}))
         : null
     window.scrollTo(0, 0)
-    param !== '' && !category.length ? paramFiltering() : filtering(),
-      defaultFiltering()
+    param !== '' && !category.length
+      ? paramFiltering()
+      : (filtering(), defaultFiltering())
   }, [productisLoading, searchFor])
   return {productisLoading}
 }

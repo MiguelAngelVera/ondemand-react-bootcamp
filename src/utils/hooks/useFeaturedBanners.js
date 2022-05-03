@@ -1,4 +1,7 @@
-import {useState, useEffect, useContext} from 'react'
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable consistent-return */
+import {useState, useEffect} from 'react'
 import axios from 'axios'
 import {API_BASE_URL} from '../constants'
 import {useLatestAPI} from './useLatestAPI'
@@ -23,7 +26,6 @@ export function useFeaturedBanners(encodes, languages, pageSizes, featureds) {
     async function getFeaturedBanners() {
       try {
         setFeaturedBanners({data: {}, isLoading: true})
-
         const {data, status} = await axios(
           `${API_BASE_URL}/documents/search?ref=${apiRef}&q=${encodeURIComponent(
             encoder,
