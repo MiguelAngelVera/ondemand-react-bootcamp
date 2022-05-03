@@ -18,16 +18,16 @@ const ProducttoCart = styled.button`
   } */
 `
 
-function handleClick(e, data, cartItems, setCartItems, quantity) {
+function handleClick(e, itemData, cartItems, setCartItems, quantity) {
   e.preventDefault()
-  const item = data.data
+  console.log(itemData.id)
   const matches = cartItems.filter((existingItemns) =>
-    existingItemns.id.includes(item.id),
+    existingItemns.id.includes(itemData.id),
   )
   matches.length
     ? setCartItems(
         cartItems.map((existingItem) => {
-          if (existingItem.id === item.id) {
+          if (existingItem.id === itemData.id) {
             if (existingItem.qty + quantity > existingItem.data.stock) {
               return {...existingItem, qty: existingItem.data.stock}
             }
@@ -36,15 +36,15 @@ function handleClick(e, data, cartItems, setCartItems, quantity) {
           return existingItem
         }),
       )
-    : setCartItems([...cartItems, {...item, qty: quantity}])
+    : setCartItems([...cartItems, {...itemData, qty: quantity}])
 
   return null
 }
-export default function AddToCart(data, {qty}) {
+export default function AddToCart({itemData, qty}) {
   const {cartItems, setCartItems} = useContext(ListContext)
   return (
     <ProducttoCart
-      onClick={(e) => handleClick(e, data, cartItems, setCartItems, data.qty)}
+      onClick={(e) => handleClick(e, itemData, cartItems, setCartItems, qty)}
     >
       Add to Cart
     </ProducttoCart>

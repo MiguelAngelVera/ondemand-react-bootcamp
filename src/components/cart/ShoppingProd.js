@@ -111,7 +111,9 @@ export default function ShoppingProd({checkout}) {
                 )}
                 <Text>
                   <table>
-                    <tbody>{!checkout && <Selector data={item} cart />}</tbody>
+                    <tbody>
+                      {!checkout && <Selector itemData={item} cart />}
+                    </tbody>
                   </table>
                   <Name>
                     <b>Subtotal: </b>${(item.qty * item.data.price).toFixed(2)}
