@@ -20,7 +20,6 @@ const ProducttoCart = styled.button`
 
 function handleClick(e, itemData, cartItems, setCartItems, quantity) {
   e.preventDefault()
-  console.log(itemData.id)
   const matches = cartItems.filter((existingItemns) =>
     existingItemns.id.includes(itemData.id),
   )

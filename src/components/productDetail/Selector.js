@@ -19,7 +19,7 @@ export default function Selector({itemData, cart}) {
   const {cartItems, setCartItems} = useContext(ListContext)
 
   const [qty, setQty] = useState(1)
-
+  console.log(itemData)
   return (
     <>
       <tr>
@@ -31,7 +31,7 @@ export default function Selector({itemData, cart}) {
               handleChange(e, cart, itemData, cartItems, setCartItems, setQty)
             }
             name="qty"
-            defaultValue={cart ? itemData.data.qty : qty}
+            defaultValue={cart ? itemData.qty : qty}
           >
             {[...Array(itemData.data.stock + 1).keys()].slice(1).map((item) => (
               <option key={item} value={item}>
