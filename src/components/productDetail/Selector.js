@@ -19,7 +19,6 @@ export default function Selector({itemData, cart}) {
   const {cartItems, setCartItems} = useContext(ListContext)
 
   const [qty, setQty] = useState(1)
-  console.log(itemData)
   return (
     <>
       <tr>

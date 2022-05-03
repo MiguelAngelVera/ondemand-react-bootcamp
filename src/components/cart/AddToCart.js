@@ -1,22 +1,10 @@
 /* eslint-disable no-unused-expressions */
 import React, {useContext} from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import ListContext from '../../states/ListContext'
 
-const ProducttoCart = styled.button`
-  /* position: absolute;
-  border-width: 0px;
-  color: #6495ed;
-  font-size: 1.2vw;
-  display: flex;
-  border-radius: 0.3rem;
-  bottom: 0;
-  margin: 0 auto;
-  align-content: center;
-  @media (max-width: 900px) {
-    font-size: 3vw;
-  } */
-`
+const ProducttoCart = styled.button``
 
 function handleClick(e, itemData, cartItems, setCartItems, quantity) {
   e.preventDefault()
@@ -48,4 +36,10 @@ export default function AddToCart({itemData, qty}) {
       Add to Cart
     </ProducttoCart>
   )
+}
+
+AddToCart.propTypes = {
+  itemData: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
+    .isRequired,
+  qty: PropTypes.number.isRequired,
 }
