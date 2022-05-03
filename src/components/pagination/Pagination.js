@@ -1,6 +1,6 @@
-import React, {useContext, useState} from 'react'
+import React, {useContext} from 'react'
+import PropTypes from 'prop-types'
 import ListContext from '../../states/ListContext'
-import {Paginate} from '../productFilter/ProductList-style'
 import './Pagination.css'
 
 export default function Pagination({postPerPage, totalPosts}) {
@@ -13,7 +13,7 @@ export default function Pagination({postPerPage, totalPosts}) {
     window.scrollTo(0, 0)
   }
 
-  for (let i = 1; i <= Math.ceil(totalPosts / postPerPage); i++) {
+  for (let i = 1; i <= Math.ceil(totalPosts / postPerPage); i += 1) {
     pageNumbers.push(i)
   }
 
@@ -23,6 +23,7 @@ export default function Pagination({postPerPage, totalPosts}) {
         {pageNumbers.map((number) => (
           <li key={number} className="Page">
             <button
+              type="button"
               key={number}
               name={number}
               onClick={(e) => handleClick(e, number)}
@@ -35,4 +36,9 @@ export default function Pagination({postPerPage, totalPosts}) {
       </ul>
     </nav>
   )
+}
+
+Pagination.propTypes = {
+  postPerPage: PropTypes.number.isRequired,
+  totalPosts: PropTypes.number.isRequired,
 }
