@@ -1,3 +1,4 @@
+/* eslint-disable no-sequences */
 /* eslint-disable no-nested-ternary */
 /* eslint-disable no-return-assign */
 /* eslint-disable no-unused-expressions */

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
-import {Link,useNavigate} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import {ReactComponent as MainLogo} from '../../utils/assets/main-logo.svg'
 import {ReactComponent as SearchLogo} from '../../utils/assets/search-icon.svg'
 import * as styles from './Header-style'
@@ -14,11 +14,11 @@ function NavBar() {
   const navigate = useNavigate()
   const [searchString, setSearchString] = useState('')
   const handleChange = (event) => setSearchString(event.target.value)
-  const handleSearch = (event) => (
-    navigate(`/ondemand-react-bootcamp/search?q=${searchString.toLowerCase()}`),
-    event.preventDefault(),
+  const handleSearch = (event) => {
+    navigate(`/ondemand-react-bootcamp/search?q=${searchString.toLowerCase()}`)
+    event.preventDefault()
     setSearchString('')
-  )
+  }
   return (
     <styles.BarWrapper>
       <styles.Left>
@@ -39,7 +39,7 @@ function NavBar() {
               placeholder="Search..."
               value={searchString}
               onChange={handleChange}
-             />
+            />
             <button
               style={{backgroundColor: 'white', borderWidth: '0'}}
               type="submit"
