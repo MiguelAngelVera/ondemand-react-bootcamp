@@ -55,6 +55,7 @@ export default function Selector({itemData, cart}) {
                 .map((item) => ({label: item, value: item}))}
               name="qtySelector"
               inputId="qtySelector"
+              placeholder={cart ? itemData.qty : qty}
               onChange={(e) =>
                 handleChange(
                   e,
