@@ -16,7 +16,6 @@ const handleChange = (
   setQty,
   setDisableButton,
 ) => {
-  console.log(e)
   !cart
     ? setQty(parseInt(e.value, 10))
     : setCartItems(
@@ -67,23 +66,7 @@ export default function Selector({itemData, cart}) {
                   setDisableButton,
                 )
               }
-
-              // defaultValue={cart ? itemData.qty : qty}
-              // defaultValue={value: '1', label: '1'}
-              // placeholder={cart ? itemData.qty : qty}
-
-              // {[...Array(itemData.data.stock + 1).keys()]
-              //   .slice(1)
-              //   .map((item) => ({label: item, value: item}))}
             />
-            {/* {[...Array(itemData.data.stock + 1).keys()]
-                .slice(1)
-                .map((item) => (
-                  <option key={item} value={item}>
-                    {item}
-                  </option>
-                ))}
-            </Select> */}
           </form>
           {!cart && <p>stock: {itemData.data.stock}</p>}
         </td>

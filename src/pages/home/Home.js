@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import BannerApi from '../../components/banner/BannerApi'
 import CarouselApi from '../../components/carousel/CarouselApi'
 import HomeButton from '../../components/HomeButton'
@@ -13,6 +12,7 @@ function HomePage() {
       <BannerApi />
       <CarouselApi />
       <ProductsApi />
+      <HomeButton />
       <Space />
     </>
   )

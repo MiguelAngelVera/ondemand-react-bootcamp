@@ -7,7 +7,6 @@ import '@testing-library/jest-dom/extend-expect'
 import {rest} from 'msw'
 import {setupServer} from 'msw/node'
 import ProductsApi from './ProductsApi'
-import ProductGrid from '../productGrid/ProductGrid'
 import {ListProvider} from '../../states/ListContext'
 import PrductsApiTest from '../../mocks/ProductsApiTest.json'
 

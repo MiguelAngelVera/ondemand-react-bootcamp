@@ -6,7 +6,6 @@ import '@testing-library/jest-dom/extend-expect'
 import {MemoryRouter} from 'react-router-dom'
 import {rest} from 'msw'
 import {setupServer} from 'msw/node'
-import BannetTest from '../../mocks/BannerTest.json'
 import Products from '../../mocks/ProductFilterTest/Products.json'
 import SearchPage from '../../pages/search/SearchPage'
 import {ListProvider} from '../../states/ListContext'
@@ -40,12 +39,9 @@ const server = setupServer(
     },
   ),
 )
-// Establish API mocking before all tests.
+
 beforeAll(() => server.listen())
-// Reset any request handlers that we may add during the tests,
-// so they don't affect other tests.
 afterEach(() => server.resetHandlers())
-// Clean up after the tests are finished.
 afterAll(() => server.close())
 
 describe('5 - Test Search Results Page ', () => {

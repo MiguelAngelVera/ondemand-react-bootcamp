@@ -29,14 +29,9 @@ export default function ProductFilterApi() {
     useFeaturedBanners(categoryEncode, categoryLanguage, categoryPageSize)
   const {
     setSearchFor,
-    //filteredProducts,
-    //defaultfiltered,
     setFilteredProducts,
     param,
     setParam,
-    // setProductEncode,
-    // setProductPageSize,
-    // setProductLanguage,
     currentPage,
     setCurrentPage,
     setActiveItem,
@@ -54,9 +49,6 @@ export default function ProductFilterApi() {
   // Call API and retreive data
   useEffect(() => {
     setParam(params.get('category') ?? '')
-    // setProductEncode('[[at(document.type, "product")]]')
-    // setProductPageSize(100)
-    // setProductLanguage('en-us')
   }, [])
 
   // Filters following the categories selected
@@ -66,16 +58,6 @@ export default function ProductFilterApi() {
     100,
     feature,
   )
-
-  // useEffect(() => {
-  //   !productisLoading && filtered.results
-  //   ? setDefaultfiltered(
-  //       filtered.results.filter((it) =>
-  //         it.data.category.slug.toLowerCase().includes(''),
-  //       ),
-  //     )
-  //   : null
-  // }, [filtered,productisLoading])
 
   useEffect(() => {
     focus ? setFocus(false) : null

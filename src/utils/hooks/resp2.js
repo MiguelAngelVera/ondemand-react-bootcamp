@@ -6,12 +6,17 @@ import axios from 'axios'
 import {API_BASE_URL} from '../constants'
 import {useLatestAPI} from './useLatestAPI'
 
-export function useFeaturedBanners(encodes, languages, pageSizes, featureds) {
+export function useFeaturedBanners(
+  encodes,
+  languages,
+  pageSizes,
+  feature = '',
+) {
   const {ref: apiRef, isLoading: isApiMetadataLoading} = useLatestAPI()
   const pageSize = pageSizes
   const encoder = encodes
   const language = languages
-  const featured = featureds
+  const featured = feature
   const [featuredBanners, setFeaturedBanners] = useState(() => ({
     data: {},
     isLoading: true,
@@ -43,6 +48,5 @@ export function useFeaturedBanners(encodes, languages, pageSizes, featureds) {
 
     getFeaturedBanners()
   }, [apiRef, isApiMetadataLoading])
-  console.log(featuredBanners)
   return featuredBanners
 }

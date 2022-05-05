@@ -1,31 +1,17 @@
 /* eslint-disable arrow-body-style */
 
 import React from 'react'
-import {select} from 'react-select-event'
-import {
-  fireEvent,
-  getByTestId,
-  render,
-  screen,
-  waitFor,
-} from '@testing-library/react'
+import {fireEvent, render, screen, waitFor} from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 import {MemoryRouter} from 'react-router-dom'
 import selectEvent from 'react-select-event'
 import {rest} from 'msw'
 import {setupServer} from 'msw/node'
-import BannetTest from '../../mocks/BannerTest.json'
-import Products from '../../mocks/ProductFilterTest/Products.json'
-import SearchPage from '../../pages/search/SearchPage'
 import {ListProvider} from '../../states/ListContext'
-import Header from '../header/Header'
 import CartPage from './CartPage'
-import HomePage from '../../pages/home/Home'
-import App from '../../App'
 import PrductsApiTest from '../../mocks/ProductsApiTest.json'
 import ProductsApi from '../products/ProductsApi'
 import '@testing-library/jest-dom'
-import Select from 'react-select'
 
 Window.getComputedStyle = () => {}
 window.scrollTo = jest.fn()
@@ -121,7 +107,7 @@ describe('6 - Test Shopping Cart Page ', () => {
   })
 
   it('6.4- List of products is shown ', async () => {
-    const {getByTestId, getByText, getByLabelText, queryByText} = render(
+    const {getByTestId, getByText, getByLabelText} = render(
       <ListProvider>
         <MemoryRouter>
           <CartPage />
@@ -145,41 +131,5 @@ describe('6 - Test Shopping Cart Page ', () => {
     const deleteItem = screen.getByRole('button', {name: /removeFromCart/i})
     fireEvent.click(deleteItem)
     expect(screen.getByText(/nothing to show on your cart/i))
-
-    // expect(getByTestId('form')).toHaveFormValues({qtySelector: ''})
-    // const node = getByLabelText('QtySelector')
-    // await select(node, '2')
-    // expect(getByTestId('form')).toHaveFormValues({qtySelector: '2'})
-
-    // expect(screen.getAllByText(new RegExp(`total.*80.00`, 'i')))´
-    //  screen.getAllByRole('yjbb', {name: /addtocartbutton/i})
   })
-
-  // expect(getByTestId('form')).toHaveFormValues({qtySelector: ''})
-  // const node = getByLabelText('QtySelector')
-  // await select(node, '2')
-  // expect(getByTestId('form')).toHaveFormValues({qtySelector: '2'})
-
-  // expect(screen.getAllByText(new RegExp(`total.*80.00`, 'i')))´
-  //  screen.getAllByRole('yjbb', {name: /addtocartbutton/i})
 })
-//   it('5.2 - Empty State', async () => {
-//     render(
-//       <ListProvider>
-//         <MemoryRouter>
-//           <Header search="FailDummy" />
-//           <SearchPage searchString="cover" />
-//         </MemoryRouter>
-//       </ListProvider>,
-//     )
-
-//     expect(screen.queryByText(/nothing to show/i)).toBeNull()
-
-//     const search = await waitFor(() =>
-//       screen.getByRole('button', {name: /searchbutton/i}),
-//     )
-
-//     fireEvent.click(search)
-
-//     await waitFor(() => screen.getByText(/nothing to show/i))
-//   })

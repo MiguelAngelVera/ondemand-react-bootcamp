@@ -1,5 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, {useEffect, useState} from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 import {Link, useNavigate} from 'react-router-dom'
 import {ReactComponent as MainLogo} from '../../utils/assets/main-logo.svg'
 import {ReactComponent as SearchLogo} from '../../utils/assets/search-icon.svg'
@@ -73,4 +75,11 @@ export default function Header({search}) {
       <NavBar search={search} />
     </styles.MainHeader>
   )
+}
+
+NavBar.propTypes = {
+  search: PropTypes.string.isRequired,
+}
+Header.propTypes = {
+  search: PropTypes.string.isRequired,
 }

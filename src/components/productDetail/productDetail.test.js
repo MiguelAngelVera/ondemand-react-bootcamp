@@ -6,12 +6,9 @@ import {fireEvent, render, screen, waitFor} from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 import {rest} from 'msw'
 import {setupServer} from 'msw/node'
-import CarousselTest from '../../mocks/CarousselTest.json'
 import ProductDetail from './productDetail'
 import {ListProvider} from '../../states/ListContext'
 import ProductDetailTest from '../../mocks/ProductDetailTest/ProductDetailTest.json'
-import ProductFilterApi from '../productFilter/ProductFilterApi'
-import ProductFilterTest from '../../mocks/ProductDetailTest/ProductFilterTest.json'
 import Categories from '../../mocks/ProductFilterTest/Categories.json'
 import HeaderCart from '../header/HeaderCart'
 
@@ -21,7 +18,6 @@ const server = setupServer(
   rest.get(
     'https://wizeline-academy.cdn.prismic.io/api/v2/documents/search',
     (req, res, ctx) => {
-      console.log(req.url.search)
       const test = req.url.search
       if (test.includes('.id')) {
         return res(ctx.status(200), ctx.json(ProductDetailTest))
@@ -49,12 +45,8 @@ const server = setupServer(
   ),
 )
 
-//Establish API mocking before all tests.
 beforeAll(() => server.listen())
-// Reset any request handlers that we may add during the tests,
-// so they don't affect other tests.
 afterEach(() => server.resetHandlers())
-// Clean up after the tests are finished.
 afterAll(() => server.close())
 
 describe('4 - Product Detail Page: Test', () => {

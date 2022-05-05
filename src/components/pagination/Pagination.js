@@ -1,3 +1,4 @@
+/* eslint-disable prefer-template */
 import React, {useContext} from 'react'
 import PropTypes from 'prop-types'
 import ListContext from '../../states/ListContext'
