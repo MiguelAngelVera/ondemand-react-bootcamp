@@ -14,9 +14,6 @@ const server = setupServer(
   rest.get(
     'https://wizeline-academy.cdn.prismic.io/api/v2/documents/search',
     (req, res, ctx) => {
-      //   const test = req
-      //   console.log(test)
-
       return res(ctx.status(200), ctx.json(PrductsApiTest))
     },
   ),
@@ -39,42 +36,22 @@ const server = setupServer(
     },
   ),
 )
-// Establish API mocking before all tests.
+
 beforeAll(() => server.listen())
-// Reset any request handlers that we may add during the tests,
-// so they don't affect other tests.
 afterEach(() => server.resetHandlers())
-// Clean up after the tests are finished.
 afterAll(() => server.close())
 
-it('fetch and render', async () => {
-  render(
-    <ListProvider>
-      <MemoryRouter>
-        <ProductsApi />
-      </MemoryRouter>
-    </ListProvider>,
-  )
-  const bannerElements = await waitFor(() => screen.getAllByRole('img'))
-  expect(bannerElements.length).toBe(14)
+describe('2 - Home Page:', () => {
+  it('2.3 - Fetch and render Products Grid', async () => {
+    render(
+      <ListProvider>
+        <MemoryRouter>
+          <ProductsApi />
+        </MemoryRouter>
+      </ListProvider>,
+    )
+    /* Find 14 (mandatory) images displayed */
+    const bannerElements = await waitFor(() => screen.getAllByRole('img'))
+    expect(bannerElements.length).toBe(14)
+  })
 })
-
-// it('failed fetch and render', async () => {
-//   server.use(
-//     rest.get(
-//       'https://wizeline-academy.cdn.prismic.io/api/v2/documents/search',
-//       (req, res, ctx) => {
-//         return res(ctx.status(404))
-//       },
-//     ),
-//   )
-//   render(
-//     <MemoryRouter>
-//       <CarouselApi />
-//     </MemoryRouter>,
-//   )
-//   const error = await waitFor(() =>
-//     screen.getByRole('heading', {name: /norender/i}),
-//   )
-//   expect(error).toBeInTheDocument()
-// })

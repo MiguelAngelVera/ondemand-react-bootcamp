@@ -49,8 +49,8 @@ beforeEach(() => server.listen())
 afterEach(() => server.resetHandlers())
 afterAll(() => server.close())
 
-describe('Fetch and Rendr Test', () => {
-  it('Fetch from API and Render Products in Products Page', async () => {
+describe('3 - Product List Page', () => {
+  it('3.1 -  Category Sidebar fetching and rendering', async () => {
     render(
       <ListProvider>
         <MemoryRouter>
@@ -65,81 +65,76 @@ describe('Fetch and Rendr Test', () => {
     expect(categories.length).toBe(5)
   })
 })
+it('3.2 - Category Sidebar', async () => {
+  render(
+    <ListProvider>
+      <MemoryRouter>
+        <ProductFilterApi />
+      </MemoryRouter>
+    </ListProvider>,
+  )
+  /* Find the product 'Desk Lamp Ezra', which belongs to Lightning category */
+  await waitFor(() => screen.getByText(/Ezra/))
 
-describe('Filtering Test', () => {
-  it('Applying Filtering to display only Decorate category', async () => {
-    render(
-      <ListProvider>
-        <MemoryRouter>
-          <ProductFilterApi />
-        </MemoryRouter>
-      </ListProvider>,
-    )
-    /* Find the product 'Desk Lamp Ezra', which belongs to Lightning category */
-    await waitFor(() => screen.getByText(/Ezra/))
+  /* Find 'Decorate' filter button */
+  const button = await waitFor(() =>
+    screen.getByRole('button', {name: /decorate/}),
+  )
 
-    /* Find 'Decorate' filter button */
-    const button = await waitFor(() =>
-      screen.getByRole('button', {name: /decorate/}),
-    )
+  /* Click on 'Decorate' button to apply filter */
+  fireEvent.click(button)
 
-    /* Click on 'Decorate' button to apply filter */
-    fireEvent.click(button)
+  /* Validating 'Desk Lamp Ezra' is not displayed anymore */
+  expect(screen.queryByText(/Ezra/)).toBeNull()
 
-    /* Validating 'Desk Lamp Ezra' is not displayed anymore */
-    expect(screen.queryByText(/Ezra/)).toBeNull()
-
-    /* Validating 'Fair Isle Snowflake Lumbar Cushion Cover' stills
+  /* Validating 'Fair Isle Snowflake Lumbar Cushion Cover' stills
     displayed because belongs to 'Decorate' category */
-    await waitFor(() => screen.getByText(/Fair Isle Snowflake/))
-  })
+  await waitFor(() => screen.getByText(/Fair Isle Snowflake/))
 })
 
-describe('Pagination Test', () => {
-  it('', async () => {
-    render(
-      <ListProvider>
-        <MemoryRouter>
-          <ProductFilterApi />
-        </MemoryRouter>
-      </ListProvider>,
-    )
-    /* Mock Api contains 30 prodcts
+it('3.3 - Pagination Controls', async () => {
+  render(
+    <ListProvider>
+      <MemoryRouter>
+        <ProductFilterApi />
+      </MemoryRouter>
+    </ListProvider>,
+  )
+  /* Mock Api contains 30 prodcts
     Considering that 12 items are displayd by page,
     there sould be 3 pages */
 
-    /* Find pagination buttons */
-    const buttons = await waitFor(() =>
-      screen.getAllByRole('button', {name: /paginationButton/}),
-    )
+  /* Find pagination buttons */
+  const buttons = await waitFor(() =>
+    screen.getAllByRole('button', {name: /paginationButton/}),
+  )
 
-    /* Validating that there are three */
-    expect(buttons.length).toBe(3)
+  /* Validating that there are three */
+  expect(buttons.length).toBe(3)
 
-    /* Validating that page 1 is activated using the visual indicator */
-    expect(screen.queryByText(/page: 1/i)).not.toBeNull()
-    expect(screen.queryByText(/page: 2/i)).toBeNull()
-    expect(screen.queryByText(/page: 3/i)).toBeNull()
+  /* Validating that page 1 is activated using the visual indicator */
+  expect(screen.queryByText(/page: 1/i)).not.toBeNull()
+  expect(screen.queryByText(/page: 2/i)).toBeNull()
+  expect(screen.queryByText(/page: 3/i)).toBeNull()
 
-    /* Validating that only 12 items are displayed per page */
-    const items = await waitFor(() => screen.getAllByRole('img'))
-    expect(items.length).toBe(12)
+  /* Validating that only 12 items are displayed per page */
+  const items = await waitFor(() => screen.getAllByRole('img'))
+  expect(items.length).toBe(12)
 
-    /* Click to change to Page 3 */
-    const Page3 = await waitFor(() => screen.getByText('3'))
-    fireEvent.click(Page3)
+  /* Click to change to Page 3 */
+  const Page3 = await waitFor(() => screen.getByText('3'))
+  fireEvent.click(Page3)
 
-    /* Validating that page 2 is activated using the visual indicator */
-    expect(screen.queryByText(/page: 1/i)).toBeNull()
-    expect(screen.queryByText(/page: 2/i)).toBeNull()
-    expect(screen.queryByText(/page: 3/i)).not.toBeNull()
+  /* Validating that page 2 is activated using the visual indicator */
+  expect(screen.queryByText(/page: 1/i)).toBeNull()
+  expect(screen.queryByText(/page: 2/i)).toBeNull()
+  expect(screen.queryByText(/page: 3/i)).not.toBeNull()
 
-    /* Mock Api contains 30 prodcts
+  /* Mock Api contains 30 prodcts
     Considering that 12 items are displayd by page,
     in page three should be only 6 items */
 
-    /* Validating that only 6 items are displayed in page 3 */
-    const items3 = await waitFor(() => screen.getAllByRole('img'))
-    expect(items3.length).toBe(6)
-  })
+  /* Validating that only 6 items are displayed in page 3 */
+  const items3 = await waitFor(() => screen.getAllByRole('img'))
+  expect(items3.length).toBe(6)
 })

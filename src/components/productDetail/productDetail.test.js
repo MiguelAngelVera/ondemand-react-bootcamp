@@ -58,6 +58,8 @@ describe('4 - Product Detail Page: Test', () => {
         </MemoryRouter>
       </ListProvider>,
     )
+    /* Find the three images that belong
+    to the cataloge defined in the mock API */
     const GoDetailPage = await waitFor(() => screen.getAllByRole('img'))
     expect(GoDetailPage.length).toBe(3)
   })
@@ -70,17 +72,24 @@ describe('4 - Product Detail Page: Test', () => {
         </MemoryRouter>
       </ListProvider>,
     )
+    /* Name displayed */
+    await waitFor(() => screen.getByRole('heading', {name: /nameValue/i}))
+    /* Price displayed */
     await waitFor(() => screen.getByRole('heading', {name: /priceLabel/i}))
     await waitFor(() => screen.getByRole('heading', {name: /priceValue/i}))
     await waitFor(() => screen.getByText(/\$[1-9]+/i))
+    /* Sku displayed */
     await waitFor(() => screen.getByRole('heading', {name: /skuLabel/i}))
     await waitFor(() => screen.getByRole('heading', {name: /skuValue/i}))
+    /* Category displayed */
     await waitFor(() => screen.getByRole('heading', {name: /categoryLabel/i}))
     await waitFor(() => screen.getByRole('heading', {name: /categoryValue/i}))
     await waitFor(() => screen.getByText(/decorate/i))
+    /* Description displayed */
     await waitFor(() =>
       screen.getByRole('heading', {name: /descriptionLabel/i}),
     )
+    /* Tags */
     await waitFor(() => screen.getByRole('heading', {name: /specsLabel/i}))
     const specs = await waitFor(() =>
       screen.getAllByRole('heading', {name: /specsValue/i}),
@@ -110,14 +119,18 @@ describe('4 - Product Detail Page: Test', () => {
         </MemoryRouter>
       </ListProvider>,
     )
+    /* Validating with the pop number in the header that cart is empty */
     const ProductsOnCarBefore = await waitFor(() =>
       screen.queryByRole('heading', {name: /numberOfProducts/i}),
     )
     expect(ProductsOnCarBefore).toBeNull()
 
+    /* By default, the selector is configured to displays the number 1.
+    Click on add to cart to add 1 element */
     const button = await waitFor(() => screen.getByRole('button'))
     fireEvent.click(button)
 
+    /* Validating that just one element was send to the cart */
     const ProductsOnCarAfter = await waitFor(() =>
       screen.queryByRole('heading', {name: /numberOfProducts/i}),
     )
@@ -134,11 +147,21 @@ it('4.5 - Add to cart disable', async () => {
       </MemoryRouter>
     </ListProvider>,
   )
-
+  /* Addind 50 items to the cart */
   const button = await waitFor(() => screen.getByRole('button'))
   for (let i = 0; i < 50; i += 1) {
     fireEvent.click(button)
   }
+
+  /* Verifying that only 48 items appears in the 
+  pop number in the header, even though 50 items were tried 
+  to add */
+  /* The number 48 is from the stock declared in mock API */
   const validator = await waitFor(() => screen.getAllByText('48'))
   expect(validator.length).toBe(1)
+
+  /* My botton only disappiers when there is a change in the selector
+  and the sum (numberSelected, itemsOnCart) is grater than the available stock. In this case, theres no 
+  change , so the button does not dissapier, but the logic of the code prevents users from
+  adding more items than the stock allows */
 })

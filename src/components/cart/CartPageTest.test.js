@@ -42,12 +42,9 @@ const server = setupServer(
     },
   ),
 )
-// Establish API mocking before all tests.
+
 beforeAll(() => server.listen())
-// Reset any request handlers that we may add during the tests,
-// so they don't affect other tests.
 afterEach(() => server.resetHandlers())
-// Clean up after the tests are finished.
 afterAll(() => server.close())
 
 describe('6 - Test Shopping Cart Page ', () => {
@@ -59,9 +56,10 @@ describe('6 - Test Shopping Cart Page ', () => {
         </MemoryRouter>
       </ListProvider>,
     )
+    /* Validating that empty state text appears */
     expect(screen.getByText(/nothing to show on your cart/i))
   })
-  it('6.2 - List of products is shown ', async () => {
+  it('6.2, 6.3 - List of products is shown and sum of the subtotals', async () => {
     render(
       <ListProvider>
         <MemoryRouter>
@@ -70,43 +68,52 @@ describe('6 - Test Shopping Cart Page ', () => {
         </MemoryRouter>
       </ListProvider>,
     )
+
+    /* 6.2 - List of products is shown */
+    /* Add 3 different items to the cart */
     const cartButtons = await waitFor(() =>
       screen.getAllByRole('button', {name: /addtocartbutton/i}),
     )
     expect(cartButtons.length).toBe(14)
-
     fireEvent.click(cartButtons[0])
     fireEvent.click(cartButtons[1])
     fireEvent.click(cartButtons[2])
 
+    /* Three images displayed */
     expect(screen.getAllByRole('img', {name: /imgItemCart/i}).length).toBe(3)
-    expect(screen.getAllByRole('img', {name: /imgItemCart/i}).length).toBe(3)
+    /* Three Product labels displayed */
     expect(screen.getAllByText(/Product:/i).length).toBe(3)
+    /* Three Price labels displayed */
     expect(screen.getAllByText(/Price:/i).length).toBe(3)
+    /* Three Prices displayed */
     expect(screen.getAllByText(/US\$[0-9]+/i).length).toBe(3)
+    /* Three Selectors displayed */
     expect(screen.getAllByRole('combobox', {name: /qtyselector/i}).length).toBe(
       3,
     )
+    /* Three Subtotals displayed */
     expect(screen.getAllByText(/subtotal: \$[0-9]+/i).length).toBe(3)
+    /* Three Remove buttons displayed */
     expect(
       screen.getAllByRole('button', {name: /removeFromCart/i}).length,
     ).toBe(3)
 
+    /* 6.3 - Total label displays the sum of the subtotals of all items in the cart. */
+    /* The price of the three items added to cart */
     const subtotal1 = 40
     const subtotal2 = 147
     const subtotal3 = 41
+    /* Validating that the three prices are displayed and are correct */
     expect(screen.getAllByText(new RegExp(`subtotal.*${subtotal1}.00`, 'i')))
     expect(screen.getAllByText(new RegExp(`subtotal.*${subtotal2}.00`, 'i')))
     expect(screen.getAllByText(new RegExp(`subtotal.*${subtotal3}.00`, 'i')))
-
+    /* sum of the subtotals */
     const total = subtotal1 + subtotal2 + subtotal3
+    /* Validating that the sum is displayed and correct */
     expect(screen.getAllByText(new RegExp(`total.*${total}.00`, 'i')))
-
-    // fireEvent.click(qtySelector[0])
-    // expect(screen.getAllByRole('cofcfmbobox', {name: /qtyselector/i}))
   })
 
-  it('6.4- List of products is shown ', async () => {
+  it('6.4, 6.5 - Update the quantity of items and remove item from the cart ', async () => {
     const {getByTestId, getByText, getByLabelText} = render(
       <ListProvider>
         <MemoryRouter>
@@ -115,21 +122,27 @@ describe('6 - Test Shopping Cart Page ', () => {
         </MemoryRouter>
       </ListProvider>,
     )
+
+    /* 6.4 - Update the quantity of items */
+    /* Populate Cart Page with one item form Product Grid */
     const cartButtons = await waitFor(() =>
       screen.getAllByRole('button', {name: /addtocartbutton/i}),
     )
     expect(cartButtons.length).toBe(14)
-
     fireEvent.click(cartButtons[0])
-
-    expect(getByTestId('form')).toHaveFormValues({qtySelector: ''})
+    /* Once in the cart, change the selector from 1 to 3 units of the same item */
     selectEvent.openMenu(getByLabelText('Qty'))
-    const test = getByText('2')
+    const test = getByText('3')
     fireEvent.click(test)
-    expect(getByTestId('form')).toHaveFormValues({qtySelector: '2'})
+    /* Now the selector displays 3 units */
+    expect(getByTestId('form')).toHaveFormValues({qtySelector: '3'})
 
+    /* 6.5 - Remove item from the cart */
+    /* Click to remove the item from the cart */
     const deleteItem = screen.getByRole('button', {name: /removeFromCart/i})
     fireEvent.click(deleteItem)
+    /* As the only item in the cart was remove, the empty state indicator 
+    should be displayed */
     expect(screen.getByText(/nothing to show on your cart/i))
   })
 })

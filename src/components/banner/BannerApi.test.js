@@ -34,32 +34,35 @@ const server = setupServer(
     },
   ),
 )
-// Establish API mocking before all tests.
+
 beforeAll(() => server.listen())
-// Reset any request handlers that we may add during the tests,
-// so they don't affect other tests.
 afterEach(() => server.resetHandlers())
-// Clean up after the tests are finished.
 afterAll(() => server.close())
 
-it('fetch and render', async () => {
-  render(<BannerApp />)
-  const bannerElements = await waitFor(() => screen.getAllByRole('img'))
-  expect(bannerElements.length).toBe(3)
-})
+describe('2 - Home Page:', () => {
+  it('2.1 - Fetch and render Banner', async () => {
+    render(<BannerApp />)
 
-it('failed fetch and render', async () => {
-  server.use(
-    rest.get(
-      'https://wizeline-academy.cdn.prismic.io/api/v2/documents/search',
-      (req, res, ctx) => {
-        return res(ctx.status(404))
-      },
-    ),
-  )
-  render(<BannerApp />)
-  const error = await waitFor(() =>
-    screen.getByRole('heading', {name: /norender/i}),
-  )
-  expect(error).toBeInTheDocument()
+    /* Find three images from de mock API */
+    const bannerElements = await waitFor(() => screen.getAllByRole('img'))
+    expect(bannerElements.length).toBe(3)
+  })
+
+  it('2.1.1 - Error calling mock API', async () => {
+    /* New request with error */
+    server.use(
+      rest.get(
+        'https://wizeline-academy.cdn.prismic.io/api/v2/documents/search',
+        (req, res, ctx) => {
+          return res(ctx.status(404))
+        },
+      ),
+    )
+    render(<BannerApp />)
+    /* Find header that is displayed when theres no API answer */
+    const error = await waitFor(() =>
+      screen.getByRole('heading', {name: /norender/i}),
+    )
+    expect(error).toBeInTheDocument()
+  })
 })

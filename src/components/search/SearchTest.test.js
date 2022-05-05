@@ -55,19 +55,23 @@ describe('5 - Test Search Results Page ', () => {
       </ListProvider>,
     )
 
+    /* The SearchPage is configured to show all the items when
+    there is no searchTerm provided ir it is empty (""). Because of this,
+    it should display the 20 elements (mandatory) per page */
     const imgItems = await waitFor(() => screen.getAllByRole('img'))
-    expect(imgItems.length).not.toBe(1)
-    expect(imgItems.length).not.toBe(0)
+    expect(imgItems.length).toBe(20)
 
+    /* Click the button to apply the search of the searchTerm. In this case
+    the searchTerm is "towel" (indicated as parameter in the render event) */
     const search = await waitFor(() =>
       screen.getByRole('button', {name: /searchbutton/i}),
     )
-
     fireEvent.click(search)
 
+    /* In the mock API there is only one match, and thus showing 
+    only one element is displayed */
     const imgTowels = await waitFor(() => screen.getAllByRole('img'))
     expect(imgTowels.length).toBe(1)
-
     const towels = await waitFor(() => screen.getAllByAltText(/towel/i))
     expect(towels.length).toBe(1)
   })
@@ -81,15 +85,16 @@ describe('5 - Test Search Results Page ', () => {
         </MemoryRouter>
       </ListProvider>,
     )
-
+    /* Validating that empty state text is not displayed */
     expect(screen.queryByText(/nothing to show/i)).toBeNull()
 
+    /* Apply search of random string (indicated as parameter in the render event) */
     const search = await waitFor(() =>
       screen.getByRole('button', {name: /searchbutton/i}),
     )
-
     fireEvent.click(search)
 
+    /* Validating that empty state appiers */
     await waitFor(() => screen.getByText(/nothing to show/i))
   })
 })
