@@ -45,7 +45,6 @@ export default function Selector({itemData, cart}) {
       <tr>
         <td />
         <td style={{display: 'flex'}}>
-          <h5 style={{margin: 0}}>qty: </h5>
           <form data-testid="form">
             <label htmlFor="qtySelector">Qty</label>
             <Select
