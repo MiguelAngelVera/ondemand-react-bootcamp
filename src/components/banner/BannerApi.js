@@ -33,20 +33,18 @@ export default function BannerApp() {
       slideref.current.addEventListener('transitionend', append)
     }
   }
-
   useEffect(() => {
     const autoChange = setInterval(() => {
       Slider()
     }, 2500)
     return () => clearInterval(autoChange)
   }, [])
-
   return (
     <>
       <styles.Title>Popular Products</styles.Title>
       <styles.Container>
         <styles.SlideContainer ref={slideref}>
-          {!bannerIsLoading ? (
+          {!bannerIsLoading && bannerDataApi.results ? (
             bannerDataApi.results.map((item) => (
               <styles.BannerStyle key={item.id}>
                 <BannerBox
@@ -56,7 +54,7 @@ export default function BannerApp() {
               </styles.BannerStyle>
             ))
           ) : (
-            <h2>Loading...</h2>
+            <h2 aria-label="noRender">Loading...</h2>
           )}
         </styles.SlideContainer>
       </styles.Container>

@@ -44,7 +44,7 @@ export default function ProductGrid({productisLoading, product, feature}) {
         <h2 style={{textAlign: 'center'}}>Loading...</h2>
       ) : null}
       <styles.Container>
-        {!productisLoading
+        {!productisLoading && product.length
           ? product.map((itemData) => (
               <styles.ProductCard key={itemData.data.sku + feature}>
                 <Image

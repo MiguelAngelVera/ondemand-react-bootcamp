@@ -31,6 +31,7 @@ export default function AddToCart({itemData, qty}) {
   const {cartItems, setCartItems} = useContext(ListContext)
   return (
     <ProducttoCart
+      aria-label="addToCartButton"
       onClick={(e) => handleClick(e, itemData, cartItems, setCartItems, qty)}
     >
       Add to Cart

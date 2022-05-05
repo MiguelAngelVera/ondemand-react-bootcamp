@@ -1,7 +1,7 @@
 .Pages {
   overflow: hidden;
-  padding: 5vw 0;
-  height: 100px;
+  padding-top: 5vw;
+  height: 50px;
   width: auto;
   display: flex;
   list-style-type: none;
@@ -12,6 +12,7 @@
 .Page {
   width: 30px;
   margin: 4px;
+  max-height: 40px;
   align-items: center;
 }
 
@@ -25,6 +26,9 @@
   border-width: 1px;
   border-color: blue;
   font-size: 2vw;
+}
+.CurrentPage {
+  text-align: left;
 }
 @media only screen and (max-width: 900px) {
   .Pages {
@@ -40,7 +44,9 @@
   }
   .Page {
     /* margin: 2vw; */
-
     align-items: center;
+  }
+  .CurrentPage {
+    text-align: center;
   }
 }

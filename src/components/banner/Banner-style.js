@@ -34,13 +34,13 @@ export const BannerStyle = styled.div`
   min-width: 100%;
   height: 80%;
   transition: 0.3s ease all;
-  img {
+  /* img {
     height: 100%;
     display: block;
     margin-top: center;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
 `
 export const Title = styled.div`
   padding: 0 6vw;
@@ -50,4 +50,12 @@ export const Title = styled.div`
   @media (max-width: 900px) {
     font-size: 3vw;
   }
+`
+
+export const ImageBox = styled.img`
+  height: 100%;
+  display: block;
+  margin-top: center;
+  margin-left: auto;
+  margin-right: auto;
 `

@@ -40,7 +40,6 @@ export default function CarouselApi() {
       carouselslide.current.addEventListener('transitionend', append)
     }
   }
-
   const Prev = () => {
     if (carouselslide.current.children.length > 0) {
       const index = carouselslide.current.children.length - 1
@@ -68,12 +67,14 @@ export default function CarouselApi() {
     <>
       <styles.Title>Departments</styles.Title>
       {carouselIsLoading ? (
-        <h2 style={{textAlign: 'center'}}>Loading...</h2>
+        <h2 aria-label="noRender" style={{textAlign: 'center'}}>
+          Loading...
+        </h2>
       ) : null}
       <styles.Container>
         <styles.CardBackground>
           <styles.CardContainer ref={carouselslide}>
-            {!carouselIsLoading
+            {!carouselIsLoading && carouselDataApi.results
               ? carouselDataApi.results.map((item) => (
                   <styles.Card
                     key={item.id}

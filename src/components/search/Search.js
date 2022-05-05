@@ -18,12 +18,13 @@ export default function Search() {
 
   const [filteredSearchList, setFilteredSearchList] = useState('')
   const [filteredSearchPagination, setfilteredSearchPagination] = useState('')
+  const [searchString, setSearchString] = useState('')
   const {
     setProductEncode,
     setProductPageSize,
     setProductLanguage,
-    searchString,
-    setSearchString,
+    // searchString,
+    // setSearchString,
     filterSearchName,
     setFilterSearchName,
     filterSearchCat,
@@ -64,15 +65,15 @@ export default function Search() {
         temp = temp.concat(item)
       }
     })
-    filterSearchDesc.map((item) => {
-      skuKey = item.data.sku
-      found = temp.filter((meta) =>
-        meta.data.sku.toLowerCase().includes(skuKey),
-      )
-      if (!found.length) {
-        temp = temp.concat(item)
-      }
-    })
+    // filterSearchDesc.map((item) => {
+    //   skuKey = item.data.sku
+    //   found = temp.filter((meta) =>
+    //     meta.data.sku.toLowerCase().includes(skuKey),
+    //   )
+    //   if (!found.length) {
+    //     temp = temp.concat(item)
+    //   }
+    // })
     filterSearchCat.map((item) => {
       skuKey = item.data.sku
       found = temp.filter((meta) =>

@@ -1,3 +1,4 @@
+/* eslint-disable prefer-template */
 /* eslint-disable no-sequences */
 /* eslint-disable no-nested-ternary */
 /* eslint-disable no-return-assign */
@@ -28,14 +29,14 @@ export default function ProductFilterApi() {
     useFeaturedBanners(categoryEncode, categoryLanguage, categoryPageSize)
   const {
     setSearchFor,
-    filteredProducts,
-    defaultfiltered,
+    //filteredProducts,
+    //defaultfiltered,
     setFilteredProducts,
     param,
     setParam,
-    setProductEncode,
-    setProductPageSize,
-    setProductLanguage,
+    // setProductEncode,
+    // setProductPageSize,
+    // setProductLanguage,
     currentPage,
     setCurrentPage,
     setActiveItem,
@@ -53,13 +54,28 @@ export default function ProductFilterApi() {
   // Call API and retreive data
   useEffect(() => {
     setParam(params.get('category') ?? '')
-    setProductEncode('[[at(document.type, "product")]]')
-    setProductPageSize(100)
-    setProductLanguage('en-us')
+    // setProductEncode('[[at(document.type, "product")]]')
+    // setProductPageSize(100)
+    // setProductLanguage('en-us')
   }, [])
 
   // Filters following the categories selected
-  const {productisLoading} = useFilter(feature)
+  const {defaultfiltered, productisLoading, filteredProducts} = useFilter(
+    '[[at(document.type, "product")]]',
+    'en-us',
+    100,
+    feature,
+  )
+
+  // useEffect(() => {
+  //   !productisLoading && filtered.results
+  //   ? setDefaultfiltered(
+  //       filtered.results.filter((it) =>
+  //         it.data.category.slug.toLowerCase().includes(''),
+  //       ),
+  //     )
+  //   : null
+  // }, [filtered,productisLoading])
 
   useEffect(() => {
     focus ? setFocus(false) : null
@@ -89,7 +105,7 @@ export default function ProductFilterApi() {
     const indexFirstItem = indexLastItem - postPerPage
     setProductPagination(productList.slice(indexFirstItem, indexLastItem))
     window.scrollTo(0, 0)
-  }, [productList, currentPage, productList])
+  }, [productList, currentPage])
 
   const handleFiltering = (e, categoryClicked) => (
     e.target.style.color === 'gray'
@@ -118,7 +134,6 @@ export default function ProductFilterApi() {
     setSearchParams(searchParams)
     setFocus(true)
   }
-
   return (
     <styles.Container>
       <styles.NavBarContainer>
@@ -129,12 +144,17 @@ export default function ProductFilterApi() {
           <ul>
             <styles.NavBarList>
               {!focus ? (
-                !categoryIsLoading ? (
+                !categoryIsLoading && categoryDataApi.results ? (
                   categoryDataApi.results.map((item) =>
                     item.data.name.toLowerCase() !==
                     param.replace('--', ' & ') ? (
                       <li key={item.id} style={myStyleGray} name={item.id}>
                         <styles.FilterButton
+                          id={item.data.name.toLowerCase()}
+                          aria-label={
+                            item.data.name.toLowerCase() +
+                            ' categoryFilterRendered'
+                          }
                           type="button"
                           onClick={(e) =>
                             handleFiltering(e, item.data.name.toLowerCase())
@@ -147,6 +167,11 @@ export default function ProductFilterApi() {
                     ) : (
                       <li key={item.id} style={myStyleBlue} name={item.id}>
                         <styles.FilterButton
+                          id={item.data.name.toLowerCase()}
+                          aria-label={
+                            item.data.name.toLowerCase() +
+                            ' categoryFilterRendered'
+                          }
                           type="button"
                           onClick={(e) =>
                             handleFiltering(e, item.data.name.toLowerCase())
@@ -161,10 +186,14 @@ export default function ProductFilterApi() {
                 ) : (
                   <li style={{textAlign: 'center'}}>Loading...</li>
                 )
-              ) : !categoryIsLoading ? (
+              ) : !categoryIsLoading && categoryDataApi.results ? (
                 categoryDataApi.results.map((item) => (
                   <li key={item.data.name} style={myStyleGray} name={item.id}>
                     <styles.FilterButton
+                      id={item.data.name.toLowerCase()}
+                      aria-label={
+                        item.data.name.toLowerCase() + ' categoryFilterRendered'
+                      }
                       type="button"
                       onClick={(e) =>
                         handleFiltering(e, item.data.name.toLowerCase())

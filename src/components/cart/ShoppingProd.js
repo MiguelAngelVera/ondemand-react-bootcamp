@@ -64,65 +64,68 @@ export default function ShoppingProd({checkout}) {
 
   return (
     <Medium>
-      {cartItems.length
-        ? cartItems.map((item) => (
-            <Row key={item.id}>
-              <ProductDetails>
-                <Image src={item.data.mainimage.url} />
-                <Text>
+      {cartItems.length ? (
+        cartItems.map((item) => (
+          <Row key={item.id}>
+            <ProductDetails>
+              <Image aria-label="imgItemCart" src={item.data.mainimage.url} />
+              <Text>
+                <Name aria-label="nameItemCart">
+                  <b>Product: </b>
+                  {item.data.name.toUpperCase()}
+                </Name>
+                {checkout && (
                   <Name>
-                    <b>Product: </b>
-                    {item.data.name.toUpperCase()}
+                    <b>Qty: </b>
+                    {item.qty}
                   </Name>
-                  {checkout && (
-                    <Name>
-                      <b>Qty: </b>
-                      {item.qty}
-                    </Name>
-                  )}
-                  {!checkout && (
-                    <Category>
-                      <b>Category: </b>
-                      {item.data.category.slug}
-                    </Category>
-                  )}
-                  {!checkout && (
-                    <Price>
-                      <b>Price: </b>${item.data.price}
-                    </Price>
-                  )}
-                  {!checkout && (
-                    <Name>
-                      Stock:
-                      {item.data.stock}
-                    </Name>
-                  )}
-                </Text>
-              </ProductDetails>
-              <CartActions>
-                {!checkout && (
-                  <Remove
-                    onClick={(e) =>
-                      handleClick(e, cartItems, setCartItems, item.id)
-                    }
-                  >
-                    Remove
-                  </Remove>
                 )}
-                <Text>
-                  <table>
-                    <tbody>
-                      {!checkout && <Selector itemData={item} cart />}
-                    </tbody>
-                  </table>
+                {!checkout && (
+                  <Category>
+                    <b>Category: </b>
+                    {item.data.category.slug}
+                  </Category>
+                )}
+                {!checkout && (
+                  <Price>
+                    <b>Price: </b>US${item.data.price}
+                  </Price>
+                )}
+                {!checkout && (
                   <Name>
-                    <b>Subtotal: </b>${(item.qty * item.data.price).toFixed(2)}
+                    Stock:
+                    {item.data.stock}
                   </Name>
-                </Text>
-              </CartActions>
-            </Row>
-          ))
-        : null}
+                )}
+              </Text>
+            </ProductDetails>
+            <CartActions>
+              {!checkout && (
+                <Remove
+                  aria-label="removeFromCart"
+                  onClick={(e) =>
+                    handleClick(e, cartItems, setCartItems, item.id)
+                  }
+                >
+                  Remove
+                </Remove>
+              )}
+              <Text>
+                <table>
+                  <tbody>
+                    {!checkout && <Selector itemData={item} cart />}
+                  </tbody>
+                </table>
+                <Name>
+                  Subtotal: ${(item.qty * item.data.price).toFixed(2)}
+                </Name>
+              </Text>
+            </CartActions>
+          </Row>
+        ))
+      ) : (
+        <h1>Nothing to Show on Your Cart...</h1>
+      )}
     </Medium>
   )
 }

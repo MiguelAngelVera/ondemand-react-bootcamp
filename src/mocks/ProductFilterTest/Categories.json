@@ -1,0 +1,49 @@
+{
+  "results": [
+    {
+      "id": "YWHyYRIAACgAykCqmock",
+      "data": {
+        "name": "Decorate",
+        "category": {
+          "slug": "mock1"
+        }
+      }
+    },
+    {
+      "id": "YWHy0xIAACoAykKmmock",
+      "data": {
+        "name": "Lighting",
+        "category": {
+          "slug": "mock2"
+        }
+      }
+    },
+    {
+      "id": "YWHxkhIAAC4Ayj0Jmock",
+      "data": {
+        "name": "Kitchen",
+        "category": {
+          "slug": "mock3"
+        }
+      }
+    },
+    {
+      "id": "YWHviRIAACsAyjP3mock",
+      "data": {
+        "name": "Furniture",
+        "category": {
+          "slug": "mock4"
+        }
+      }
+    },
+    {
+      "id": "YWHx-xIAAC0Ayj7imock",
+      "data": {
+        "name": "Bed & Bath",
+        "category": {
+          "slug": "mock5"
+        }
+      }
+    }
+  ]
+}

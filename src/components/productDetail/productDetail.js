@@ -24,41 +24,61 @@ function InfoBox({
 }) {
   return (
     <>
-      <h1 style={{color: 'black', margin: 0}}>{itemName}</h1>
+      <h1 aria-label="nameValue" style={{color: 'black', margin: 0}}>
+        {itemName}
+      </h1>
       <styles.Line />
       <styles.MainTable>
         <tbody>
           <tr>
             <td>
-              <h5 style={{color: '#6495ed', marginTop: '5vw'}}>List Price:</h5>
+              <h5
+                aria-label="priceLabel"
+                style={{color: '#6495ed', marginTop: '5vw'}}
+              >
+                List Price:
+              </h5>
             </td>
             <td>
-              <h2 style={{color: 'black', marginTop: '5vw'}}>${itemPrice}</h2>
+              <h2
+                aria-label="priceValue"
+                style={{color: 'black', marginTop: '5vw'}}
+              >
+                ${itemPrice}
+              </h2>
             </td>
           </tr>
           <Selector itemData={itemData} cart={false} />
           <tr>
             <td>
-              <h5 style={{margin: 1, marginTop: '5vw'}}>sku:</h5>
+              <h5 aria-label="skuLabel" style={{margin: 1, marginTop: '5vw'}}>
+                sku:
+              </h5>
             </td>
             <td>
               <styles.Line />
-              <h5 style={{margin: 1, marginTop: '5vw'}}>{itemSku}</h5>
+              <h5 aria-label="skuValue" style={{margin: 1, marginTop: '5vw'}}>
+                {itemSku}
+              </h5>
             </td>
           </tr>
           <tr>
             <td>
-              <h5 style={{margin: 1}}>Category:</h5>
+              <h5 aria-label="categoryLabel" style={{margin: 1}}>
+                Category:
+              </h5>
             </td>
             <td>
-              <h5 style={{margin: 1}}>
+              <h5 aria-label="categoryValue" style={{margin: 1}}>
                 {itemCategory.replace('--', ' & ').toUpperCase()}
               </h5>
             </td>
           </tr>
           <tr>
             <td>
-              <h5 style={{margin: 1}}>Description:</h5>
+              <h5 aria-label="descriptionLabel" style={{margin: 1}}>
+                Description:
+              </h5>
             </td>
             <td>
               <p style={{margin: 1, textAlign: 'justify', width: '90%'}}>
@@ -69,12 +89,18 @@ function InfoBox({
           </tr>
           <tr>
             <td style={{verticalAlign: 'top'}}>
-              <h5 style={{margin: 1}}>Things you must know:</h5>
+              <h5 aria-label="specsLabel" style={{margin: 1}}>
+                Things you must know:
+              </h5>
             </td>
 
             <td style={{verticalAlign: 'top'}}>
               {itemSpecs.map((item) => (
-                <h5 key={item.spec_name} style={{margin: 10, marginTop: 0}}>
+                <h5
+                  aria-label="specsValue"
+                  key={item.spec_name}
+                  style={{margin: 10, marginTop: 0}}
+                >
                   {item.spec_name}: {item.spec_value}
                 </h5>
               ))}

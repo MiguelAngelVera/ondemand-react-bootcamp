@@ -1,18 +1,24 @@
 /* eslint-disable arrow-body-style */
 
 import React from 'react'
+import {MemoryRouter} from 'react-router-dom'
 import {render, screen, waitFor} from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 import {rest} from 'msw'
 import {setupServer} from 'msw/node'
-import BannerApp from './BannerApi'
-import BannetTest from '../../mocks/BannerTest.json'
+import ProductsApi from './ProductsApi'
+import ProductGrid from '../productGrid/ProductGrid'
+import {ListProvider} from '../../states/ListContext'
+import PrductsApiTest from '../../mocks/ProductsApiTest.json'
 
 const server = setupServer(
   rest.get(
     'https://wizeline-academy.cdn.prismic.io/api/v2/documents/search',
     (req, res, ctx) => {
-      return res(ctx.status(200), ctx.json(BannetTest))
+      //   const test = req
+      //   console.log(test)
+
+      return res(ctx.status(200), ctx.json(PrductsApiTest))
     },
   ),
   rest.get(
@@ -43,23 +49,33 @@ afterEach(() => server.resetHandlers())
 afterAll(() => server.close())
 
 it('fetch and render', async () => {
-  render(<BannerApp />)
+  render(
+    <ListProvider>
+      <MemoryRouter>
+        <ProductsApi />
+      </MemoryRouter>
+    </ListProvider>,
+  )
   const bannerElements = await waitFor(() => screen.getAllByRole('img'))
-  expect(bannerElements.length).toBe(3)
+  expect(bannerElements.length).toBe(14)
 })
 
-it('failed fetch and render', async () => {
-  server.use(
-    rest.get(
-      'https://wizeline-academy.cdn.prismic.io/api/v2/documents/search',
-      (req, res, ctx) => {
-        return res(ctx.status(404))
-      },
-    ),
-  )
-  render(<BannerApp />)
-  const error = await waitFor(() =>
-    screen.getByRole('heading', {name: /norender/i}),
-  )
-  expect(error).toBeInTheDocument()
-})
+// it('failed fetch and render', async () => {
+//   server.use(
+//     rest.get(
+//       'https://wizeline-academy.cdn.prismic.io/api/v2/documents/search',
+//       (req, res, ctx) => {
+//         return res(ctx.status(404))
+//       },
+//     ),
+//   )
+//   render(
+//     <MemoryRouter>
+//       <CarouselApi />
+//     </MemoryRouter>,
+//   )
+//   const error = await waitFor(() =>
+//     screen.getByRole('heading', {name: /norender/i}),
+//   )
+//   expect(error).toBeInTheDocument()
+// })

@@ -5,21 +5,25 @@ import {useContext, useEffect} from 'react'
 import {useFeaturedBanners} from './useFeaturedBanners'
 import ListContext from '../../states/ListContext'
 
-export default function useFilter(feature) {
+export default function useFilter(
+  productEncode,
+  productLanguage,
+  productPageSize,
+) {
   const {
     searchFor,
     filteredProducts,
     setFilteredProducts,
     setDefaultfiltered,
+    defaultfiltered,
     param,
-    productEncode,
-    productPageSize,
-    productLanguage,
+    // productEncode,
+    // productPageSize,
+    // productLanguage,
   } = useContext(ListContext)
 
   const {data: productDataApi, isLoading: productisLoading} =
-    useFeaturedBanners(productEncode, productLanguage, productPageSize, feature)
-
+    useFeaturedBanners(productEncode, productLanguage, productPageSize)
   useEffect(() => {
     let found = ''
     let temp = ''
@@ -37,7 +41,7 @@ export default function useFilter(feature) {
             : setFilteredProducts({...filteredProducts, [category]: found}))
         : null
     const defaultFiltering = () =>
-      !productisLoading
+      !productisLoading && productDataApi.results
         ? setDefaultfiltered(
             productDataApi.results.filter((it) =>
               it.data.category.slug.toLowerCase().includes(''),
@@ -51,10 +55,9 @@ export default function useFilter(feature) {
           )),
           setFilteredProducts({[param]: found}))
         : null
-    window.scrollTo(0, 0)
     param !== '' && !category.length
       ? paramFiltering()
       : (filtering(), defaultFiltering())
   }, [productisLoading, searchFor])
-  return {productisLoading}
+  return {defaultfiltered, productisLoading, filteredProducts}
 }

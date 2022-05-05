@@ -2,6 +2,7 @@ import React, {useContext} from 'react'
 import PropTypes from 'prop-types'
 import ListContext from '../../states/ListContext'
 import './Pagination.css'
+import Space from '../Space'
 
 export default function Pagination({postPerPage, totalPosts}) {
   const {setCurrentPage, activeItem, setActiveItem} = useContext(ListContext)
@@ -18,23 +19,30 @@ export default function Pagination({postPerPage, totalPosts}) {
   }
 
   return (
-    <nav>
-      <ul className="Pages">
-        {pageNumbers.map((number) => (
-          <li key={number} className="Page">
-            <button
-              type="button"
-              key={number}
-              name={number}
-              onClick={(e) => handleClick(e, number)}
-              className={activeItem === number ? 'PageButtonOn' : 'PageButton'}
-            >
-              {number}
-            </button>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <>
+      <nav>
+        <ul className="Pages">
+          {pageNumbers.map((number) => (
+            <li key={number} className="Page">
+              <button
+                aria-label={activeItem + 'paginationButton'}
+                type="button"
+                key={number}
+                name={number}
+                onClick={(e) => handleClick(e, number)}
+                className={
+                  activeItem === number ? 'PageButtonOn' : 'PageButton'
+                }
+              >
+                {number}
+              </button>
+            </li>
+          ))}
+        </ul>
+        <h3 className="CurrentPage">Page: {activeItem}</h3>
+      </nav>
+      <Space />
+    </>
   )
 }
 

@@ -9,7 +9,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
 `
-const NumberOfItems = styled.p`
+const NumberOfItems = styled.h5`
   background-color: black;
   color: white;
   border-radius: 50%;
@@ -26,7 +26,7 @@ export default function HeaderCart() {
         <CartLogoIcon />
       </Link>
       {cartItems.length ? (
-        <NumberOfItems>
+        <NumberOfItems aria-label="numberOfProducts">
           {cartItems.map((item) => item.qty).reduce((acc, curr) => acc + curr)}
         </NumberOfItems>
       ) : null}
