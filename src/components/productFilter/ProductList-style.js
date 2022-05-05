@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   overflow: hidden;
@@ -13,7 +13,7 @@ export const Container = styled.div`
   @media (max-width: 900px) {
     display: inline;
   }
-`;
+`
 export const NavBarContainer = styled.nav`
   margin-left: 8vw;
   background-color: #e6e6e6;
@@ -37,7 +37,7 @@ export const NavBarContainer = styled.nav`
     z-index: 3;
     padding-top: 10vw;
   }
-`;
+`
 
 export const NavBarList = styled.div`
   @media (max-width: 900px) {
@@ -45,7 +45,7 @@ export const NavBarList = styled.div`
     flex-wrap: nowrap;
     justify-content: space-evenly;
   }
-`;
+`
 export const NavBarCard = styled.div`
   h1 {
     font-size: 1.6vw;
@@ -87,20 +87,20 @@ export const NavBarCard = styled.div`
       gap: 3vw;
     }
   }
-`;
+`
 
 export const ProductContainer = styled.div`
   background-color: #e6e6e6;
   @media (max-width: 900px) {
     padding: 10vw 0;
   }
-`;
+`
 export const ProductCard = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
   background-color: #e6e6e6;
-`;
+`
 
 export const ProductImage = styled.div`
   background-color: white;
@@ -113,13 +113,13 @@ export const ProductImage = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
-`;
+`
 
 export const Line = styled.div`
   margin: auto 13px;
   border: 0.6px solid gray;
   opacity: 30%;
-`;
+`
 
 export const ProductText = styled.div`
   position: relative;
@@ -129,21 +129,21 @@ export const ProductText = styled.div`
   @media (max-width: 900px) {
     padding: 4.5vw 4.5vw;
   }
-`;
+`
 export const ProductName = styled.div`
   font-size: 1vw;
   color: gray;
   @media (max-width: 900px) {
     font-size: 2.7vw;
   }
-`;
+`
 
 export const ProductPrice = styled.div`
   font-size: 1.8vw;
   @media (max-width: 900px) {
     font-size: 4vw;
   }
-`;
+`
 
 export const ProductCategory = styled.div`
   position: absolute;
@@ -153,7 +153,7 @@ export const ProductCategory = styled.div`
   @media (max-width: 900px) {
     font-size: 2vw;
   }
-`;
+`
 
 export const Paginate = styled.div`
   font-size: 1.8vw;
@@ -164,7 +164,7 @@ export const Paginate = styled.div`
   @media (max-width: 900px) {
     font-size: 4vw;
   }
-`;
+`
 export const Arrow = styled.button`
   border-radius: 0.3rem;
   background-color: #e6e6e6;
@@ -177,10 +177,17 @@ export const Arrow = styled.button`
     width: 12vw;
     height: 12vw;
   }
-`;
+`
 export const Title = styled.div`
-  margin-top: "0";
+  margin-top: '0';
   @media (max-width: 900px) {
-    margin-top: "15vw";
+    margin-top: '15vw';
   }
-`;
+`
+export const FilterButton = styled.button`
+  border-width: 0;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: #e6e6e6;
+`

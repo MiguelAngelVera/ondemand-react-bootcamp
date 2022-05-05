@@ -1,20 +1,20 @@
-import React, { useContext } from "react";
-import ListContext from "../../states/ListContext";
-import Space from "../Space";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import ShoppingProd from "./ShoppingProd";
+import React, {useContext} from 'react'
+import styled from 'styled-components'
+import {Link} from 'react-router-dom'
+import ListContext from '../../states/ListContext'
+import Space from '../Space'
+import ShoppingProd from './ShoppingProd'
 
 const Container = styled.section`
   width: 85%;
   margin: 0 auto;
-`;
-const Tittle = styled.h1``;
-const Wrapper = styled.div``;
-const Top = styled.div``;
+`
+const Tittle = styled.h1``
+const Wrapper = styled.div``
+const Top = styled.div``
 const Total = styled.p`
   text-align: right;
-`;
+`
 
 const CheckoutButton = styled.button`
   background-color: #6495ed40;
@@ -25,7 +25,7 @@ const CheckoutButton = styled.button`
     font-size: 5vw;
     width: 100vw;
   }
-`;
+`
 const Bottom = styled.div`
   display: flex;
   justify-content: right;
@@ -37,14 +37,14 @@ const Bottom = styled.div`
     margin: 0 auto;
     overflow: hidden;
   }
-`;
+`
 export default function CartPage() {
-  const { cartItems } = useContext(ListContext);
+  const {cartItems} = useContext(ListContext)
 
-  window.scrollTo(0, 0);
+  window.scrollTo(0, 0)
   return (
     <>
-      <Space></Space>
+      <Space />
       <Container>
         <Tittle>Your Cart</Tittle>
         <Wrapper>
@@ -61,11 +61,11 @@ export default function CartPage() {
               </b>
             </Total>
           </Top>
-          <ShoppingProd></ShoppingProd>
+          <ShoppingProd />
           <Bottom>
             <Link
               to="/ondemand-react-bootcamp/checkout"
-              style={{ textDecoration: "none" }}
+              style={{textDecoration: 'none'}}
             >
               {cartItems.length ? (
                 <CheckoutButton>Checkout</CheckoutButton>
@@ -74,8 +74,8 @@ export default function CartPage() {
           </Bottom>
         </Wrapper>
       </Container>
-      <Space></Space>
-      <Space></Space>
+      <Space />
+      <Space />
     </>
-  );
+  )
 }

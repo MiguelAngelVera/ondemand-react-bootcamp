@@ -1,5 +1,8 @@
-import React from "react";
-import ProductFilterApi from "../../components/productFilter/ProductFilterApi.js";
-const ProductPage = () => <ProductFilterApi></ProductFilterApi>;
+import React from 'react'
+import ProductFilterApi from '../../components/productFilter/ProductFilterApi'
 
-export default ProductPage;
+function ProductPage() {
+  return <ProductFilterApi />
+}
+
+export default ProductPage

@@ -1,34 +1,35 @@
-import { useState, useEffect } from "react";
-import { API_BASE_URL } from "../constants";
+/* eslint-disable import/prefer-default-export */
+import {useState, useEffect} from 'react'
+import {API_BASE_URL} from '../constants'
 
-const INITIAL_API_METADATA = { ref: null, isLoading: true };
+const INITIAL_API_METADATA = {ref: null, isLoading: true}
 
 export function useLatestAPI() {
-  const [apiMetadata, setApiMetadata] = useState(() => INITIAL_API_METADATA);
+  const [apiMetadata, setApiMetadata] = useState(() => INITIAL_API_METADATA)
 
   useEffect(() => {
-    const controller = new AbortController();
+    const controller = new AbortController()
 
     async function getAPIMetadata() {
       try {
-        setApiMetadata(INITIAL_API_METADATA);
+        setApiMetadata(INITIAL_API_METADATA)
 
         const response = await fetch(API_BASE_URL, {
           signal: controller.signal,
-        });
-        const { refs: [{ ref } = {}] = [] } = await response.json();
+        })
+        const {refs: [{ref} = {}] = []} = await response.json()
 
-        setApiMetadata({ ref, isLoading: false });
+        setApiMetadata({ref, isLoading: false})
       } catch (err) {
-        setApiMetadata({ ref: null, isLoading: false });
+        setApiMetadata({ref: null, isLoading: false})
       }
     }
 
-    getAPIMetadata();
+    getAPIMetadata()
 
     return () => {
-      controller.abort();
-    };
-  }, []);
-  return apiMetadata;
+      controller.abort()
+    }
+  }, [])
+  return apiMetadata
 }

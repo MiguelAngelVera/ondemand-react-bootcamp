@@ -1,0 +1,1514 @@
+{
+  "results": [
+    {
+      "id": "YZZ_XhIAAC0AvmiA",
+
+      "data": {
+        "name": "mock Fair Isle Snowflake Lumbar Cushion Cover",
+        "sku": "1107982309",
+        "category": {
+          "id": "YWHyYRIAACgAykCq",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "decorate",
+          "first_publication_date": "2021-10-09T23:32:29+0000",
+          "last_publication_date": "2021-11-18T14:27:09+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Fair Isle Snowflake Lumbar Cushion Cover",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/1c8883ca-2797-4138-a7e5-a7d2ae583192_1.jpeg?auto=compress,format"
+        },
+        "short_description": "Keeping a distinctive complex pattern without being complicated involves choosing a simple palette. The poinsettia red and ivory white in this cushion cover are two lovely colors that we enjoy all season long. The sweater-like snowflake design celebrates more than one type of holiday (reverse is sherpa-like sheepskin). Make it a snow day. The front is made of 100% yarn-dyed acrylic; It is reversed to 100% recycled polyester sherpa in white. Yarn dyed fabric has amazing vivid colors that keep their radiance over time. Holds 16 \"x 26\" fill (sold separately).",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Keeping a distinctive complex pattern without being complicated involves choosing a simple palette. The poinsettia red and ivory white in this cushion cover are two lovely colors that we enjoy all season long. The sweater-like snowflake design celebrates more than one type of holiday (reverse is sherpa-like sheepskin). Make it a snow day. The front is made of 100% yarn-dyed acrylic; It is reversed to 100% recycled polyester sherpa in white. Yarn dyed fabric has amazing vivid colors that keep their radiance over time. Holds 16 \"x 26\" fill (sold separately).",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Dimensions",
+            "spec_value": "40.26 cm high x 66 cm wide. Zipper: Approximately 61 cm long"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Fair Isle Snowflake Lumbar"
+          },
+          {
+            "spec_name": "Other information",
+            "spec_value": "Machine wash cold, inside out, on delicate cycle. Use only non-chlorine bleach, if necessary. Tumble dry on low temperature, remove immediately. Use warm iron as needed."
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/1c8883ca-2797-4138-a7e5-a7d2ae583192_1.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/741e500e-4a74-4634-b544-06fe48115cbc_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/f4645f8e-fc25-4c6f-9d28-38abb7abcace_3.jpeg?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 48,
+        "price": 40
+      }
+    },
+    {
+      "id": "YZZ6OhIAACgAvlE1",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZZ6OhIAACgAvlE1%22%29+%5D%5D",
+      "tags": ["Lamps", "Featured"],
+      "first_publication_date": "2021-11-18T16:07:25+0000",
+      "last_publication_date": "2021-11-18T16:08:09+0000",
+      "slugs": ["desk-lamp-ezra", "lampara-de-buro-ezra"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZZ52xIAAC8Avk-S",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Desk Lamp Ezra",
+        "sku": "1102665992",
+        "category": {
+          "id": "YWHy0xIAACoAykKm",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "lighting",
+          "first_publication_date": "2021-10-09T23:32:20+0000",
+          "last_publication_date": "2021-10-13T00:04:48+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Desk Lamp Ezra",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/267ca459-c37b-4187-a59e-9e7c55e0b09a_1.webp?auto=compress,format"
+        },
+        "short_description": "Craftsmanship and practical functionality come together in our eye-catching accent lamp. Crafted from tough ceramic with gently curved contours, Ezra is hand finished with a reactive glaze that imparts a rich, varied tone and unique character. Made of ceramic with a reactive Teal Glazed finish applied by hand. Pluggable. The lamp has an on / off switch located in the socket. Transparent PVC cord. UL Listed Dry. It has capacity for 1 bulb type A of 60 W or equivalent to LED (not included). E26 plug.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Craftsmanship and practical functionality come together in our eye-catching accent lamp. Crafted from tough ceramic with gently curved contours, Ezra is hand finished with a reactive glaze that imparts a rich, varied tone and unique character. Made of ceramic with a reactive Teal Glazed finish applied by hand. Pluggable. The lamp has an on / off switch located in the socket. Transparent PVC cord. UL Listed Dry. It has capacity for 1 bulb type A of 60 W or equivalent to LED (not included). E26 plug.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Base Material",
+            "spec_value": "Ceramic"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Ezra"
+          },
+          {
+            "spec_name": "Watts",
+            "spec_value": "60 W"
+          },
+          {
+            "spec_name": "Weight",
+            "spec_value": "2.26 kg"
+          },
+          {
+            "spec_name": "Dimensions",
+            "spec_value": "Measurements: 16.51 cm diameter x 55.8 cm high approximate"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/267ca459-c37b-4187-a59e-9e7c55e0b09a_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/d4dfb5e0-1f35-4ba7-a61b-e5e5f7b4e7bb_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/5e69abf6-972e-4595-9a4f-86ae1b0b8b83_3.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 9,
+        "price": 147
+      }
+    },
+    {
+      "id": "YZZ-ThIAAC4AvmNn",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZZ-ThIAAC4AvmNn%22%29+%5D%5D",
+      "tags": ["Living Room", "Featured"],
+      "first_publication_date": "2021-11-18T16:24:50+0000",
+      "last_publication_date": "2021-11-18T16:24:50+0000",
+      "slugs": ["cojin-faye-azul"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZZ9-xIAACwAvmHG",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Cojín Faye Azul",
+        "sku": "1091816888",
+        "category": {
+          "id": "YWHyYRIAACgAykCq",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "decorate",
+          "first_publication_date": "2021-10-09T23:32:29+0000",
+          "last_publication_date": "2021-11-18T14:27:09+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Faye Blue Throw Pillow",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/39db837a-8a39-48fc-9937-5d496027bc79_1.jpeg?auto=compress,format"
+        },
+        "short_description": "The soft texture makes a room cozier. This cushion features a beautiful variation of ups and downs and features a subtle diamond pattern that works with all styles. Oeko-Tex Certified: This product is free of harmful and irritating toxins; the production is ecological and does not generate water, air or noise pollution.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "The soft texture makes a room cozier. This cushion features a beautiful variation of ups and downs and features a subtle diamond pattern that works with all styles. Oeko-Tex Certified: This product is free of harmful and irritating toxins; the production is ecological and does not generate water, air or noise pollution.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Care and cleaning instructions",
+            "spec_value": "Machine wash cold; smooth cycle. Use only non-chlorine bleach when necessary. Dry low"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Blue"
+          },
+          {
+            "spec_name": "Dimensions",
+            "spec_value": "50.80 cm x 50.80 cm"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/39db837a-8a39-48fc-9937-5d496027bc79_1.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/56f55c28-e085-403b-b7f1-dcb704c842d0_2.jpeg?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 49,
+        "price": 41
+      }
+    },
+    {
+      "id": "YZWTvxIAACkAujoz",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZWTvxIAACkAujoz%22%29+%5D%5D",
+      "tags": ["Featured", "Bathrobe"],
+      "first_publication_date": "2021-11-17T23:44:02+0000",
+      "last_publication_date": "2021-11-17T23:44:02+0000",
+      "slugs": ["bathrobe-disney-mickey-mouse", "bata-disney-mickey-mouse"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZWTYRIAAC4Aujh-",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Bathrobe Disney Mickey Mouse",
+        "sku": "1107982422",
+        "category": {
+          "id": "YWHx-xIAAC0Ayj7i",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "bed--bath",
+          "first_publication_date": "2021-10-09T23:33:05+0000",
+          "last_publication_date": "2021-10-12T23:45:23+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Bathrobe Disney Mickey Mouse",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/7cbed35a-d943-44c9-956c-a59cbb81e2ba_1.jpeg?auto=compress,format"
+        },
+        "short_description": "Brighten up your space with the all-magic mascot: Disney's Mickey Mouse. And we don't just mean decoration. Why not pay tribute to one of the world's most famous people with this hooded robe complete with Mickey ears.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Brighten up your space with the all-magic mascot: Disney's Mickey Mouse. And we don't just mean decoration. Why not pay tribute to one of the world's most famous people with this hooded robe complete with Mickey's ears.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Material",
+            "spec_value": "Polyester"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Disney Mickey Mouse"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Multicolor"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/7cbed35a-d943-44c9-956c-a59cbb81e2ba_1.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/21745ea3-f277-499c-956d-3da04cab40f4_2.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 14,
+        "price": 82
+      }
+    },
+    {
+      "id": "YZU5oBIAAC0AuKK-",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZU5oBIAAC0AuKK-%22%29+%5D%5D",
+      "tags": ["Plato", "Christmas", "Featured"],
+      "first_publication_date": "2021-11-17T17:19:31+0000",
+      "last_publication_date": "2021-11-17T17:19:31+0000",
+      "slugs": [
+        "plato-forest-gnome-christmas-tree",
+        "platon-forest-gnome-christmas-tree"
+      ],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZU5JhIAAC4AuKCQ",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Plato Forest Gnome Christmas Tree",
+        "sku": "1107975833",
+        "category": {
+          "id": "YWHxkhIAAC4Ayj0J",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "kitchen",
+          "first_publication_date": "2021-10-09T23:33:27+0000",
+          "last_publication_date": "2021-10-12T23:35:55+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Plato Forest Gnome Christmas Tree",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/da0de922-eb41-4ff1-8839-2917c9aa7a33_0.jpeg?auto=compress,format"
+        },
+        "short_description": "There is no gnome place home this holiday season. Illustrating a fairytale forest scene, the art in this collection was originally painted by our in-house design team to add a touch of winter magic to your meals. The tree-shaped platter cheerfully features hors d'oeuvres, salads and side dishes, colorful treats, and more.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "There is no gnome place home this holiday season. Illustrating a fairytale forest scene, the art in this collection was originally painted by our in-house design team to add a touch of winter magic to your meals. The tree-shaped platter cheerfully features hors d'oeuvres, salads and side dishes, colorful treats, and more.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Other information",
+            "spec_value": "Made of stoneware. It has a decorated white enamel finish. Lead Free. Measurements: 40 cm wide x 33.7 cm deep approximate"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Forest Gnome Christmas Tree"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Multicolor"
+          },
+          {
+            "spec_name": "Care and cleaning instructions",
+            "spec_value": "Although the dishes are safe for microwave use, they can get hot. Drive carefully"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/da0de922-eb41-4ff1-8839-2917c9aa7a33_0.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/51dc3751-936b-4970-a236-534c41240d99_1.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/784e97a6-55a3-48c9-ae2e-b9f4f5ead163_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/24e24f50-1744-435e-995b-f9fe4a2efbf6_3.jpeg?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 17,
+        "price": 74
+      }
+    },
+    {
+      "id": "YZV_4hIAACkAueDO",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZV_4hIAACkAueDO%22%29+%5D%5D",
+      "tags": ["Bowl", "Featured"],
+      "first_publication_date": "2021-11-17T22:19:17+0000",
+      "last_publication_date": "2021-11-17T22:19:17+0000",
+      "slugs": ["set-of-4-larkin-bowls", "set-de-4-bowls-larkin"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZV_cBIAAC4Aud7I",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Set of 4 Larkin Bowls",
+        "sku": "1105574742",
+        "category": {
+          "id": "YWHxkhIAAC4Ayj0J",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "kitchen",
+          "first_publication_date": "2021-10-09T23:33:27+0000",
+          "last_publication_date": "2021-10-12T23:35:55+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Set of 4 Larkin Bowls",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/00881d86-ab89-47ff-94ad-f142ad8169ff_1.webp?auto=compress,format"
+        },
+        "short_description": "Taking a fresh approach to traditional ceramic traditions, our elegant Larkin dinnerware collection highlights its artisan sensibility with a reactive glaze and rustic appeal. In iconic coupe designs, each tonal beauty features distinctly variegated hues and enamel patterns. From this dynamic design come our refined and rustic soup bowls, which adorn a table rich in tone and texture.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Taking a fresh approach to traditional ceramic traditions, our elegant Larkin dinnerware collection highlights its artisan sensibility with a reactive glaze and rustic appeal. In iconic coupe designs, each tonal beauty features distinctly variegated hues and enamel patterns. From this dynamic design come our refined and rustic soup bowls, which adorn a table rich in tone and texture.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Material",
+            "spec_value": "Gres"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Larkin"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Beiger"
+          },
+          {
+            "spec_name": "Details",
+            "spec_value": "Made from stoneware with a matte glazed finish. Free of phthalates, BPA, lead and latex. Capacity: 370 ml"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/00881d86-ab89-47ff-94ad-f142ad8169ff_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/ca651120-d8eb-4988-a554-c67af0f3476c_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/877239f8-9e45-48a5-a473-68eae90ec323_3.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 17,
+        "price": 41
+      }
+    },
+    {
+      "id": "YZWLYBIAACwAuhSS",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZWLYBIAACwAuhSS%22%29+%5D%5D",
+      "tags": ["Silverware", "Featured"],
+      "first_publication_date": "2021-11-17T23:08:20+0000",
+      "last_publication_date": "2021-11-17T23:08:20+0000",
+      "slugs": [
+        "shiny-hammered-cutlery-set",
+        "set-de-cubiertos-shiny-hammered"
+      ],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZWKwxIAAC4AuhHW",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Shiny Hammered Cutlery Set",
+        "sku": "1041018298",
+        "category": {
+          "id": "YWHxkhIAAC4Ayj0J",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "kitchen",
+          "first_publication_date": "2021-10-09T23:33:27+0000",
+          "last_publication_date": "2021-10-12T23:35:55+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Shiny Hammered Cutlery Set",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/91d8e0a6-70e6-48fe-8258-6476ab2f3627_1.webp?auto=compress,format"
+        },
+        "short_description": "The meticulous finish gives this cutlery collection an original and elegant look, perfect for your table. Includes salad fork, carving fork, knife, soup spoon, and coffee spoon. Crafted from 18/10 stainless steel that will stay sharp and shiny for years to come.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "The meticulous finish gives this cutlery collection an original and elegant look, perfect for your table. Includes salad fork, carving fork, knife, soup spoon, and coffee spoon. Crafted from 18/10 stainless steel that will stay sharp and shiny for years to come.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Material",
+            "spec_value": "Stainless steel"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Silver"
+          },
+          {
+            "spec_name": "Dimensions",
+            "spec_value": "Carving Fork: 8.5 \"long x 3.81 cm wide Soup Spoon: 8.5\" long x 5.08 cm wide Knife: 22.86 cm long x 2.54 cm wide Dessert Fork: 19.05 cm long x 2.54 cm wide width. Dessert Spoon: 16.51 cm long x 3.81 cm wide."
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/91d8e0a6-70e6-48fe-8258-6476ab2f3627_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/e48abba1-98f8-4e77-980b-4032a555d495_3.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/9176c338-2121-4335-90f3-62c13716c44b_2.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 46,
+        "price": 73
+      }
+    },
+    {
+      "id": "YZV8FBIAAC8Auc-c",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZV8FBIAAC8Auc-c%22%29+%5D%5D",
+      "tags": ["Plate", "Christmas", "Featured"],
+      "first_publication_date": "2021-11-17T22:03:04+0000",
+      "last_publication_date": "2021-11-17T22:03:04+0000",
+      "slugs": [
+        "set-of-4-trinche-forest-gnome-plates",
+        "set-de-4-platos-trinche-forest-gnome"
+      ],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZV7dBIAAC0AuczN",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Set of 4 Trinche Forest Gnome Plates",
+        "sku": "1107975256",
+        "category": {
+          "id": "YWHxkhIAAC4Ayj0J",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "kitchen",
+          "first_publication_date": "2021-10-09T23:33:27+0000",
+          "last_publication_date": "2021-10-12T23:35:55+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Set of 4 Trinche Forest Gnome Plates",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/922ca6ac-249a-48aa-8d0e-821da1841cdb_1.jpeg?auto=compress,format"
+        },
+        "short_description": "There is no gnome place home. Illustrating a fairytale forest scene, the art in this collection was originally painted by our in-house design team to add a touch of Christmas magic to your meals. This set includes four carving plates, which can be combined with other pieces in the collection to achieve a completely coordinated table design.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "There is no gnome place home. Illustrating a fairytale forest scene, the art in this collection was originally painted by our in-house design team to add a touch of Christmas magic to your meals. This set includes four carving plates, which can be combined with other pieces in the collection to achieve a completely coordinated table design.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Color",
+            "spec_value": "Multicolor"
+          },
+          {
+            "spec_name": "Other Information",
+            "spec_value": "Made of stoneware. It is finished with a glossy enamel decoration. Free of phthalates, BPA, lead and latex"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Forest Gnome"
+          },
+          {
+            "spec_name": "Product diameter",
+            "spec_value": "27.3 cm"
+          },
+          {
+            "spec_name": "Care and cleaning instructions",
+            "spec_value": "Dishwasher and microwave safe. Although the dishes are safe for microwave use, they can get hot."
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/922ca6ac-249a-48aa-8d0e-821da1841cdb_1.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/583cb1b3-711f-4e3b-a382-57b2352d445e_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/cdf6b68f-cbae-4f6b-9d00-8ec3b6c2942a_3.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/00812db4-06c1-4b89-8f67-8a7cfdf23b82_4.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/8c62f060-274e-4418-a1ce-07a60485f2d5_5.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/723fb04b-d5be-4e43-aeb5-3080c5da8b1e_6.jpeg?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 76,
+        "price": 66
+      }
+    },
+    {
+      "id": "YWMHuxIAAC8Azxdw",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWMHuxIAAC8Azxdw%22%29+%5D%5D",
+      "tags": ["Living Room", "Armchair", "Featured"],
+      "first_publication_date": "2021-10-10T15:33:18+0000",
+      "last_publication_date": "2021-10-25T22:58:21+0000",
+      "slugs": ["grayton-armchair", "sillon-grayton"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YWMHGxIAAC4AzxSn",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Grayton Armchair",
+        "sku": "1105659063",
+        "category": {
+          "id": "YWHviRIAACsAyjP3",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "furniture",
+          "first_publication_date": "2021-10-09T23:34:39+0000",
+          "last_publication_date": "2021-10-12T23:30:58+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Grayton Armchair",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/2a136772-dcee-4eba-9da4-ad3468504bdb_1.webp?auto=compress,format"
+        },
+        "short_description": "Inclined arm. The cushions are not removable. The kiln-dried, corner-locked rubber wood frame provides exceptional structural integrity.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Inclined arm. The cushions are not removable. The kiln-dried, corner-locked rubber wood frame provides exceptional structural integrity. Kiln-dried wood helps prevent warping, splitting, cracking, and the development of mold. Premium quality, aniline dyed. The skin will soften and clear with use and the passage of time, developing an elegant patina. Leather is a natural product. Variations in color and texture are inherent to each skin; no two pieces are exactly alike. The cushion is supported by steel springs that do not sag. Fixed legs have a natural distressed finish. Polyester wrapped cushions for a firmer feel.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Style",
+            "spec_value": "Contemporary"
+          },
+          {
+            "spec_name": "Leg shape",
+            "spec_value": "Conical"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Brown"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Grayton"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "77.47 cm"
+          },
+          {
+            "spec_name": "Product height",
+            "spec_value": "77.47 cm"
+          },
+          {
+            "spec_name": "Product depth",
+            "spec_value": "71.12 cm"
+          },
+          {
+            "spec_name": "Care and cleaning instructions",
+            "spec_value": "Never use detergents"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Leather"
+          },
+          {
+            "spec_name": "Structure Material",
+            "spec_value": "Wood"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/2a136772-dcee-4eba-9da4-ad3468504bdb_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/577b9bc0-122a-44bb-b8a4-dd75d8689566_2.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 8,
+        "price": 1689.74
+      }
+    },
+    {
+      "id": "YZUOFhIAACoAt9QL",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZUOFhIAACoAt9QL%22%29+%5D%5D",
+      "tags": ["Glasses", "Featured"],
+      "first_publication_date": "2021-11-17T14:15:35+0000",
+      "last_publication_date": "2021-11-17T14:28:54+0000",
+      "slugs": ["recycled-sea-glass"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZUPnRIAACwAt9sf",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Recycled Sea Glass",
+        "sku": "1102656292",
+        "category": {
+          "id": "YWHxkhIAAC4Ayj0J",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "kitchen",
+          "first_publication_date": "2021-10-09T23:33:27+0000",
+          "last_publication_date": "2021-10-12T23:35:55+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Recycled Sea Glass",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/de6f41b0-a97e-485e-99ff-742cfeb86d82_5.webp?auto=compress,format"
+        },
+        "short_description": "Inspired by the sun-bleached look of sea glass, our collection evokes a casual seaside sensibility. Crafted from recycled glass with an organic texture, these drinking glasses feature a translucent finish...",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Inspired by the sun-bleached look of sea glass, our collection evokes a casual seaside sensibility. Crafted from recycled glass with an organic texture, these drinking glasses feature a translucent finish with delicate bubbles to provide visual dimension. Ideal for backyard barbecues or poolside parties, they add a quintessential look to summer entertaining.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Care and Cleaning Instructions",
+            "spec_value": "Dishwasher safe"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Glass"
+          },
+          {
+            "spec_name": "Capacity",
+            "spec_value": "341 ml"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/b752776d-08bb-4152-9624-6aaa6d82781a_1.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/f6c7bf4c-847d-4aee-9f4b-235cdb274b81_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/e02e9420-14f6-45d8-9043-268a25f02076_2.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/a2b85cc8-716a-4a94-aafb-28766e9937b6_4.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/de6f41b0-a97e-485e-99ff-742cfeb86d82_5.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 4,
+        "price": 12.98
+      }
+    },
+    {
+      "id": "YZW2BBIAACgAutST",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZW2BBIAACgAutST%22%29+%5D%5D",
+      "tags": ["Duvet", "Featured"],
+      "first_publication_date": "2021-11-18T02:10:17+0000",
+      "last_publication_date": "2021-11-18T02:10:17+0000",
+      "slugs": ["duvet-willow"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZW1ZRIAAC8AutHM",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Duvet Willow",
+        "sku": "1099506308",
+        "category": {
+          "id": "YWHx-xIAAC0Ayj7i",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "bed--bath",
+          "first_publication_date": "2021-10-09T23:33:05+0000",
+          "last_publication_date": "2021-10-12T23:45:23+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Duvet Willow",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/770e6ae1-df13-4339-b260-c10f17ea7dd9_1.webp?auto=compress,format"
+        },
+        "short_description": "Oeko-Tex Certified, the definitive mark of excellence for products that are healthy for you and the environment. The duvet features a concealed button closure with internal ties that keep the padding in place. Pre-washed for a super soft touch feeling.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Oeko-Tex Certified, the definitive mark of excellence for products that are healthy for you and the environment. The duvet features a concealed button closure with internal ties that keep the padding in place. Pre-washed for a super soft touch feeling.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Composition",
+            "spec_value": "70% linen and 30% cotton twill fabric"
+          },
+          {
+            "spec_name": "Details",
+            "spec_value": "Yarn dyed for long-lasting vibrant color"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Linen"
+          },
+          {
+            "spec_name": "Washing instructions",
+            "spec_value": "Machine wash cold; smooth cycle with similar colors. Use only non-chlorine bleach if necessary. Dry at low temperature; extract on time. Hot iron as needed"
+          },
+          {
+            "spec_name": "Dimensions",
+            "spec_value": "Double-Queen size: 2.33 m long x 2.74 m wide. King size: 2.33 m long x 2.74 m wide approximate"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/770e6ae1-df13-4339-b260-c10f17ea7dd9_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/b0a0f398-c3d4-4c86-9654-4da57fcb28d7_2.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/1d80265d-52c9-4209-bc72-63e0c2f4c176_3.jpeg?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 12,
+        "price": 296
+      }
+    },
+    {
+      "id": "YZWM_xIAAC0AuhvP",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZWM_xIAAC0AuhvP%22%29+%5D%5D",
+      "tags": ["Silverware", "Featured"],
+      "first_publication_date": "2021-11-17T23:15:18+0000",
+      "last_publication_date": "2021-11-17T23:15:18+0000",
+      "slugs": ["luna-gold-cutlery-set", "set-de-cubiertos-luna-gold"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZWMehIAAC0Auhl8",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Luna Gold Cutlery Set",
+        "sku": "1051660028",
+        "category": {
+          "id": "YWHxkhIAAC4Ayj0J",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "kitchen",
+          "first_publication_date": "2021-10-09T23:33:27+0000",
+          "last_publication_date": "2021-10-12T23:35:55+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 940,
+            "height": 1215
+          },
+          "alt": "Luna Gold Cutlery Set",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/17e65610-6d79-4b66-a075-b8add809b786_1.webp?auto=compress,format"
+        },
+        "short_description": "East meets West in the design of the elegant handles of our Luna cutlery, which have a cross-section with rounded corners, similar to toothpick designs. The spoons and forks are made of stainless steel. The knife is made of stainless steel. Each piece is handcrafted and polished upon completion. Set of 5.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "East meets West in the design of the elegant handles of our Luna cutlery, which have a cross-section with rounded corners, similar to toothpick designs. The spoons and forks are made of stainless steel. The knife is made of stainless steel. Each piece is handcrafted and polished upon completion. Set of 5.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Color",
+            "spec_value": "Gold"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/17e65610-6d79-4b66-a075-b8add809b786_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/816adb5f-abf5-41f4-b3b0-4dd8a717ca47_2.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 5,
+        "price": 62
+      }
+    },
+    {
+      "id": "YZWqlhIAACkAuqDP",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZWqlhIAACkAuqDP%22%29+%5D%5D",
+      "tags": ["Bed sheets", "Featured"],
+      "first_publication_date": "2021-11-18T01:21:30+0000",
+      "last_publication_date": "2021-11-18T01:21:41+0000",
+      "slugs": [
+        "dream-king-size-sheet-set",
+        "juego-de-sabanas-dream-king-size"
+      ],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZWp-xIAACsAup4J",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Dream King Size Sheet Set",
+        "sku": "1105574122",
+        "category": {
+          "id": "YWHx-xIAAC0Ayj7i",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "bed--bath",
+          "first_publication_date": "2021-10-09T23:33:05+0000",
+          "last_publication_date": "2021-10-12T23:45:23+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Dream King Size Sheet Set",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/1dce13b9-b43b-4aa1-b82d-8d5dea9d4c61_1.webp?auto=compress,format"
+        },
+        "short_description": "Made from 100% organic cotton satin brushed for supreme softness, our Dream bedding has a luxurious, silky feel. The sheet set has a versatile color palette that favors layering for a stylish bed. And you can rest easy knowing that each component is made with the environment in mind. Sweet Dreams. Made from 100% organic cotton satin. Organic cotton is grown without the use of persistent pesticides and synthetic fertilizers. Fair Trade Certified ™. Purchasing this product helps ensure fair and safe work practices, improve livelihoods, and empower workers to invest in their communities.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Made from 100% organic cotton satin brushed for supreme softness, our Dream bedding has a luxurious, silky feel. The sheet set has a versatile color palette that favors layering for a stylish bed. And you can rest easy knowing that each component is made with the environment in mind. Sweet Dreams. Made from 100% organic cotton satin. Organic cotton is grown without the use of persistent pesticides and synthetic fertilizers. Fair Trade Certified ™. Purchasing this product helps ensure fair and safe work practices, improve livelihoods, and empower workers to invest in their communities.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Care and cleaning instructions",
+            "spec_value": "Wash before first use. Machine wash warm. Use only non-chlorine bleach, if necessary. Use tumble dryer on medium heat, remove quickly"
+          },
+          {
+            "spec_name": "Commercial Model",
+            "spec_value": "Dream"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Gray"
+          },
+          {
+            "spec_name": "Details",
+            "spec_value": "STANDARD 100 certified by OEKO-TEX®. Tested in an independent laboratory and verified that it does not contain substances that are harmful to people and the environment. 300 thread count. This product meets the strict requirements of the Global Organic Textile Standard (GOTS), the world's leading processing standard for organic textiles to ensure a healthier home for you and a better planet for all"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/1dce13b9-b43b-4aa1-b82d-8d5dea9d4c61_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/612350fc-5e82-4000-93be-e26fb1607169_2.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/afb52996-5069-43a5-bef1-4a959ae3b4b5_3.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 23,
+        "price": 173
+      }
+    },
+    {
+      "id": "YZWdwRIAACkAumb-",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZWdwRIAACkAumb-%22%29+%5D%5D",
+      "tags": ["Bathroom", "Featured"],
+      "first_publication_date": "2021-11-18T00:26:45+0000",
+      "last_publication_date": "2021-11-18T00:26:45+0000",
+      "slugs": [
+        "disney-mickey-mouse-soap-dispenser",
+        "dispensador-de-jabon-disney-mickey-mouse"
+      ],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZWdRhIAAC0AumTV",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Disney Mickey Mouse Soap Dispenser",
+        "sku": "1107981469",
+        "category": {
+          "id": "YWHx-xIAAC0Ayj7i",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "bed--bath",
+          "first_publication_date": "2021-10-09T23:33:05+0000",
+          "last_publication_date": "2021-10-12T23:45:23+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Disney Mickey Mouse Soap Dispenser",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/5b557651-ed8c-46f4-9b4f-c00ef94e4a02_2.webp?auto=compress,format"
+        },
+        "short_description": "Brighten up your space with the all-magic mascot: Disney's Mickey Mouse. When you need an easy (and adorable) upgrade, our black stoneware soap or lotion dispenser, complete with a portrait of one of the world's most famous characters, is perfect for your dressing table.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Brighten up your space with the all-magic mascot: Disney's Mickey Mouse. When you need an easy (and adorable) upgrade, our black stoneware soap or lotion dispenser, complete with a portrait of one of the world's most famous characters, is perfect for your dressing table.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Color",
+            "spec_value": "Black"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "Approximate diameter 7.6 cm"
+          },
+          {
+            "spec_name": "Product height",
+            "spec_value": "19.05 cm approximate"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/5b557651-ed8c-46f4-9b4f-c00ef94e4a02_2.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/273c2c4a-889d-443a-a701-0c45a4f011c5_1.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 22,
+        "price": 23
+      }
+    }
+  ],
+  "version": "6dac34e",
+  "license": "This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/."
+}

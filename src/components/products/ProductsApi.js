@@ -1,37 +1,32 @@
-import { useContext, useEffect } from "react";
-import ListContext from "../../states/ListContext";
-import useFilter from "../../utils/hooks/useFilter";
-import ProductGrid from "../productGrid/ProductGrid";
-import * as styles from "./Products-style";
+/* eslint-disable no-unused-expressions */
+import React, {useEffect, useState} from 'react'
+import {useFeaturedBanners} from '../../utils/hooks/useFeaturedBanners'
+import ProductGrid from '../productGrid/ProductGrid'
+import * as styles from './Products-style'
 
 export default function ProductsApi() {
-  let feature = `&q=${encodeURIComponent(
-    '[[at(document.tags, ["Featured"])]]'
-  )}`;
+  const feature = `&q=${encodeURIComponent(
+    '[[at(document.tags, ["Featured"])]]',
+  )}`
 
-  const {
-    defaultfiltered,
-    setParam,
-    setProductEncode,
-    setProductPageSize,
-    setProductLanguage,
-    setSearchFor,
-    setFilteredProducts,
-    setCurrentPage,
-  } = useContext(ListContext);
+  const encode = '[[at(document.type, "product")]]'
+  const {data: filtered, isLoading: productisLoading} = useFeaturedBanners(
+    encode,
+    'en-us',
+    16,
+    feature,
+  )
+  const [defaultfiltered, setDefaultfiltered] = useState([])
 
-  //Call API and retreive data
   useEffect(() => {
-    setParam("");
-    setProductEncode('[[at(document.type, "product")]]');
-    setProductPageSize(16);
-    setProductLanguage("en-us");
-    setSearchFor("");
-    setFilteredProducts("");
-    setCurrentPage(1);
-  }, []);
-
-  const { productisLoading } = useFilter(feature);
+    !productisLoading && filtered.results
+      ? setDefaultfiltered(
+          filtered.results.filter((it) =>
+            it.data.category.slug.toLowerCase().includes(''),
+          ),
+        )
+      : null
+  }, [filtered, productisLoading])
 
   return (
     <>
@@ -43,8 +38,8 @@ export default function ProductsApi() {
           feature={feature}
           productisLoading={productisLoading}
           product={defaultfiltered}
-        ></ProductGrid>
+        />
       </styles.ContainerBackground>
     </>
-  );
+  )
 }

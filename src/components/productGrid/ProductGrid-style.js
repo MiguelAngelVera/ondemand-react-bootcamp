@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ContainerBackground = styled.div`
   background-color: #e6e6e6;
-`;
+`
 
 export const Container = styled.div`
   width: 80%;
@@ -21,12 +21,12 @@ export const Container = styled.div`
     column-gap: 0rem;
     row-gap: 2rem;
   }
-`;
+`
 export const ProductContainer = styled.div`
   display: flex;
   justify-content: center;
   background-color: #e6e6e6;
-`;
+`
 
 export const ProductImage = styled.div`
   background-color: white;
@@ -42,13 +42,13 @@ export const ProductImage = styled.div`
   @media (max-width: 900px) {
     width: 90%;
   }
-`;
+`
 
 export const Line = styled.div`
   margin: auto 13px;
   border: 0.6px solid gray;
   opacity: 30%;
-`;
+`
 
 export const ProductText = styled.div`
   position: relative;
@@ -59,21 +59,21 @@ export const ProductText = styled.div`
     padding: 4.5vw 4.5vw;
     height: 30%;
   }
-`;
+`
 export const ProductName = styled.div`
   font-size: 1vw;
   color: gray;
   @media (max-width: 900px) {
     font-size: 2.7vw;
   }
-`;
+`
 
 export const ProductPrice = styled.div`
   font-size: 1.8vw;
   @media (max-width: 900px) {
     font-size: 4vw;
   }
-`;
+`
 
 export const ProductCategory = styled.div`
   position: absolute;
@@ -84,7 +84,7 @@ export const ProductCategory = styled.div`
   @media (max-width: 900px) {
     font-size: 1.6vw;
   }
-`;
+`
 export const ProductDetails = styled.div`
   padding: 1rem 0;
   font-size: 1vw;
@@ -92,7 +92,7 @@ export const ProductDetails = styled.div`
   @media (max-width: 900px) {
     font-size: 3vw;
   }
-`;
+`
 export const ProducttoCart = styled.button`
   position: absolute;
   border-width: 0px;
@@ -106,7 +106,7 @@ export const ProducttoCart = styled.button`
   @media (max-width: 900px) {
     font-size: 3vw;
   }
-`;
+`
 
 export const Title = styled.div`
   justify-content: space-between;
@@ -131,11 +131,11 @@ export const Title = styled.div`
       font-size: 3vw;
     }
   }
-`;
+`
 
 export const ProductCard = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
   background-color: #e6e6e6;
-`;
+`

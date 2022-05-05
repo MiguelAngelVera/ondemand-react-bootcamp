@@ -1,0 +1,3478 @@
+{
+  "page": 1,
+  "results_per_page": 30,
+  "results_size": 30,
+  "total_results_size": 88,
+  "total_pages": 3,
+  "next_page": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5Bat%28document.type%2C+%22product%22%29%5D%5D&page=2&pageSize=30&languageCode=en-us",
+  "prev_page": null,
+  "results": [
+    {
+      "id": "YZZ_XhIAAC0AvmiA",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZZ_XhIAAC0AvmiA%22%29+%5D%5D",
+      "tags": ["Living Room", "Christmas", "Featured"],
+      "first_publication_date": "2021-11-18T16:29:23+0000",
+      "last_publication_date": "2021-11-18T16:29:23+0000",
+      "slugs": [
+        "fair-isle-snowflake-lumbar-cushion-cover",
+        "funda-para-cojin-fair-isle-snowflake-lumbar"
+      ],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZZ_BxIAAC0Avmbq",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Fair Isle Snowflake Lumbar Cushion Cover",
+        "sku": "1107982309",
+        "category": {
+          "id": "YWHyYRIAACgAykCq",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "decorate",
+          "first_publication_date": "2021-10-09T23:32:29+0000",
+          "last_publication_date": "2021-11-18T14:27:09+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Fair Isle Snowflake Lumbar Cushion Cover",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/1c8883ca-2797-4138-a7e5-a7d2ae583192_1.jpeg?auto=compress,format"
+        },
+        "short_description": "Keeping a distinctive complex pattern without being complicated involves choosing a simple palette. The poinsettia red and ivory white in this cushion cover are two lovely colors that we enjoy all season long. The sweater-like snowflake design celebrates more than one type of holiday (reverse is sherpa-like sheepskin). Make it a snow day. The front is made of 100% yarn-dyed acrylic; It is reversed to 100% recycled polyester sherpa in white. Yarn dyed fabric has amazing vivid colors that keep their radiance over time. Holds 16 \"x 26\" fill (sold separately).",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Keeping a distinctive complex pattern without being complicated involves choosing a simple palette. The poinsettia red and ivory white in this cushion cover are two lovely colors that we enjoy all season long. The sweater-like snowflake design celebrates more than one type of holiday (reverse is sherpa-like sheepskin). Make it a snow day. The front is made of 100% yarn-dyed acrylic; It is reversed to 100% recycled polyester sherpa in white. Yarn dyed fabric has amazing vivid colors that keep their radiance over time. Holds 16 \"x 26\" fill (sold separately).",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Dimensions",
+            "spec_value": "40.26 cm high x 66 cm wide. Zipper: Approximately 61 cm long"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Fair Isle Snowflake Lumbar"
+          },
+          {
+            "spec_name": "Other information",
+            "spec_value": "Machine wash cold, inside out, on delicate cycle. Use only non-chlorine bleach, if necessary. Tumble dry on low temperature, remove immediately. Use warm iron as needed."
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/1c8883ca-2797-4138-a7e5-a7d2ae583192_1.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/741e500e-4a74-4634-b544-06fe48115cbc_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/f4645f8e-fc25-4c6f-9d28-38abb7abcace_3.jpeg?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 48,
+        "price": 40
+      }
+    },
+    {
+      "id": "YZZ6OhIAACgAvlE1",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZZ6OhIAACgAvlE1%22%29+%5D%5D",
+      "tags": ["Lamps", "Featured"],
+      "first_publication_date": "2021-11-18T16:07:25+0000",
+      "last_publication_date": "2021-11-18T16:08:09+0000",
+      "slugs": ["desk-lamp-ezra", "lampara-de-buro-ezra"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZZ52xIAAC8Avk-S",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Desk Lamp Ezra",
+        "sku": "1102665992",
+        "category": {
+          "id": "YWHy0xIAACoAykKm",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "lighting",
+          "first_publication_date": "2021-10-09T23:32:20+0000",
+          "last_publication_date": "2021-10-13T00:04:48+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Desk Lamp Ezra",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/267ca459-c37b-4187-a59e-9e7c55e0b09a_1.webp?auto=compress,format"
+        },
+        "short_description": "Craftsmanship and practical functionality come together in our eye-catching accent lamp. Crafted from tough ceramic with gently curved contours, Ezra is hand finished with a reactive glaze that imparts a rich, varied tone and unique character. Made of ceramic with a reactive Teal Glazed finish applied by hand. Pluggable. The lamp has an on / off switch located in the socket. Transparent PVC cord. UL Listed Dry. It has capacity for 1 bulb type A of 60 W or equivalent to LED (not included). E26 plug.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Craftsmanship and practical functionality come together in our eye-catching accent lamp. Crafted from tough ceramic with gently curved contours, Ezra is hand finished with a reactive glaze that imparts a rich, varied tone and unique character. Made of ceramic with a reactive Teal Glazed finish applied by hand. Pluggable. The lamp has an on / off switch located in the socket. Transparent PVC cord. UL Listed Dry. It has capacity for 1 bulb type A of 60 W or equivalent to LED (not included). E26 plug.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Base Material",
+            "spec_value": "Ceramic"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Ezra"
+          },
+          {
+            "spec_name": "Watts",
+            "spec_value": "60 W"
+          },
+          {
+            "spec_name": "Weight",
+            "spec_value": "2.26 kg"
+          },
+          {
+            "spec_name": "Dimensions",
+            "spec_value": "Measurements: 16.51 cm diameter x 55.8 cm high approximate"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/267ca459-c37b-4187-a59e-9e7c55e0b09a_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/d4dfb5e0-1f35-4ba7-a61b-e5e5f7b4e7bb_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/5e69abf6-972e-4595-9a4f-86ae1b0b8b83_3.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 9,
+        "price": 147
+      }
+    },
+    {
+      "id": "YZZ3phIAACgAvkYv",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZZ3phIAACgAvkYv%22%29+%5D%5D",
+      "tags": ["Lamps"],
+      "first_publication_date": "2021-11-18T15:56:25+0000",
+      "last_publication_date": "2021-11-18T15:56:25+0000",
+      "slugs": ["murano-table-lamp", "lampara-de-mesa-murano"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZZ3PRIAACwAvkTm",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Murano Table Lamp",
+        "sku": "1083869681",
+        "category": {
+          "id": "YWHy0xIAACoAykKm",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "lighting",
+          "first_publication_date": "2021-10-09T23:32:20+0000",
+          "last_publication_date": "2021-10-13T00:04:48+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 940,
+            "height": 1215
+          },
+          "alt": "Murano Table Lamp",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/ce8efa73-3c5e-4888-8e1b-71241900f2bf_1.webp?auto=compress,format"
+        },
+        "short_description": "Thick metal bands surround our blown glass chandelier to give it a rustic, handcrafted look that gives it a warm glow in a variety of settings. Made from blown glass with a bronze coated aluminum band covering the top and bottom. The hand-applied finish is polished, stained and sealed with lacquer. On / off switch. This lamp fits our Pottery Barn lampshades. The screen is sold separately.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Thick metal bands surround our blown glass chandelier to give it a rustic, handcrafted look that gives it a warm glow in a variety of settings. Made from blown glass with a bronze coated aluminum band covering the top and bottom. The hand-applied finish is polished, stained and sealed with lacquer. On / off switch. This lamp fits our Pottery Barn lampshades. The screen is sold separately.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Base Depth",
+            "spec_value": "20.32 cm"
+          },
+          {
+            "spec_name": "Screen Height",
+            "spec_value": "43.81 cm"
+          },
+          {
+            "spec_name": "Base Width",
+            "spec_value": "20 cm"
+          },
+          {
+            "spec_name": "Base material",
+            "spec_value": "Metal and glass"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/ce8efa73-3c5e-4888-8e1b-71241900f2bf_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/542486de-8dd6-4f7e-bf64-c00f75244ee5_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/f5847230-f8e6-4c86-976a-832a97fcff12_3.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/7234689e-31fa-457f-931d-b2e9af5f2968_4.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/fb59c75d-ecac-4795-81f3-91bdf5f7b0d6_5.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/74ea8538-8072-49cf-a0a9-eb1753ccd010_6.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/83070749-306a-4f24-b490-caafdd21475f_7.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/4b50f190-db71-4b7b-9060-2a5043aaa752_8.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/a83d4e71-2604-4190-8e1e-22d664f351fd_9.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 17,
+        "price": 135
+      }
+    },
+    {
+      "id": "YZaBuRIAACsAvnN-",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZaBuRIAACsAvnN-%22%29+%5D%5D",
+      "tags": ["Lamps"],
+      "first_publication_date": "2021-11-18T16:39:24+0000",
+      "last_publication_date": "2021-11-18T16:39:24+0000",
+      "slugs": ["paxton-pendant-lamp", "lampara-colgante-paxton"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZaBWRIAAC4AvnG1",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Paxton Pendant Lamp",
+        "sku": "1083937920",
+        "category": {
+          "id": "YWHy0xIAACoAykKm",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "lighting",
+          "first_publication_date": "2021-10-09T23:32:20+0000",
+          "last_publication_date": "2021-10-13T00:04:48+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 940,
+            "height": 1215
+          },
+          "alt": "Paxton Pendant Lamp",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/72e1dd40-3880-4485-9bfd-5b9042330414_5.webp?auto=compress,format"
+        },
+        "short_description": "Blown glass in an eclectic mix of shapes, the shades of our pendant light have a soft mottled texture and a subtle green hue. Each glass lamp is suspended from a round cover with black fabric cable. Made of molded glass and steel finished with bronze. Professional installation is recommended. Each lamp is sold separately.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Blown glass in an eclectic mix of shapes, the shades of our pendant light have a soft mottled texture and a subtle green hue. Each glass lamp is suspended from a round cover with black fabric cable. Made of molded glass and steel finished with bronze. Professional installation is recommended. Each lamp is sold separately.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Care and Cleaning Instructions",
+            "spec_value": "Clean with a soft, dry cloth. To protect the finish, do not apply abrasives or household cleaners. Do not exceed the specified power"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/81c6238c-1409-4a3b-b095-ef1b8fae4cc6_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/3f987996-cf7e-458f-82ba-c530eb10f3cd_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/f74990c9-5b99-43f0-ba16-2db801ecf58a_3.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/7ac48c95-3dad-4124-86b3-909fa14eaf54_4.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/72e1dd40-3880-4485-9bfd-5b9042330414_5.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 22,
+        "price": 106
+      }
+    },
+    {
+      "id": "YZZ06hIAAC0AvjsS",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZZ06hIAAC0AvjsS%22%29+%5D%5D",
+      "tags": ["Trays"],
+      "first_publication_date": "2021-11-18T15:44:50+0000",
+      "last_publication_date": "2021-11-18T15:44:50+0000",
+      "slugs": ["two-tone-rattan-tray", "charola-rattan-two-tone"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZZ0cBIAACkAvjmw",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Two Tone Rattan Tray",
+        "sku": "1102630676",
+        "category": {
+          "id": "YWHyYRIAACgAykCq",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "decorate",
+          "first_publication_date": "2021-10-09T23:32:29+0000",
+          "last_publication_date": "2021-11-18T14:27:09+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Two Tone Rattan Tray",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/5b9e1a1a-2f6e-48a6-87ff-1015aa903b32_1.webp?auto=compress,format"
+        },
+        "short_description": "Handwoven from textured rattan, our tray brings a note of natural beauty to your home. Its earthy material features a blend of black and white graphic strands that play a contemporary counterpoint to organic fiber. With handles for portability, the tray offers a handy accessory for accessories, books, and candles. Handwoven from rattan and wire. Lead Free.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Handwoven from textured rattan, our tray brings a note of natural beauty to your home. Its earthy material features a blend of black and white graphic strands that play a contemporary counterpoint to organic fiber. With handles for portability, the tray offers a handy accessory for accessories, books, and candles. Handwoven from rattan and wire. Lead Free.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Collection",
+            "spec_value": "Rattan Two Tone"
+          },
+          {
+            "spec_name": "Dimensions",
+            "spec_value": "24 '' Diameter x 3 '' Height Approximately"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Black"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/5b9e1a1a-2f6e-48a6-87ff-1015aa903b32_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/ca458ce8-2e25-4db3-b936-a6ea952a201e_2.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/5de72a4d-9fa4-4a17-90d5-0f94391af73a_3.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/173d01f4-a8ec-4504-9852-1875bb8befa1_4.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/e32f008b-47a0-42d8-9097-65d162aadb23_5.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 11,
+        "price": 94
+      }
+    },
+    {
+      "id": "YZZj4hIAACgAve1w",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZZj4hIAACgAve1w%22%29+%5D%5D",
+      "tags": ["Floor mats"],
+      "first_publication_date": "2021-11-18T14:32:05+0000",
+      "last_publication_date": "2021-11-18T14:32:05+0000",
+      "slugs": ["andie-mat", "tapete-andie"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZZjdhIAACgAveuB",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Andie Mat",
+        "sku": "1107899690",
+        "category": {
+          "id": "YWHyYRIAACgAykCq",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "decorate",
+          "first_publication_date": "2021-10-09T23:32:29+0000",
+          "last_publication_date": "2021-11-18T14:27:09+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Andie Mat",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/04d1d0f6-2047-43fb-b68b-3c57366f489e_1.jpeg?auto=compress,format"
+        },
+        "short_description": "Inspired by an antique rug, the Andie faux rug features a bold pattern that can easily update the space. Layer it with your favorite neutral rug for a bohemian-inspired look. Eco-friendly polyester fiber made from recycled plastic bottles makes this durable mat a perfect choice for high-traffic areas.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Inspired by an antique rug, the Andie faux rug features a bold pattern that can easily update the space. Layer it with your favorite neutral rug for a bohemian-inspired look. Eco-friendly polyester fiber made from recycled plastic bottles makes this durable mat a perfect choice for high-traffic areas.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Color",
+            "spec_value": "Multicolor"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Andie"
+          },
+          {
+            "spec_name": "Product length",
+            "spec_value": "243.84 cm"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "152.4 cm"
+          },
+          {
+            "spec_name": "Style",
+            "spec_value": "Contemporary"
+          },
+          {
+            "spec_name": "Care and cleaning instructions",
+            "spec_value": "Vacuum frequently on low power using a beater brushless vacuum to prevent debris from depositing on the fiber roots. Clean up spills immediately; if liquid, blot with a clean, undyed cloth, pressing firmly around the spilled liquid to absorb as much as possible. It can be rinsed periodically with an open air hose and mild soap. For stubborn stains, a professional mat cleaning is recommended. For indoor / outdoor use. The use of a mat protector is recommended"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/04d1d0f6-2047-43fb-b68b-3c57366f489e_1.jpeg?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 14,
+        "price": 222
+      }
+    },
+    {
+      "id": "YZZ7LxIAACkAvlRg",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZZ7LxIAACkAvlRg%22%29+%5D%5D",
+      "tags": ["Lamps"],
+      "first_publication_date": "2021-11-18T16:11:30+0000",
+      "last_publication_date": "2021-11-18T16:11:30+0000",
+      "slugs": ["carter-table-lamp", "lampara-de-mesa-carter"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZZ66BIAACkAvlMa",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Carter Table Lamp",
+        "sku": "1067011721",
+        "category": {
+          "id": "YWHy0xIAACoAykKm",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "lighting",
+          "first_publication_date": "2021-10-09T23:32:20+0000",
+          "last_publication_date": "2021-10-13T00:04:48+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 940,
+            "height": 1215
+          },
+          "alt": "Carter Table Lamp",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/7298f72f-6be4-43a3-950b-eed75ad76827_1.webp?auto=compress,format"
+        },
+        "short_description": "Finished in brass and champagne, the elongated, open frame gives our Carter collection its graceful appearance. The delicate geometric design takes up little space and has French wiring for a classic accent. Made of steel with a hand applied champagne brass finish. Power switch in socket. Screen not included.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Finished in brass and champagne, the elongated, open frame gives our Carter collection its graceful appearance. The delicate geometric design takes up little space and has French wiring for a classic accent. Made of steel with a hand applied champagne brass finish. Power switch in socket. Screen not included.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Collection",
+            "spec_value": "Carter"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Gold"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/7298f72f-6be4-43a3-950b-eed75ad76827_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/8f1bd566-0691-41ce-a091-fea2758800a8_2.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 39,
+        "price": 164
+      }
+    },
+    {
+      "id": "YZZysBIAACkAvjFs",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZZysBIAACkAvjFs%22%29+%5D%5D",
+      "tags": ["Mirrors"],
+      "first_publication_date": "2021-11-18T15:35:15+0000",
+      "last_publication_date": "2021-11-18T15:35:15+0000",
+      "slugs": ["bentley-mirror", "espejo-bentley"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZZxsBIAACoAviyo",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Bentley mirror",
+        "sku": "1105585981",
+        "category": {
+          "id": "YWHyYRIAACgAykCq",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "decorate",
+          "first_publication_date": "2021-10-09T23:32:29+0000",
+          "last_publication_date": "2021-11-18T14:27:09+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Bentley mirror",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/d060046e-6699-437e-8e46-6208ef9076b8_1.webp?auto=compress,format"
+        },
+        "short_description": "The affinity for mid-century décor means having a craving for minimal orientation and ultimate style. That's exactly what drew us to this bentwood-framed mirror. It's striking and seamless, and the understated walnut finish is as smooth as the frame.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "The affinity for mid-century décor means having a craving for minimal orientation and ultimate style. That's exactly what drew us to this bentwood-framed mirror. It's striking and seamless, and the understated walnut finish is as smooth as the frame.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Color",
+            "spec_value": "Brown"
+          },
+          {
+            "spec_name": "Mounting Type",
+            "spec_value": "Turnstiles"
+          },
+          {
+            "spec_name": "Frame Material",
+            "spec_value": "Solid boxwood with mirrored glass. Backed with MDF"
+          },
+          {
+            "spec_name": "Style",
+            "spec_value": "Mid century"
+          },
+          {
+            "spec_name": "Details",
+            "spec_value": "Walnut finish"
+          },
+          {
+            "spec_name": "Shape",
+            "spec_value": "Round"
+          },
+          {
+            "spec_name": "Product Weight",
+            "spec_value": "11.34 kg"
+          },
+          {
+            "spec_name": "Product diameter",
+            "spec_value": "101.60 cm"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/d060046e-6699-437e-8e46-6208ef9076b8_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/01e0c250-454a-415d-bede-848d5e5c9e7b_2.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/9d29ca75-d0aa-4345-b13e-783c1eaac61e_3.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/e3d13328-5024-4a82-8b03-18bca22090fa_4.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/26aa9259-0206-40ef-b7db-7843ffaa8772_5.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 15,
+        "price": 572
+      }
+    },
+    {
+      "id": "YZZ9QxIAACoAvl5a",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZZ9QxIAACoAvl5a%22%29+%5D%5D",
+      "tags": ["Living Room"],
+      "first_publication_date": "2021-11-18T16:20:23+0000",
+      "last_publication_date": "2021-11-18T16:20:23+0000",
+      "slugs": ["colossal-pillowcase", "funda-para-almohada-colossal"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZZ9ARIAACkAvl0R",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Colossal Pillowcase",
+        "sku": "1105597301",
+        "category": {
+          "id": "YWHyYRIAACgAykCq",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "decorate",
+          "first_publication_date": "2021-10-09T23:32:29+0000",
+          "last_publication_date": "2021-11-18T14:27:09+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Funda para Almohada Colossal",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/310cc973-3b7c-4a0b-adff-83d8606811f0_1.jpeg?auto=compress,format"
+        },
+        "short_description": "The chunky yarn forms a distinctive pillowcase that is extra stylish and extra cozy, yet surprisingly light and soft. Handwoven, these are the heirloom decorations your sofa never knew it needed. The front is woven in 100% acrylic, the reverse is woven in 100% cotton. The pillow has a 100% polyester lining. STANDARD 100 certified by OEKO-TEX®. Independent laboratory tested and verified safe against over 350 harmful substances. Dyed fibers for long-lasting and vibrant color. Reversible to a uniform color. Zip closure. Holds a 61cm2 fill (sold separately).",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "The chunky yarn forms a distinctive pillowcase that is extra stylish and extra cozy, yet surprisingly light and soft. Handwoven, these are the heirloom decorations your sofa never knew it needed. The front is woven in 100% acrylic, the reverse is woven in 100% cotton. The pillow has a 100% polyester lining. STANDARD 100 certified by OEKO-TEX®. Independent laboratory tested and verified safe against over 350 harmful substances. Dyed fibers for long-lasting and vibrant color. Reversible to a uniform color. Zip closure. Holds a 61cm2 fill (sold separately).",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Collection",
+            "spec_value": "Colossal"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Beige"
+          },
+          {
+            "spec_name": "Dimensions",
+            "spec_value": "61 cm x 61 cm"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/310cc973-3b7c-4a0b-adff-83d8606811f0_1.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/fcdbe85a-58d4-43db-9ca0-cc61ad24527f_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/4d1a2a7a-c23a-463e-9c6a-ae1dd72a440c_3.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/daf57bdb-242f-4cf1-b19c-862f7799145b_4.jpeg?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 41,
+        "price": 61
+      }
+    },
+    {
+      "id": "YZZ47hIAACwAvkwF",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZZ47hIAACwAvkwF%22%29+%5D%5D",
+      "tags": ["Lámparas"],
+      "first_publication_date": "2021-11-18T16:01:53+0000",
+      "last_publication_date": "2021-11-18T16:01:53+0000",
+      "slugs": ["large-table-lamp-mallorca", "lampara-grande-de-mesa-mallorca"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZZ4uxIAAC0AvksM",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Large Table Lamp Mallorca",
+        "sku": "1074277663",
+        "category": {
+          "id": "YWHy0xIAACoAykKm",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "lighting",
+          "first_publication_date": "2021-10-09T23:32:20+0000",
+          "last_publication_date": "2021-10-13T00:04:48+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 940,
+            "height": 1215
+          },
+          "alt": "Large Table Lamp Mallorca",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/23a87a85-5138-40ea-b205-5eb0825d3bed_1.webp?auto=compress,format"
+        },
+        "short_description": "The thick recycled Spanish glass in the Mallorca lamp features an aqua tint that highlights the appeal of its subtle profile. Combine it with one of our screens (sold separately) and place it on a console or buffet to create ambient lighting. Made from recycled clear glass. Combine with any of our Small or Extra Large Mix & Match screens (all screens sold separately). On / off switch.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "The thick recycled Spanish glass in the Mallorca lamp features an aqua tint that highlights the appeal of its subtle profile. Combine it with one of our screens (sold separately) and place it on a console or buffet to create ambient lighting. Made from recycled clear glass. Combine with any of our Small or Extra Large Mix & Match screens (all screens sold separately). On / off switch.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Material",
+            "spec_value": "Glass"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/23a87a85-5138-40ea-b205-5eb0825d3bed_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/d4dfb5e0-1f35-4ba7-a61b-e5e5f7b4e7bb_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/bf070d2f-96af-46e2-a42b-0093074f0b45_3.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/4f03b015-a1ad-4add-8ad1-582d612ca9af_4.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/211971c5-9ef8-455a-a077-0249a40ba9d0_5.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/ad36b230-6b12-4843-9b92-b3e7f7d438ec_6.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 7,
+        "price": 205
+      }
+    },
+    {
+      "id": "YZZ8QRIAACsAvlld",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZZ8QRIAACsAvlld%22%29+%5D%5D",
+      "tags": ["Lamps"],
+      "first_publication_date": "2021-11-18T16:16:04+0000",
+      "last_publication_date": "2021-11-18T16:16:04+0000",
+      "slugs": ["carter-floor-lamp", "lampara-de-piso-carter"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZZ8CBIAAC8AvlhR",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Carter Floor Lamp",
+        "sku": "1067005101",
+        "category": {
+          "id": "YWHy0xIAACoAykKm",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "lighting",
+          "first_publication_date": "2021-10-09T23:32:20+0000",
+          "last_publication_date": "2021-10-13T00:04:48+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 940,
+            "height": 1215
+          },
+          "alt": "Carter Floor Lamp",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/e4a2c50e-0578-4f2e-a7f7-4a5cb49f82bb_1.webp?auto=compress,format"
+        },
+        "short_description": "Finished in brass and champagne, the elongated, open frame gives our Carter collection its graceful appearance. The delicate geometric design takes up little space and has French wiring for a classic accent. Made of steel. Hand finished in brass. Power switch located in socket. Dimensions: General (without lampshade): 36.20 cm diameter x 1.70 m high. Finishing: 3.18 cm in diameter. Harp: 29.85 cm. Cable: 3.35 m. Spotlight (1): 9 Watt LED (included); it also accommodates a 75 Watt Type A (not included).",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Finished in brass and champagne, the elongated, open frame gives our Carter collection its graceful appearance. The delicate geometric design takes up little space and has French wiring for a classic accent. Made of steel. Hand finished in brass. Power switch located in socket. Dimensions: General (without lampshade): 36.20 cm diameter x 1.70 m high. Finishing: 3.18 cm in diameter. Harp: 29.85 cm. Cable: 3.35 m. Spotlight (1): 9 Watt LED (included); it also accommodates a 75 Watt Type A (not included).",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Color",
+            "spec_value": "Gold"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/e4a2c50e-0578-4f2e-a7f7-4a5cb49f82bb_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/f80196e8-8dd1-45af-a177-8303c63275ef_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/54b15d11-955c-4579-95c8-7429097383db_3.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/62be7f3f-4865-4938-83b4-84469e878ff4_4.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/ceec39f7-ad97-4623-841f-d8de5aac0fc5_5.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 46,
+        "price": 369
+      }
+    },
+    {
+      "id": "YZZ-ThIAAC4AvmNn",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZZ-ThIAAC4AvmNn%22%29+%5D%5D",
+      "tags": ["Living Room", "Featured"],
+      "first_publication_date": "2021-11-18T16:24:50+0000",
+      "last_publication_date": "2021-11-18T16:24:50+0000",
+      "slugs": ["cojin-faye-azul"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZZ9-xIAACwAvmHG",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Cojín Faye Azul",
+        "sku": "1091816888",
+        "category": {
+          "id": "YWHyYRIAACgAykCq",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "decorate",
+          "first_publication_date": "2021-10-09T23:32:29+0000",
+          "last_publication_date": "2021-11-18T14:27:09+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Faye Blue Throw Pillow",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/39db837a-8a39-48fc-9937-5d496027bc79_1.jpeg?auto=compress,format"
+        },
+        "short_description": "The soft texture makes a room cozier. This cushion features a beautiful variation of ups and downs and features a subtle diamond pattern that works with all styles. Oeko-Tex Certified: This product is free of harmful and irritating toxins; the production is ecological and does not generate water, air or noise pollution.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "The soft texture makes a room cozier. This cushion features a beautiful variation of ups and downs and features a subtle diamond pattern that works with all styles. Oeko-Tex Certified: This product is free of harmful and irritating toxins; the production is ecological and does not generate water, air or noise pollution.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Care and cleaning instructions",
+            "spec_value": "Machine wash cold; smooth cycle. Use only non-chlorine bleach when necessary. Dry low"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Blue"
+          },
+          {
+            "spec_name": "Dimensions",
+            "spec_value": "50.80 cm x 50.80 cm"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/39db837a-8a39-48fc-9937-5d496027bc79_1.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/56f55c28-e085-403b-b7f1-dcb704c842d0_2.jpeg?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 49,
+        "price": 41
+      }
+    },
+    {
+      "id": "YZWTvxIAACkAujoz",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZWTvxIAACkAujoz%22%29+%5D%5D",
+      "tags": ["Featured", "Bathrobe"],
+      "first_publication_date": "2021-11-17T23:44:02+0000",
+      "last_publication_date": "2021-11-17T23:44:02+0000",
+      "slugs": ["bathrobe-disney-mickey-mouse", "bata-disney-mickey-mouse"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZWTYRIAAC4Aujh-",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Bathrobe Disney Mickey Mouse",
+        "sku": "1107982422",
+        "category": {
+          "id": "YWHx-xIAAC0Ayj7i",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "bed--bath",
+          "first_publication_date": "2021-10-09T23:33:05+0000",
+          "last_publication_date": "2021-10-12T23:45:23+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Bathrobe Disney Mickey Mouse",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/7cbed35a-d943-44c9-956c-a59cbb81e2ba_1.jpeg?auto=compress,format"
+        },
+        "short_description": "Brighten up your space with the all-magic mascot: Disney's Mickey Mouse. And we don't just mean decoration. Why not pay tribute to one of the world's most famous people with this hooded robe complete with Mickey ears.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Brighten up your space with the all-magic mascot: Disney's Mickey Mouse. And we don't just mean decoration. Why not pay tribute to one of the world's most famous people with this hooded robe complete with Mickey's ears.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Material",
+            "spec_value": "Polyester"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Disney Mickey Mouse"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Multicolor"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/7cbed35a-d943-44c9-956c-a59cbb81e2ba_1.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/21745ea3-f277-499c-956d-3da04cab40f4_2.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 14,
+        "price": 82
+      }
+    },
+    {
+      "id": "YZWYWhIAACgAuk6v",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZWYWhIAACgAuk6v%22%29+%5D%5D",
+      "tags": ["Bathroom"],
+      "first_publication_date": "2021-11-18T00:03:43+0000",
+      "last_publication_date": "2021-11-18T00:03:43+0000",
+      "slugs": ["silas-dispensers", "dispensadores-silas"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZWX_xIAACgAuk0Z",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Silas Dispensers",
+        "sku": "1105593348",
+        "category": {
+          "id": "YWHx-xIAAC0Ayj7i",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "bed--bath",
+          "first_publication_date": "2021-10-09T23:33:05+0000",
+          "last_publication_date": "2021-10-12T23:45:23+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Silas Dispensers",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/b9f31a8b-9d56-4a01-a02a-065ad89f1b27_1.webp?auto=compress,format"
+        },
+        "short_description": "Handcrafted to display the beautiful veining of natural cream marble, these Silas marble dispensers give your bathroom the luxurious look of a spa.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Handcrafted to display the beautiful veining of natural cream marble, these Silas marble dispensers give your bathroom the luxurious look of a spa.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Color",
+            "spec_value": "White"
+          },
+          {
+            "spec_name": "Details",
+            "spec_value": "Made of 100% natural marble. The different shades of color and texture make the product unique"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/b9f31a8b-9d56-4a01-a02a-065ad89f1b27_1.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 23,
+        "price": 28
+      }
+    },
+    {
+      "id": "YZW95hIAACoAuvgu",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZW95hIAACoAuvgu%22%29+%5D%5D",
+      "tags": ["Bedspreads"],
+      "first_publication_date": "2021-11-18T02:43:53+0000",
+      "last_publication_date": "2021-11-18T02:43:53+0000",
+      "slugs": [
+        "linen-jersey-queen-size-bedspread",
+        "colcha-linen-jersey-queen-size"
+      ],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZW9aRIAACsAuvXt",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Linen Jersey Queen Size Bedspread",
+        "sku": "1105573983",
+        "category": {
+          "id": "YWHx-xIAAC0Ayj7i",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "bed--bath",
+          "first_publication_date": "2021-10-09T23:33:05+0000",
+          "last_publication_date": "2021-10-12T23:45:23+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Linen Jersey Queen Size Bedspread",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/2bf7addd-86ba-4b42-940b-0ca7f6156261_1.webp?auto=compress,format"
+        },
+        "short_description": "With all the softness of a well-loved t-shirt, our Belgian linen bedspread dresses the bed in a relaxed and carefree look. Breathable bedding combines two of our most beloved fabrics: iconic Belgian linen and ultra-soft cotton jersey. Proudly manufactured in a Fair Trade Certified ™ factory, the fabric regulates heat by adjusting to hot or cold environments for year-round layered comfort. 100% jersey linen fabric. Reverse 75% cotton and 25% vegetable-woven linen. Breathable Belgian linen is great for warm or cool temperatures, and its durability allows you to love it for years. Soft and cool to the touch. STANDARD 100 certified by OEKO-TEX®. Independent laboratory tested and verified safe against over 350 harmful substances. Fair Trade Certified ™. Purchasing this product helps ensure fair and safe work practices, improve livelihoods, and empower workers to invest in their communities.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "With all the softness of a well-loved t-shirt, our Belgian linen bedspread dresses the bed in a relaxed and carefree look. Breathable bedding combines two of our most beloved fabrics: iconic Belgian linen and ultra-soft cotton jersey. Proudly manufactured in a Fair Trade Certified ™ factory, the fabric regulates heat by adjusting to hot or cold environments for year-round layered comfort. 100% jersey linen fabric. Reverse 75% cotton and 25% vegetable-woven linen. Breathable Belgian linen is great for warm or cool temperatures, and its durability allows you to love it for years. Soft and cool to the touch. STANDARD 100 certified by OEKO-TEX®. Independent laboratory tested and verified safe against over 350 harmful substances. Fair Trade Certified ™. Purchasing this product helps ensure fair and safe work practices, improve livelihoods, and empower workers to invest in their communities.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Color",
+            "spec_value": "Gray"
+          },
+          {
+            "spec_name": "Care and cleaning instructions",
+            "spec_value": "Clothes become softer with each wash. Machine wash cold separately on gentle cycle. Use only non-chlorine bleach, if necessary. Line or tumble dry on low temperature"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/2bf7addd-86ba-4b42-940b-0ca7f6156261_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/cf5f69f1-70f0-4fc2-b601-491d2599dcaa_2.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/d4c33dcb-9bb0-472f-9030-90eea4478eb8_3.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/2e465c97-f78c-4e81-8118-04f0ae776426_4.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 11,
+        "price": 247
+      }
+    },
+    {
+      "id": "YZWSZBIAACkAujQV",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZWSZBIAACkAujQV%22%29+%5D%5D",
+      "tags": ["Towels"],
+      "first_publication_date": "2021-11-17T23:38:32+0000",
+      "last_publication_date": "2021-11-17T23:38:32+0000",
+      "slugs": [
+        "classic-organic-cream-hand-towel",
+        "toalla-para-manos-classic-organic-crema"
+      ],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZWSCBIAACkAujJ5",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Classic Organic Cream Hand Towel",
+        "sku": "1084025361",
+        "category": {
+          "id": "YWHx-xIAAC0Ayj7i",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "bed--bath",
+          "first_publication_date": "2021-10-09T23:33:05+0000",
+          "last_publication_date": "2021-10-12T23:45:23+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 940,
+            "height": 1215
+          },
+          "alt": "Classic Organic Cream Hand Towel",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/b36ef90c-9765-4292-bd38-de69fd1b0d3f_1.webp?auto=compress,format"
+        },
+        "short_description": "Pure organic Turkish cotton is densely woven to create our luxuriously soft and absorbent PB Classic Towels. GOTS certified.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Pure organic Turkish cotton is densely woven to create our luxuriously soft and absorbent PB Classic Towels. GOTS certified.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Composition",
+            "spec_value": "100% organic cotton"
+          },
+          {
+            "spec_name": "Dimensions",
+            "spec_value": "50.80 cm wide x 76.2 cm long"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Cream"
+          },
+          {
+            "spec_name": "Care and Cleaning Instructions",
+            "spec_value": "Wash before first use. Machine wash warm on gentle cycle. Use only non-chlorine bleach, if necessary. Dry on low heat. To ensure the vibrant color of the towel, do not use harsh chemicals or facial products."
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/b36ef90c-9765-4292-bd38-de69fd1b0d3f_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/14bf7143-734f-4723-985a-aca32186c067_2.jpeg?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 76,
+        "price": 28
+      }
+    },
+    {
+      "id": "YZWg8xIAAC0AunVK",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZWg8xIAAC0AunVK%22%29+%5D%5D",
+      "tags": ["Bathroom"],
+      "first_publication_date": "2021-11-18T00:40:22+0000",
+      "last_publication_date": "2021-11-18T00:40:22+0000",
+      "slugs": ["classic-organic-loop-mat", "tapete-classic-organic-loop"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZWgjBIAACkAunN8",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Classic Organic Loop Mat",
+        "sku": "1105592554",
+        "category": {
+          "id": "YWHx-xIAAC0Ayj7i",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "bed--bath",
+          "first_publication_date": "2021-10-09T23:33:05+0000",
+          "last_publication_date": "2021-10-12T23:45:23+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Classic Organic Loop Mat",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/f36336ef-7cfa-470f-951e-118e92f38b05_1.jpeg?auto=compress,format"
+        },
+        "short_description": "There's nothing like stepping on a bath mat that looks like a cloud after a shower, and ours is the softest and fluffiest you'll find. It is made of pure organic fleece-type cotton for extra softness. Pottery Barn is a proud member of the Better Cotton Initiative. Our cotton products support the most sustainable cotton farming. This product meets the strict requirements of the Global Organic Textile Standard (GOTS), the world's leading processing standard for organic textiles to ensure a healthier home for you and a better planet for everyone.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "There's nothing like stepping on a bath mat that looks like a cloud after a shower, and ours is the softest and fluffiest you'll find. It is made of pure organic fleece-type cotton for extra softness. Pottery Barn is a proud member of the Better Cotton Initiative. Our cotton products support the most sustainable cotton farming. This product meets the strict requirements of the Global Organic Textile Standard (GOTS), the world's leading processing standard for organic textiles to ensure a healthier home for you and a better planet for everyone.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Product width",
+            "spec_value": "86.36 cm"
+          },
+          {
+            "spec_name": "Product length",
+            "spec_value": "53.34 cm"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Classic Organic Loop"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Gray"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/f36336ef-7cfa-470f-951e-118e92f38b05_1.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/813a3ba7-bf7b-4951-86fd-60822f45f3c4_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/d79bf3f9-8152-45fd-9aab-6441fc38fee3_3.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/4a51a3f4-65d6-423f-926a-7524326db11d_4.jpeg?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 77,
+        "price": 29
+      }
+    },
+    {
+      "id": "YZWyMhIAACsAusNZ",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZWyMhIAACsAusNZ%22%29+%5D%5D",
+      "tags": ["Pillowcases"],
+      "first_publication_date": "2021-11-18T01:53:58+0000",
+      "last_publication_date": "2021-11-18T01:53:58+0000",
+      "slugs": [
+        "forest-gnome-king-size-pillowcase",
+        "funda-para-almohada-forest-gnome-king-size"
+      ],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZWx1RIAACkAusG1",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Forest Gnome King Size Pillowcase",
+        "sku": "1107901821",
+        "category": {
+          "id": "YWHx-xIAAC0Ayj7i",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "bed--bath",
+          "first_publication_date": "2021-10-09T23:33:05+0000",
+          "last_publication_date": "2021-10-12T23:45:23+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Forest Gnome King Size Pillowcase",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/37d40906-24d3-43a6-8741-fc4902636082_1.jpeg?auto=compress,format"
+        },
+        "short_description": "There is no gnome place home. Illustrating a fairytale forest scene, this artwork was originally hand painted by our in-house design team to add a touch of Christmas magic to your bed. More respectful with the environment and healthier for your home, we make this bedding with organically grown cotton. OEKO-TEX® STANDARD 100 Certified - Tested against over 350 harmful substances to keep you and your family safe from common textile chemicals.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "There is no gnome place home. Illustrating a fairytale forest scene, this artwork was originally hand painted by our in-house design team to add a touch of Christmas magic to your bed. More respectful with the environment and healthier for your home, we make this bedding with organically grown cotton. OEKO-TEX® STANDARD 100 Certified - Tested against over 350 harmful substances to keep you and your family safe from common textile chemicals.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Collection",
+            "spec_value": "Forest Gnome"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Multicolor"
+          },
+          {
+            "spec_name": "Product length",
+            "spec_value": "91.4 cm"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "50.8 cm"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/37d40906-24d3-43a6-8741-fc4902636082_1.jpeg?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 4,
+        "price": 177
+      }
+    },
+    {
+      "id": "YWL8XBIAAC0AzuPZ",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWL8XBIAAC0AzuPZ%22%29+%5D%5D",
+      "tags": ["Living Room", "Sofa"],
+      "first_publication_date": "2021-10-10T14:44:47+0000",
+      "last_publication_date": "2021-10-10T14:44:47+0000",
+      "slugs": ["tallulah-sofa-gray", "sofa-tallulah-gris"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YWL7yBIAAC8AzuFJ",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Tallulah Sofa Gray",
+        "sku": "1080681271",
+        "category": {
+          "id": "YWHviRIAACsAyjP3",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "furniture",
+          "first_publication_date": "2021-10-09T23:34:39+0000",
+          "last_publication_date": "2021-10-12T23:30:58+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Tallulah Sofa Gray",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/fa394f7d-4d89-4c90-86b3-832de74928fa_1.webp?auto=compress,format"
+        },
+        "short_description": "A low profile sets the stage for nighttime relaxation. The Tallulah upholstered sofa combines the straight lines of the European style with romantic details such as side cushions, crooked legs and nail heads. Square arm.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "A low profile sets the stage for nighttime relaxation. The Tallulah upholstered sofa combines the straight lines of the European style with romantic details such as side cushions, crooked legs and nail heads. Square arm. Solid engineered solid wood frame. Down-filled cushions for a softer feel. Sinuous, non-sag steel springs provide shock absorbing support. The locked corner frame and mortise and tenon joinery provide exceptional structural integrity. The loose cushions are removable. Features antique brass nail head details. The removable legs have a vintage brown finish. Adjustable levelers provide stability on uneven floors.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Product Height",
+            "spec_value": "88.90 cm"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "187 cm"
+          },
+          {
+            "spec_name": "Product depth",
+            "spec_value": "101 cm"
+          },
+          {
+            "spec_name": "Product Weight",
+            "spec_value": "56.69 kg"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Cloth"
+          },
+          {
+            "spec_name": "Care and Cleaning Instructions",
+            "spec_value": "Rotate the cushions and vacuum under them regularly. To avoid discoloration"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/fa394f7d-4d89-4c90-86b3-832de74928fa_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/3b54d7d6-5033-4aad-a8f0-eb84032659c0_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/58dbb943-d02c-4c9b-aed1-c17d47c5476c_3.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/910fb56b-e21b-44f9-9f87-3bd2cea8262e_4.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/2d6cb851-6f38-46c9-870a-c5f374a927ca_5.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/9ff1a54a-986b-49fc-a5c4-78d6aca246db_6.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/f7551c24-90b0-4fcc-8d45-86157eafa799_7.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/8332d09a-6fa3-4786-a2a8-2b99c9b45df9_8.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 4,
+        "price": 1834.57
+      }
+    },
+    {
+      "id": "YZU5oBIAAC0AuKK-",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZU5oBIAAC0AuKK-%22%29+%5D%5D",
+      "tags": ["Plato", "Christmas", "Featured"],
+      "first_publication_date": "2021-11-17T17:19:31+0000",
+      "last_publication_date": "2021-11-17T17:19:31+0000",
+      "slugs": [
+        "plato-forest-gnome-christmas-tree",
+        "platon-forest-gnome-christmas-tree"
+      ],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZU5JhIAAC4AuKCQ",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Plato Forest Gnome Christmas Tree",
+        "sku": "1107975833",
+        "category": {
+          "id": "YWHxkhIAAC4Ayj0J",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "kitchen",
+          "first_publication_date": "2021-10-09T23:33:27+0000",
+          "last_publication_date": "2021-10-12T23:35:55+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Plato Forest Gnome Christmas Tree",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/da0de922-eb41-4ff1-8839-2917c9aa7a33_0.jpeg?auto=compress,format"
+        },
+        "short_description": "There is no gnome place home this holiday season. Illustrating a fairytale forest scene, the art in this collection was originally painted by our in-house design team to add a touch of winter magic to your meals. The tree-shaped platter cheerfully features hors d'oeuvres, salads and side dishes, colorful treats, and more.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "There is no gnome place home this holiday season. Illustrating a fairytale forest scene, the art in this collection was originally painted by our in-house design team to add a touch of winter magic to your meals. The tree-shaped platter cheerfully features hors d'oeuvres, salads and side dishes, colorful treats, and more.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Other information",
+            "spec_value": "Made of stoneware. It has a decorated white enamel finish. Lead Free. Measurements: 40 cm wide x 33.7 cm deep approximate"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Forest Gnome Christmas Tree"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Multicolor"
+          },
+          {
+            "spec_name": "Care and cleaning instructions",
+            "spec_value": "Although the dishes are safe for microwave use, they can get hot. Drive carefully"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/da0de922-eb41-4ff1-8839-2917c9aa7a33_0.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/51dc3751-936b-4970-a236-534c41240d99_1.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/784e97a6-55a3-48c9-ae2e-b9f4f5ead163_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/24e24f50-1744-435e-995b-f9fe4a2efbf6_3.jpeg?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 17,
+        "price": 74
+      }
+    },
+    {
+      "id": "YZUgshIAAC4AuCwp",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YZUgshIAAC4AuCwp%22%29+%5D%5D",
+      "tags": ["Tablecloths"],
+      "first_publication_date": "2021-11-17T15:33:09+0000",
+      "last_publication_date": "2021-11-17T15:33:09+0000",
+      "slugs": ["caterers-box-table-cloth", "mantel-para-mesa-caterers-box"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YZUgBhIAAC0AuCjR",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Caterer's Box Table Cloth",
+        "sku": "1041012583",
+        "category": {
+          "id": "YWHxkhIAAC4Ayj0J",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "kitchen",
+          "first_publication_date": "2021-10-09T23:33:27+0000",
+          "last_publication_date": "2021-10-12T23:35:55+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 940,
+            "height": 1215
+          },
+          "alt": "Caterer's Box Table Cloth",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/eca7970a-f52a-458f-a556-18984c05d527_1.webp?auto=compress,format"
+        },
+        "short_description": "Sewn-in classic white cotton twill, our tablecloth creates an elegant setting for a large family and personal gatherings. Made of pure cotton. Machine wash.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Sewn-in classic white cotton twill, our tablecloth creates an elegant setting for a large family and personal gatherings. Made of pure cotton. Machine wash.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Material",
+            "spec_value": "Linen"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "White"
+          },
+          {
+            "spec_name": "Dimensions",
+            "spec_value": "1.77x2.74 m"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/eca7970a-f52a-458f-a556-18984c05d527_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/568ea556-166a-4be8-99ff-06598466581e_3.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/ed2acb80-9161-475d-ad79-921ed012a1df_2.jpeg?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 27,
+        "price": 72.43
+      }
+    },
+    {
+      "id": "YWJFhhIAACgAy7GY",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJFhhIAACgAy7GY%22%29+%5D%5D",
+      "tags": ["Living Room", "Armchair"],
+      "first_publication_date": "2021-10-10T01:44:43+0000",
+      "last_publication_date": "2021-10-10T02:30:25+0000",
+      "slugs": ["balboa-armchair", "sillon-balboa"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YWJFAxIAACkAy69T",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Balboa Armchair",
+        "sku": "1106346701",
+        "category": {
+          "id": "YWHviRIAACsAyjP3",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "furniture",
+          "first_publication_date": "2021-10-09T23:34:39+0000",
+          "last_publication_date": "2021-10-12T23:30:58+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Balboa Armchair",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/22cea604-bb41-4b20-ab03-6d3482bddbd7_1.webp?auto=compress,format"
+        },
+        "short_description": "The swivel mechanism allows the chair to rotate 360 degrees; does not tilt or turn. Fixed cushions. The frame is made of engineered wood and filled with 100% polyester fibers.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "The swivel mechanism allows the chair to rotate 360 degrees; does not tilt or turn. Fixed cushions. The frame is made of engineered wood and filled with 100% polyester fibers. Crown construction provides increased strength for increased durability. No sinuous sunken springs to provide cushion support. Created in the USA by our master craftsmen. Polyester wrapped cushions for a firmer feel. 2 back cushions included for added comfort.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Leg shape",
+            "spec_value": "Circular"
+          },
+          {
+            "spec_name": "Seat Type",
+            "spec_value": "Fixed seats"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Beige"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "101.60 cm"
+          },
+          {
+            "spec_name": "Care and cleaning instructions",
+            "spec_value": "Rotate the cushions and vacuum under them regularly. To avoid discoloration"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/22cea604-bb41-4b20-ab03-6d3482bddbd7_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/1e8e4b98-c6a3-4af3-9048-c8a857415080_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/c06cd39e-da80-4a37-8487-82d8990599b9_3.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/bac94b84-0298-4a17-b235-1468563fda95_4.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/211a9a2d-db21-4783-be66-791cd30a77ab_5.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/de5f3e3f-ccf6-45f9-bee0-ab10df9f0e09_6.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/5fc4aa04-cb4d-4d54-8c99-39d302cff829_7.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/008703c1-fde6-412d-984c-59eb2f69adc8_8.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 8,
+        "price": 1931.13
+      }
+    },
+    {
+      "id": "YWL9uRIAAC8AzuoG",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWL9uRIAAC8AzuoG%22%29+%5D%5D",
+      "tags": ["Living Room", "Sofa"],
+      "first_publication_date": "2021-10-10T14:50:36+0000",
+      "last_publication_date": "2021-10-10T14:50:36+0000",
+      "slugs": ["comfort-aquare-arm-sofa", "sofa-comfort-aquare-arm"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YWL9WxIAACkAzuha",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Comfort Aquare Arm Sofa",
+        "sku": "1083937814",
+        "category": {
+          "id": "YWHviRIAACsAyjP3",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "furniture",
+          "first_publication_date": "2021-10-09T23:34:39+0000",
+          "last_publication_date": "2021-10-12T23:30:58+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Comfort Aquare Arm Sofa",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/b79dc562-b94b-46f5-b06a-b7251cca6fa6_1.webp?auto=compress,format"
+        },
+        "short_description": "Settle into this sofa just once and you'll know where it got its name from. Designed with extra deep seats and three layers of thick padding in the arms and backrest, it invites the whole family to relax together.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Settle into this sofa just once and you'll know where it got its name from. Designed with extra deep seats and three layers of thick padding in the arms and backrest, it invites the whole family to relax together. This successful collection offers customizable options from fabric to padding to cushion style. Choose cushions wrapped in polyester for a firmer feel.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Product Width",
+            "spec_value": "1.95 m"
+          },
+          {
+            "spec_name": "Product Height",
+            "spec_value": "93.98 cm"
+          },
+          {
+            "spec_name": "Product Depth",
+            "spec_value": "99.06 cm"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Cloth"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/b79dc562-b94b-46f5-b06a-b7251cca6fa6_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/9054009e-7745-487b-ba7f-5d71309b272c_2.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/d201455c-f660-4fb1-ba84-b70ca599b694_3.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/dc94ab10-d932-42db-b366-bbbb81906dda_4.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 8,
+        "price": 2703.61
+      }
+    },
+    {
+      "id": "YWL6YBIAAC0AztrR",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWL6YBIAAC0AztrR%22%29+%5D%5D",
+      "tags": ["Living Room", "Sofa"],
+      "first_publication_date": "2021-10-10T14:36:19+0000",
+      "last_publication_date": "2021-10-10T14:36:19+0000",
+      "slugs": ["pb-comfort-roll-arm-sofa", "sofa-pb-comfort-roll-arm"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YWL55BIAAC0AztiS",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "PB Comfort Roll Arm Sofa",
+        "sku": "1074278902",
+        "category": {
+          "id": "YWHviRIAACsAyjP3",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "furniture",
+          "first_publication_date": "2021-10-09T23:34:39+0000",
+          "last_publication_date": "2021-10-12T23:30:58+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "PB Comfort Roll Arm Sofa",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/e2a81c09-19b9-42d0-b724-cf0120a7af62_1.webp?auto=compress,format"
+        },
+        "short_description": "Settle into this sofa just once and you'll know where it got its name from. Designed with extra deep seats and three layers of thick padding in the arms and backrest, it invites the whole family to relax together.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Settle into this sofa just once and you'll know where it got its name from. Designed with extra deep seats and three layers of thick padding in the arms and backrest, it invites the whole family to relax together. This successful collection offers customizable options from fabric to padding to cushion style.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Product Width",
+            "spec_value": "2.10 m"
+          },
+          {
+            "spec_name": "Product Height",
+            "spec_value": "93.98 cm"
+          },
+          {
+            "spec_name": "Product Depth",
+            "spec_value": "99.06 cm"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Sand"
+          },
+          {
+            "spec_name": "Care and Cleaning Instructions",
+            "spec_value": "Clean with a soft, dry cloth"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/e2a81c09-19b9-42d0-b724-cf0120a7af62_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/bfe276e5-98f6-40bf-aa07-8810ca69d265_2.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 10,
+        "price": 2703.61
+      }
+    },
+    {
+      "id": "YWMGAhIAACwAzw-z",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWMGAhIAACwAzw-z%22%29+%5D%5D",
+      "tags": ["Living Room", "Sofa"],
+      "first_publication_date": "2021-10-10T15:25:57+0000",
+      "last_publication_date": "2021-10-10T15:25:57+0000",
+      "slugs": ["big-sur-modular-room", "sala-modular-big-sur"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YWMFgxIAACwAzw1x",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Big Sur Modular Room",
+        "sku": "1108098020",
+        "category": {
+          "id": "YWHviRIAACsAyjP3",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "furniture",
+          "first_publication_date": "2021-10-09T23:34:39+0000",
+          "last_publication_date": "2021-10-12T23:30:58+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Big Sur Modular Room",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/2a6e48e0-7228-48f0-92eb-c385b17c54cf_1.webp?auto=compress,format"
+        },
+        "short_description": "Casual and comfortable, our Big Sur collection has a modern profile with square arms, wide tapered feet; Generous proportions that are perfect for lounging. The cushions are loose.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Casual and comfortable, our Big Sur collection has a modern profile with square arms, wide tapered feet; Generous proportions that are perfect for lounging. The cushions are loose. The eco-friendly construction includes 70% recycled 8-gauge steel sinuous springs and seat cushions made with a soy-based foam core. Mortise and tenon joinery provides exceptional structural integrity. Winding steel springs provide cushion support. Hidden steel connectors hold modular parts together securely. Adjustable levelers provide stability on uneven surfaces. Made in the USA by our own master craftsman.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Style",
+            "spec_value": "Contemporary"
+          },
+          {
+            "spec_name": "Leg shape",
+            "spec_value": "Square"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Cloth"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Khaki"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Big Sur"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "289.56 cm"
+          },
+          {
+            "spec_name": "Product Height",
+            "spec_value": "93.98 cm"
+          },
+          {
+            "spec_name": "Product depth",
+            "spec_value": "172.72 cm"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/2a6e48e0-7228-48f0-92eb-c385b17c54cf_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/790362df-05da-4a77-9526-cf21a7a10aa0_2.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 12,
+        "price": 4345.11
+      }
+    },
+    {
+      "id": "YWMEfBIAAC8Azwjd",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWMEfBIAAC8Azwjd%22%29+%5D%5D",
+      "tags": ["Living Room", "Sofa"],
+      "first_publication_date": "2021-10-10T15:19:27+0000",
+      "last_publication_date": "2021-10-10T15:19:27+0000",
+      "slugs": [
+        "pearce-modular-sofa-left-arm",
+        "sofa-modular-pearce-brazo-izquierdo"
+      ],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YWMEABIAACwAzwau",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Pearce Modular Sofa Left Arm",
+        "sku": "1106697601",
+        "category": {
+          "id": "YWHviRIAACsAyjP3",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "furniture",
+          "first_publication_date": "2021-10-09T23:34:39+0000",
+          "last_publication_date": "2021-10-12T23:30:58+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Pearce Modular Sofa Left Arm",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/2c9c96f1-eb77-4eca-91ad-ae6666ee0d27_1.webp?auto=compress,format"
+        },
+        "short_description": "The exceptional versatility of our Pearce collection allows you to create an intimate conversation area or a spacious seating arrangement. Distinguished by its generous rolled arms and bound seams, this modular room has a luxurious feel.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "The exceptional versatility of our Pearce collection allows you to create an intimate conversation area or a spacious seating arrangement. Distinguished by its generous rolled arms and bound seams, this modular room has a luxurious feel. It has a curved arm. The removable legs are square tapered and finished in Espresso. The seat cushions are loose. Wood frame with mortise and tenon joinery provides exceptional structural integrity. Winding steel springs provide cushion support. Hidden steel connectors hold modular parts together securely. Adjustable levelers provide stability on uneven floors.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Additional accessories",
+            "spec_value": "Includes 4 seat cushions and 5 back cushions"
+          },
+          {
+            "spec_name": "Leg shape",
+            "spec_value": "Square"
+          },
+          {
+            "spec_name": "Number of pieces",
+            "spec_value": "3"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Pearce"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "307.34 cm"
+          },
+          {
+            "spec_name": "Product Height",
+            "spec_value": "96.52 cm"
+          },
+          {
+            "spec_name": "Product depth",
+            "spec_value": "226.06 cm"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/2c9c96f1-eb77-4eca-91ad-ae6666ee0d27_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/dae980b8-d18c-438c-907b-02b117888d42_2.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 4,
+        "price": 4827.91
+      }
+    },
+    {
+      "id": "YWIyFhIAACoAy1s9",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWIyFhIAACoAy1s9%22%29+%5D%5D",
+      "tags": ["Bedroom", "Bed"],
+      "first_publication_date": "2021-10-10T00:21:49+0000",
+      "last_publication_date": "2021-10-10T02:19:52+0000",
+      "slugs": ["farmhouse-king-size-bed", "cama-farmhouse-king-size"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YWIxohIAAC0Ay1k4",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Farmhouse King Size Bed",
+        "sku": "1106558121",
+        "category": {
+          "id": "YWHviRIAACsAyjP3",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "furniture",
+          "first_publication_date": "2021-10-09T23:34:39+0000",
+          "last_publication_date": "2021-10-12T23:30:58+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Farmhouse King Size Bed",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/1512ba7a-c882-411a-9256-4bb8a46313ae_1.webp?auto=compress,format"
+        },
+        "short_description": "Style, simplicity and fine craftsmanship are the hallmarks of classic Shaker furniture. We've updated the traditional profile of a four-post bed with simple straight lines and the warmth and appeal of an heirloom.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Style, simplicity and fine craftsmanship are the hallmarks of classic Shaker furniture. We've updated the traditional profile of a four-post bed with simple straight lines and the warmth and appeal of an heirloom. Masterfully crafted with kiln-dried meranti wood. Completely finished by hand, using a multi-step process that highlights the natural grain of the wood. The espresso-finished piece is crafted from kiln-dried rich mahogany to look like an heirloom. Charcoal finished parts are made from solid kiln-dried meranti wood, engineered wood, and sungkai veneers. GREENGUARD Gold Certification. GREENGUARD Gold Certificates have low emissions, which means they are designed to ensure that the air you and your family breathe is cleaner.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Product width",
+            "spec_value": "213.36 cm"
+          },
+          {
+            "spec_name": "Product Height",
+            "spec_value": "205.74 cm"
+          },
+          {
+            "spec_name": "Depth",
+            "spec_value": "220.98 cm"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Black"
+          },
+          {
+            "spec_name": "Collection",
+            "spec_value": "Farmhouse"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/1512ba7a-c882-411a-9256-4bb8a46313ae_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/8dea8f7e-d0a3-4d09-9998-42a309732417_4.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/0cc985b8-392e-46e4-bc3e-fb03d8281ed3_2.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/8867041d-f83f-479f-9f2d-8520e5f3db7c_3.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 3,
+        "price": 2510.49
+      }
+    },
+    {
+      "id": "YWJDNRIAAC0Ay6dJ",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWJDNRIAAC0Ay6dJ%22%29+%5D%5D",
+      "tags": ["Living Room", "Armchair"],
+      "first_publication_date": "2021-10-10T01:34:50+0000",
+      "last_publication_date": "2021-10-10T02:29:47+0000",
+      "slugs": ["studded-armchair-irving", "sillon-con-tachuelas-irving"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YWJClRIAACsAy6SA",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Studded Armchair Irving",
+        "sku": "1083862733",
+        "category": {
+          "id": "YWHviRIAACsAyjP3",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "furniture",
+          "first_publication_date": "2021-10-09T23:34:39+0000",
+          "last_publication_date": "2021-10-12T23:30:58+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 940,
+            "height": 1215
+          },
+          "alt": "Studded Armchair Irving ",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/9b1b6200-11d6-4172-8272-f66d58aaad8d_1.webp?auto=compress,format"
+        },
+        "short_description": "Our compact version of the classic club chair offers all the comforts of the original, but in a small swivel silhouette that is suitable for a library, study or small room.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Our compact version of the classic club chair offers all the comforts of the original, but in a small swivel silhouette that is suitable for a library, study or small room. The cushions are wrapped in flame retardant free polyester, which gives it a firmer feel. Steel anti-sag springs provide cushioned support. Features attractive nail head accents. The swivel mechanism allows the chair to rotate 360 degrees; does not tilt or turn. Premium quality leather, dyed with aniline. The skin will soften and clear with use and the passage of time, developing an elegant patina. Leather is a natural product. Each skin has inherent variations in color and texture. No two pieces are alike.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Dimensions",
+            "spec_value": "81 cm wide x 90 cm deep; 82.50 cm high. \""
+          },
+          {
+            "spec_name": "Care and Cleaning Instructions",
+            "spec_value": "Although leather is one of the most durable upholstery materials"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Leather"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/9b1b6200-11d6-4172-8272-f66d58aaad8d_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/46fc41b2-1552-4718-9ebb-9101cadf7202_2.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/07313f4b-1b48-4ec3-9290-1f046015bc41_3.jpeg?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/3e43009d-b5fd-4dfc-aeb8-5134a842eea1_4.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/daff07dd-a969-4d08-b406-f0498b7121a0_5.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/6cdda5a0-5c3d-4cb9-8e47-f4eaeb49edc7_6.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 940,
+                "height": 1215
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/ed4fdf26-f8bd-47a9-9406-ca67e8ad2412_7.webp?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 3,
+        "price": 1593.18
+      }
+    },
+    {
+      "id": "YWIiOxIAACoAyxT2",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWIiOxIAACoAyxT2%22%29+%5D%5D",
+      "tags": ["Bedroom", "Bed"],
+      "first_publication_date": "2021-10-09T23:15:56+0000",
+      "last_publication_date": "2021-10-10T02:24:03+0000",
+      "slugs": ["dayton-queen-size-bed", "cama-dayton-queen-size"],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YWIhvhIAAC4AyxLB",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Dayton Queen Size Bed",
+        "sku": "1106718527",
+        "category": {
+          "id": "YWHviRIAACsAyjP3",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "furniture",
+          "first_publication_date": "2021-10-09T23:34:39+0000",
+          "last_publication_date": "2021-10-12T23:30:58+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Dayton Queen Size Bed",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/5fc00251-bc43-464a-92c0-5a3dae489f3c_1.webp?auto=compress,format"
+        },
+        "short_description": "Our Dayton platform bed is distinguished by a low profile and clean lines. Crafted from mango wood with incredible tonality and texture, the headboard features wooden planks arranged in a subtle chevron pattern.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Our Dayton platform bed is distinguished by a low profile and clean lines. Crafted from mango wood with incredible tonality and texture, the headboard features wooden planks arranged in a subtle chevron pattern for visual interest. Slim metal legs finished in antique bronze complete the look. Made with solid mango wood, acacia wood and MDF. The legs are made of metal. Finished with a multi-step process in Carbon Light. The headboard has beautiful parquet details. The roll-up slat support system makes the use of a bed base optional. A standard-size or low-profile bed frame can be used.",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Depth",
+            "spec_value": "210.82 cm"
+          },
+          {
+            "spec_name": "Product width",
+            "spec_value": "160.02 cm"
+          },
+          {
+            "spec_name": "Product Height",
+            "spec_value": "134.62 cm"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Wood"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/5fc00251-bc43-464a-92c0-5a3dae489f3c_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/04f163ef-cd2d-496c-8aa9-29ab8457f2a8_2.jpeg?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 2,
+        "price": 1303.5
+      }
+    },
+    {
+      "id": "YWIgaRIAACsAywzl",
+      "uid": null,
+      "url": null,
+      "type": "product",
+      "href": "https://wizeline-academy.cdn.prismic.io/api/v2/documents/search?ref=YZaBvBIAACgAvnOP&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22YWIgaRIAACsAywzl%22%29+%5D%5D",
+      "tags": ["Bedroom", "Bed"],
+      "first_publication_date": "2021-10-09T23:17:27+0000",
+      "last_publication_date": "2021-10-10T02:24:47+0000",
+      "slugs": [
+        "chesterfield-king-size-bed-gray",
+        "cama-chesterfield-king-size-gris"
+      ],
+      "linked_documents": [],
+      "lang": "en-us",
+      "alternate_languages": [
+        {
+          "id": "YWIfYhIAACsAywhT",
+          "type": "product",
+          "lang": "es-mx"
+        }
+      ],
+      "data": {
+        "name": "Chesterfield King Size Bed Gray",
+        "sku": "1085189456",
+        "category": {
+          "id": "YWHviRIAACsAyjP3",
+          "type": "category",
+          "tags": [],
+          "lang": "en-us",
+          "slug": "furniture",
+          "first_publication_date": "2021-10-09T23:34:39+0000",
+          "last_publication_date": "2021-10-12T23:30:58+0000",
+          "link_type": "Document",
+          "isBroken": false
+        },
+        "mainimage": {
+          "dimensions": {
+            "width": 696,
+            "height": 900
+          },
+          "alt": "Chesterfield King Size Bed Gray",
+          "copyright": null,
+          "url": "https://images.prismic.io/wizeline-academy/8c57b556-38eb-47fd-af04-a47421d0020a_1.webp?auto=compress,format"
+        },
+        "short_description": "Our Chesterfield collection is built for superior comfort. The headboard is detailed with deep button tufts and decorative bronze rivets on each side. Expertly crafted with a kiln-dried hardwood frame.",
+        "description": [
+          {
+            "type": "paragraph",
+            "text": "Our Chesterfield collection is built for superior comfort. The headboard is detailed with deep button tufts and decorative bronze rivets on each side. Expertly crafted with a kiln-dried hardwood frame. The headboard is padded and upholstered. Exposed legs have a hand-applied Espresso finish. Adjustable levelers add stability on uneven surfaces. The headboard is guaranteed to fit our PB metal boxspring (sold separately) using the headboard hardware (included).",
+            "spans": []
+          }
+        ],
+        "specs": [
+          {
+            "spec_name": "Product Height",
+            "spec_value": "1.32 m"
+          },
+          {
+            "spec_name": "Product Width",
+            "spec_value": "2.13 m"
+          },
+          {
+            "spec_name": "Color",
+            "spec_value": "Gray"
+          },
+          {
+            "spec_name": "Material",
+            "spec_value": "Cloth"
+          },
+          {
+            "spec_name": "Weight",
+            "spec_value": "91.62 kg"
+          }
+        ],
+        "images": [
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/8c57b556-38eb-47fd-af04-a47421d0020a_1.webp?auto=compress,format"
+            }
+          },
+          {
+            "image": {
+              "dimensions": {
+                "width": 696,
+                "height": 900
+              },
+              "alt": null,
+              "copyright": null,
+              "url": "https://images.prismic.io/wizeline-academy/872f4706-fa78-4243-9ba2-017c93de2a48_2.jpeg?auto=compress,format"
+            }
+          }
+        ],
+        "stock": 4,
+        "price": 2317.37
+      }
+    }
+  ],
+  "version": "6dac34e",
+  "license": "This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/."
+}

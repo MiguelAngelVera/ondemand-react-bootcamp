@@ -1,6 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+import React from 'react'
+import {Link} from 'react-router-dom'
+import styled from 'styled-components'
+
 const CheckoutButtons = styled.div`
   display: flex;
   justify-content: space-evenly;
@@ -9,7 +10,7 @@ const CheckoutButtons = styled.div`
   @media (max-width: 900px) {
     width: 70%;
   }
-`;
+`
 
 const BackButton = styled.button`
   width: 10vw;
@@ -21,7 +22,7 @@ const BackButton = styled.button`
     width: auto;
     font-size: 4vw;
   }
-`;
+`
 
 const ProceedButton = styled.button`
   width: 10vw;
@@ -33,18 +34,15 @@ const ProceedButton = styled.button`
     width: auto;
     font-size: 5vw;
   }
-`;
+`
 export default function CheckOutButtons() {
   return (
     <CheckoutButtons>
-      <Link
-        to="/ondemand-react-bootcamp/cart"
-        style={{ textDecoration: "none" }}
-      >
+      <Link to="/ondemand-react-bootcamp/cart" style={{textDecoration: 'none'}}>
         <BackButton>Go Back To Cart</BackButton>
       </Link>
       {/* {cartItems.length ? <ProceedButton>Place Order</ProceedButton> : null} */}
       <ProceedButton>Place Order</ProceedButton>
     </CheckoutButtons>
-  );
+  )
 }

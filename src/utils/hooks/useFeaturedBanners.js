@@ -1,45 +1,47 @@
-import { useState, useEffect, useContext } from "react";
-import { API_BASE_URL } from "../constants";
-import { useLatestAPI } from "./useLatestAPI";
-import axios from "axios";
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable consistent-return */
+import {useState, useEffect} from 'react'
+import axios from 'axios'
+import {API_BASE_URL} from '../constants'
+import {useLatestAPI} from './useLatestAPI'
 
-export function useFeaturedBanners(encodes, languages, pageSizes, featureds) {
-  const { ref: apiRef, isLoading: isApiMetadataLoading } = useLatestAPI();
-  const pageSize = pageSizes;
-  const encoder = encodes;
-  const language = languages;
-  const featured = featureds;
+export function useFeaturedBanners(encodes, languages, pageSizes, feature) {
+  const {ref: apiRef, isLoading: isApiMetadataLoading} = useLatestAPI()
+  const pageSize = pageSizes
+  const encoder = encodes
+  const language = languages
+  const featured = feature
   const [featuredBanners, setFeaturedBanners] = useState(() => ({
     data: {},
     isLoading: true,
-  }));
+  }))
   useEffect(() => {
     if (!apiRef || isApiMetadataLoading) {
-      return () => {};
+      return () => {}
     }
-    const CancelToken = axios.CancelToken;
-    const cancelSource = CancelToken.source();
+    const {CancelToken} = axios
+    const cancelSource = CancelToken.source()
 
     async function getFeaturedBanners() {
       try {
-        setFeaturedBanners({ data: {}, isLoading: true });
-
-        const { data, status } = await axios(
+        setFeaturedBanners({data: {}, isLoading: true})
+        const {data, status} = await axios(
           `${API_BASE_URL}/documents/search?ref=${apiRef}&q=${encodeURIComponent(
-            encoder
+            encoder,
           )}${featured}&lang=${language}&pageSize=${pageSize}`,
           {
             cancelToken: cancelSource.token,
-          }
-        );
-        const response = status !== 200 ? {} : data;
-        setFeaturedBanners({ data: response, isLoading: false });
+          },
+        )
+        const response = status !== 200 ? {} : data
+        setFeaturedBanners({data: response, isLoading: false})
       } catch (err) {
-        setFeaturedBanners({ data: {}, isLoading: false });
+        setFeaturedBanners({data: {}, isLoading: false})
       }
     }
 
-    getFeaturedBanners();
-  }, [apiRef, isApiMetadataLoading]);
-  return featuredBanners;
+    getFeaturedBanners()
+  }, [apiRef, isApiMetadataLoading])
+  return featuredBanners
 }

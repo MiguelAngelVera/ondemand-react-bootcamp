@@ -1,51 +1,59 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import { ReactComponent as MainLogo } from "../../utils/assets/main-logo.svg";
-import { ReactComponent as SearchLogo } from "../../utils/assets/search-icon.svg";
-import * as styles from "./Header-style";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import HeaderCart from "./HeaderCart";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, {useEffect, useState} from 'react'
+import styled from 'styled-components'
+import PropTypes from 'prop-types'
+import {Link, useNavigate} from 'react-router-dom'
+import {ReactComponent as MainLogo} from '../../utils/assets/main-logo.svg'
+import {ReactComponent as SearchLogo} from '../../utils/assets/search-icon.svg'
+import * as styles from './Header-style'
+import HeaderCart from './HeaderCart'
 
-const MainLogoIcon = styled(MainLogo)``;
+const MainLogoIcon = styled(MainLogo)``
 
-const SearchIcon = styled(SearchLogo)``;
+const SearchIcon = styled(SearchLogo)``
 
-function NavBar() {
-  const navigate = useNavigate();
-  const [searchString, setSearchString] = useState("");
-  const handleChange = (event) => setSearchString(event.target.value);
-  const handleSearch = (event) => (
-    navigate(`/ondemand-react-bootcamp/search?q=${searchString.toLowerCase()}`),
-    event.preventDefault(),
-    setSearchString("")
-  );
+function NavBar({search}) {
+  const navigate = useNavigate()
+  const [searchString, setSearchString] = useState('')
+  const handleChange = (event) => {
+    setSearchString(event.target.value)
+  }
+  const handleSearch = (event) => {
+    navigate(`/ondemand-react-bootcamp/search?q=${searchString.toLowerCase()}`)
+    event.preventDefault()
+    setSearchString('')
+  }
+  useEffect(() => {
+    setSearchString(search)
+  }, [])
+
   return (
     <styles.BarWrapper>
       <styles.Left>
         <Link
           to="/ondemand-react-bootcamp/home"
-          style={{ textDecoration: "none" }}
+          style={{textDecoration: 'none'}}
         >
-          <MainLogoIcon></MainLogoIcon>
+          <MainLogoIcon />
         </Link>
       </styles.Left>
 
       <styles.Mid>
         <styles.SearchBar>
-          <form style={{ display: "flex" }} onSubmit={handleSearch}>
+          <form style={{display: 'flex'}} onSubmit={handleSearch}>
             <styles.SearchInput
-              style={{ outline: "none" }}
+              style={{outline: 'none'}}
               type="text"
               placeholder="Search..."
               value={searchString}
               onChange={handleChange}
-            ></styles.SearchInput>
+            />
             <button
-              style={{ backgroundColor: "white", borderWidth: "0" }}
+              aria-label="searchButton"
+              style={{backgroundColor: 'white', borderWidth: '0'}}
               type="submit"
             >
-              <SearchIcon></SearchIcon>
+              <SearchIcon />
             </button>
           </form>
         </styles.SearchBar>
@@ -55,16 +63,23 @@ function NavBar() {
           <styles.Sign>Register</styles.Sign>
           <styles.Sign>Sign In</styles.Sign>
         </styles.SignBlock>
-        <HeaderCart></HeaderCart>
+        <HeaderCart />
       </styles.Right>
     </styles.BarWrapper>
-  );
+  )
 }
 
-export default function Header() {
+export default function Header({search}) {
   return (
     <styles.MainHeader>
-      <NavBar></NavBar>
+      <NavBar search={search} />
     </styles.MainHeader>
-  );
+  )
+}
+
+NavBar.propTypes = {
+  search: PropTypes.string.isRequired,
+}
+Header.propTypes = {
+  search: PropTypes.string.isRequired,
 }

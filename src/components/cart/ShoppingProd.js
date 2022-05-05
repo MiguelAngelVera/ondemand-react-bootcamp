@@ -1,22 +1,22 @@
-import React, { useContext } from "react";
-import styled from "styled-components";
-import CartContext from "../../states/CartContext";
-import ListContext from "../../states/ListContext";
-import Selector from "../productDetail/Selector";
+import React, {useContext} from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import ListContext from '../../states/ListContext'
+import Selector from '../productDetail/Selector'
 
-const Medium = styled.div``;
+const Medium = styled.div``
 const Row = styled.div`
   display: flex;
   margin-bottom: 10px;
   background-color: white;
-`;
+`
 const Image = styled.img`
   width: 130px;
   @media (max-width: 900px) {
     width: 50%;
     height: 50%;
   }
-`;
+`
 const ProductDetails = styled.div`
   display: flex;
   padding: 0 15px;
@@ -24,7 +24,7 @@ const ProductDetails = styled.div`
     display: inline;
     width: 50%;
   }
-`;
+`
 const Text = styled.div`
   padding: 20px;
   display: flex;
@@ -34,17 +34,17 @@ const Text = styled.div`
     padding: 0;
     font-size: 3vw;
   }
-`;
-const Price = styled.span``;
-const Name = styled.span``;
-const Category = styled.span``;
+`
+const Price = styled.span``
+const Name = styled.span``
+const Category = styled.span``
 const CartActions = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-left: auto;
   margin-right: 10px;
-`;
+`
 const Remove = styled.button`
   width: 5vw;
   background-color: #ff573330;
@@ -53,78 +53,87 @@ const Remove = styled.button`
   @media (max-width: 900px) {
     width: auto;
   }
-`;
+`
 
 const handleClick = (e, cartItems, setCartItems, data) => {
-  setCartItems(cartItems.filter((existingItes) => existingItes.id !== data));
-};
+  setCartItems(cartItems.filter((existingItes) => existingItes.id !== data))
+}
 
-export default function ShoppingProd({ checkout = false }) {
-  const { cartItems, setCartItems } = useContext(ListContext);
+export default function ShoppingProd({checkout}) {
+  const {cartItems, setCartItems} = useContext(ListContext)
 
   return (
     <Medium>
-      {cartItems.length
-        ? cartItems.map((item) => (
-            <Row key={item.id}>
-              <ProductDetails>
-                <Image src={item.data.mainimage.url}></Image>
-                <Text>
+      {cartItems.length ? (
+        cartItems.map((item) => (
+          <Row key={item.id}>
+            <ProductDetails>
+              <Image aria-label="imgItemCart" src={item.data.mainimage.url} />
+              <Text>
+                <Name aria-label="nameItemCart">
+                  <b>Product: </b>
+                  {item.data.name.toUpperCase()}
+                </Name>
+                {checkout && (
                   <Name>
-                    <b>Product: </b>
-                    {item.data.name.toUpperCase()}
+                    <b>Qty: </b>
+                    {item.qty}
                   </Name>
-                  {checkout && (
-                    <Name>
-                      <b>Qty: </b>
-                      {item.qty}
-                    </Name>
-                  )}
-                  {!checkout && (
-                    <Category>
-                      <b>Category: </b>
-                      {item.data.category.slug}
-                    </Category>
-                  )}
-                  {!checkout && (
-                    <Price>
-                      <b>Price: </b>${item.data.price}
-                    </Price>
-                  )}
-                  {!checkout && (
-                    <Name>
-                      Stock:
-                      {item.data.stock}
-                    </Name>
-                  )}
-                </Text>
-              </ProductDetails>
-              <CartActions>
-                {!checkout && (
-                  <Remove
-                    onClick={(e) =>
-                      handleClick(e, cartItems, setCartItems, item.id)
-                    }
-                  >
-                    Remove
-                  </Remove>
                 )}
-                <Text>
-                  <table>
-                    <tbody>
-                      {!checkout && (
-                        <Selector data={item} cart={true}></Selector>
-                      )}
-                    </tbody>
-                  </table>
+                {!checkout && (
+                  <Category>
+                    <b>Category: </b>
+                    {item.data.category.slug}
+                  </Category>
+                )}
+                {!checkout && (
+                  <Price>
+                    <b>Price: </b>US${item.data.price}
+                  </Price>
+                )}
+                {!checkout && (
                   <Name>
-                    <b>Subtotal: </b>${(item.qty * item.data.price).toFixed(2)}
+                    Stock:
+                    {item.data.stock}
                   </Name>
-                </Text>
-              </CartActions>
-            </Row>
-          ))
-        : null}
+                )}
+              </Text>
+            </ProductDetails>
+            <CartActions>
+              {!checkout && (
+                <Remove
+                  aria-label="removeFromCart"
+                  onClick={(e) =>
+                    handleClick(e, cartItems, setCartItems, item.id)
+                  }
+                >
+                  Remove
+                </Remove>
+              )}
+              <Text>
+                <table>
+                  <tbody>
+                    {!checkout && <Selector itemData={item} cart />}
+                  </tbody>
+                </table>
+                <Name>
+                  Subtotal: ${(item.qty * item.data.price).toFixed(2)}
+                </Name>
+              </Text>
+            </CartActions>
+          </Row>
+        ))
+      ) : (
+        <h1>Nothing to Show on Your Cart...</h1>
+      )}
     </Medium>
-  );
+  )
+}
+
+ShoppingProd.defaultProps = {
+  checkout: false,
+}
+
+ShoppingProd.propTypes = {
+  checkout: PropTypes.bool,
 }
