@@ -1,23 +1,9 @@
 /* eslint-disable no-unused-expressions */
 import React, { useContext } from "react";
 import styled from "styled-components";
-import CartContext from "../../states/CartContext";
 import ListContext from "../../states/ListContext";
 
-const ProducttoCart = styled.button`
-  /* position: absolute;
-  border-width: 0px;
-  color: #6495ed;
-  font-size: 1.2vw;
-  display: flex;
-  border-radius: 0.3rem;
-  bottom: 0;
-  margin: 0 auto;
-  align-content: center;
-  @media (max-width: 900px) {
-    font-size: 3vw;
-  } */
-`;
+const ProducttoCart = styled.button``;
 
 function handleClick(e, data, cartItems, setCartItems, quantity) {
   e.preventDefault();
